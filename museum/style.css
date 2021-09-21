@@ -304,10 +304,9 @@ font-family: var(--Forum);
  background-color:var(--dark-red);
  }
 
-.welcome-background{
+.visiting-section{
   height:1430px;
 }
-
 
 .card-container{
  display:flex;
