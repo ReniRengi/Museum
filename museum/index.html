@@ -5,7 +5,9 @@
   <meta charset="utf-8">
   <title>Museum</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="./assets/svg/frame.svg">
+  <link rel="icon" href="./assets/svg/Frame.svg">
+  <base target="_blank">
+
 </head>
 
 <body>
@@ -13,23 +15,29 @@
     <div class="section container header-container">
       <div class="image-icon">
         <img src="./assets/svg/Frame.svg" alt="logo"><span>Louvre</span>
-      </div>
-      <nav class="nav-container">
-        <ul>
-          <li class="list"><a href="#visiting">Visiting</a></li>
-          <li class="list"><a href="#explore">Explore</a></li>
-          <li class="list"><a href="#video">Video</a></li>
-          <li class="list"><a href="#tickets">Tickets</a></li>
-          <li class="list"><a href="#contacts">Contacts</a></li>
+        </div>
+      <div class="burger-menu">
+        <input id="menu-toggle" type="checkbox"/>
+        <label class="menu-btn" for="menu-toggle">
+           <span></span>
+        </label>
+        <ul class="menu-box">
+          <li class="menu-item"><a href="#visiting">Visiting > </a></li>
+          <li class="menu-item"><a href="#explore">Explore > </a></li>
+          <li class="menu-item"><a href="#video">Video > </a></li>
+          <li class="menu-item"><a href="#tickets">Tickets > </a></li>
+          <li class="menu-item"><a href="#contacts">Contacts > </a></li>
         </ul>
-      </nav>
+      </div>
     </div>
   </header>
   <main>
     <section class="wrap-dark welcome-background">
       <div class="container section welcome-section" id="welcome">
+        <img src="./assets/img/background.jpg" alt="background">
         <div class="title">
-          <h1>Welcome<br>To the Louvre</h1>
+          <h1>Welcome</h1>
+          <span>to the Louvre</span>
           <h2 class="title-padding">From the castle to the museum</h2>
           <form action='https://www.google.com/maps/@48.8618159,2.3366818,3a,75y,81.55h,73.4t/data=!3m7!1e1!3m5!1sAF1QipOVxZQuSy3Bx9T_HpH_7FtBHDTXvI6SF-A10ocT!2e10!3e12!7i5472!8i2736'>
             <button>Discover the Louvre</button>
@@ -41,38 +49,38 @@
       <div class="container section visiting-section" id="visiting">
         <h2 class="title-underline">Virtual tour</h2>
         <div class="card-container">
-          <a class="card" href="./assets/img/royal_palace.jpg">
+          <a class="card" href="https://www.google.com/maps/@48.8606882,2.3356791,3a,90y,328.36h,87.55t/data=!3m7!1e1!3m5!1sAF1QipMZ9YgnArbwEIbTDANeSQYFu9gNqpW_2Sv8FBvY!2e10!3e12!7i4352!8i1815">
             <img src="./assets/img/royal_palace.jpg" alt="Royal_palace">
             <h3 class="subject">Royal palace</h3>
             <span>360° virtual tour</span>
 
               <p>Google Street Panorama View</p>
           </a>
-          <a class="card" href="./assets/img/Denon_wing.jpg">
+          <a class="card" href="https://www.google.com/maps/@48.8563254,2.3352706,3a,75y,90t/data=!3m7!1e1!3m5!1sAF1QipNRj_CwP4coDMYdCHj6qHeBeJpI2VxU5BUsOX4F!2e10!3e12!7i11000!8i5500">
             <img src="./assets/img/Denon_wing.jpg" alt="Denon_wing">
             <h3 class="subject">Denon wing</h3>
             <span>360° virtual tour</span>
             <p>Google Street Panorama View</p>
           </a>
-          <a class="card" href="./assets/img/Colonnade_Perrault.jpg">
+          <a class="card" href="https://www.google.com/maps/@48.8601723,2.3395439,3a,88.4y,322.04h,84.25t/data=!3m7!1e1!3m5!1sAF1QipNMZGQuEA-pAUvIG_eP_2f3gWTKZEJ6XLVJ-Pgb!2e10!3e12!7i10240!8i5120">
             <img src="./assets/img/Colonnade_Perrault.jpg" alt="Colonnade_Perrault">
             <h3 class="subject">Colonnade Perrault</h3>
             <span>360° virtual tour</span>
             <p>Google Street Panorama View</p>
           </a>
-          <a class="card" href="./assets/img/Greek_hall.jpg">
+          <a class="card" href="https://www.google.com/maps/@48.860183,2.3356156,3a,90y,177.69h,95.61t/data=!3m7!1e1!3m5!1sAF1QipP7uFZnTITRe-7AEVAgHAfqiCL-03gvBHcYWgF3!2e10!3e12!7i5472!8i2736">
             <img src="./assets/img/Greek_hall.jpg" alt="Greek_hall">
             <h3 class="subject">Greek hall</h3>
             <span>360° virtual tour</span>
             <p>Google Street Panorama View</p>
           </a>
-          <a class="card" href="./assets/img/Mona_Lisa.jpg">
+          <a class="card" href="https://www.google.com/maps/@48.8598788,2.3355157,3a,82.2y,7.53h,94t/data=!3m7!1e1!3m5!1sAF1QipO1wkUUbyzpPjj-OR0mR5etZJT-xl-40XK8rDQ3!2e10!3e12!7i10240!8i5120">
             <img src="./assets/img/Mona_Lisa.jpg" alt="Mona_Lisa">
             <h3 class="subject">Mona Lisa</h3>
             <span>360° virtual tour</span>
             <p>Google Street Panorama View</p>
           </a>
-          <a class="card" href="./assets/img/Night_Palace.jpg">
+          <a class="card" href="https://www.google.com/maps/@48.8563254,2.3352706,3a,90y,21.26h,79.91t/data=!3m7!1e1!3m5!1sAF1QipPpGAowYatVyk3MMGnZAaQkYm2EUk-Dlca06SS5!2e10!3e12!7i11304!8i5652">
             <img src="./assets/img/Night_Palace.jpg" alt="Night_Palace">
             <h3 class="subject">Night Palace</h3>
             <span>360° virtual tour</span>

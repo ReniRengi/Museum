@@ -37,13 +37,11 @@ html{
 .wrap-body{
   max-height: 6250px;
 }
-.section{
- background-size:cover;
 
-}
 .wrap-dark{
- padding-top:75px;
- padding-bottom: 75px;
+ padding-left:1.76%;
+ padding-right: 1.76%;
+
  background-color: var(--bg-dark);
  color: var(--font-white);
 }
@@ -58,8 +56,8 @@ html{
 }
 
 .wrap-white{
- padding-top:75px;
- padding-bottom: 75px;
+ padding-left:1.76%;
+ padding-right: 1.76%;
  background-color:var(--font-white);
 }
 
@@ -71,7 +69,7 @@ html{
 
 .container{
  margin: 0px auto;
-  max-width: 1370px;
+  max-width: 1024px;
 }
 
 .title-padding{
@@ -86,17 +84,18 @@ html{
  justify-content: space-between;
  padding-right: 0px;
  align-items: center;
- height: 75px;
- /* min-width: 1440px; */
-}
+ height: 130px;
+ }
 
 .image-icon{
- width: 50%;
+ position:absolute;
+ width: 30%;
  font-family: var(--Forum);
  font-size: 28px;
  text-transform: uppercase;
  letter-spacing: 5px;
  color: var(--font-white);
+ z-index: 1001;
 }
 
 .image-icon * {
@@ -104,52 +103,128 @@ html{
 }
 
 .image-icon img{
-  padding-right: 2%;
+  padding-right:7%;
 }
 
-.nav-container {
- width: 50%;
- height: 50px;
- align-items:center;
- justify-content: space-between;
+.image-icon img:hover{
+  -webkit-filter: invert(65%) sepia(15%) saturate(806%) hue-rotate(356deg) brightness(81%) contrast(80%);
 }
-.nav-container ul {
- display: flex;
- flex-direction: row;
- justify-content: space-between;
- font-family:var(--Roboto);
- font-size: 21px;
- letter-spacing: 4px;
- word-spacing: 1px;
- color: var(--font-white);
+#menu-toggle{
+  opacity:0;
 }
-.nav-container ul li {
+
+.menu-btn{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right:20px;
+  top: 7.7%;
+  width: 3.1%;
+  height: 18px;
+  cursor:pointer;
+}
+
+.menu-btn > span,
+.menu-btn > span::before,
+.menu-btn > span::after{
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: var(--font-white);
+  transition-duration: .25s;
+}
+
+.menu-btn > span::before {
+  content: '';
+  top: -8px;
+}
+
+.menu-btn > span::after {
+  content: '';
+  top: 8px;
+}
+
+.menu-box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  width: 29%;
+  height: 100%;
+  margin: 0;
+  padding: 260px 0 0 4%;
   list-style: none;
+  background-color: var(--bg-dark);
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  transition-duration: .25s;
+  z-index:1000;
+}
+
+.menu-item {
+  display: block;
+  padding: 12px;
+  color: var(--font-white);
+  font-family: var(--Roboto);
+  font-size: 30px;
+  font-weight: 600;
+  line-height:1.5;
+  text-decoration: none;
+  transition-duration: .25s;
+}
+
+.menu-item:hover {
+  background-color: var(--font-gold);
+  color: var(--font-white);
+}
+
+#menu-toggle:checked ~ .menu-btn > span {
+  transform: rotate(45deg);
+}
+
+#menu-toggle:checked ~ .menu-btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+
+#menu-toggle:checked ~ .menu-btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+#menu-toggle:checked ~ .menu-box {
+  visibility: visible;
+  left: 0;
 }
 
 .welcome-section{
- display: flex;
- flex-direction: row;
- justify-content: space-between;
- align-items: center;
- align-content: center;
- min-height: 12%;
+  position: relative;
+  text-align: end;
+  padding-top: 0;
+  height:585px;
 }
 
-.welcome-background {
- min-height: 750px;
- background: var(--bg-dark)  url("./assets/img/background.jpg") right bottom no-repeat;
- background-size: 60% 100%;
+.welcome-section img{
+  width:68,3%;
+  height:89,7%;
+
+}
+
+.welcome-section .title{
+  position: absolute;
+  text-align: start;
+  top: 1.36%;
 }
 
 h1{
  margin:0px;
- padding-top:5%;
- padding-bottom: 5%;
+ padding-top:15%;
+ padding-bottom: 8%;
  font-family: var(--Forum);
  letter-spacing: 5px;
  font-weight:normal;
- font-size: 80px;
+ font-size: 50px;
  text-transform: uppercase;
 }
 
@@ -160,26 +235,36 @@ h1{
  color:var(--font-white);
 }
 
+.title span{
+font-family: var(--Forum);
+ letter-spacing: 5px;
+ line-height:56px;
+ font-weight:normal;
+ font-size: 50px;
+ text-transform: uppercase;
+}
+
 .title h2{
  text-align: justify;
- padding-bottom: 13%;
+ padding-top:66px;
+ padding-bottom: 60px;
  font-family:var(--Roboto);
- font-size: 24px;
- letter-spacing: 4px;
- word-spacing: 1px;
+ font-size: 22px;
+ 
 }
 
 .title button{
- width: 60%;
- height: 70px;
+ width: 76%;
+ height: 60px;
  border-radius: 7px;
  background-color: var(--dark-red);
  font-family: var(--Roboto);
  font-size: 20px;
- letter-spacing: 3px;
+ letter-spacing: 2px;
  color:var(--font-white);
  word-spacing: 1px;
 }
+
 .title button:link{
  background-color:var(--font-gold);
 }
@@ -200,11 +285,11 @@ h1{
  text-transform: uppercase;
 }
 
-
 .title-underline{
  position: relative;
+ padding-top: 71px;
  font-family: "Forum", sans-serif;
- font-size: 80px;
+ font-size: 50px;
  font-weight:normal;
  letter-spacing: 5px;
  text-transform: uppercase;
@@ -213,7 +298,7 @@ h1{
 .title-underline::after {
  content: "";
  position: absolute;
- bottom: -25px;
+ bottom: -31px;
  left: 0;
  right: 0;
  height: 3px;
@@ -224,8 +309,11 @@ h1{
  display:flex;
  justify-content: space-between;
  flex-wrap: wrap;
- padding-top: 8%;
- gap: 60px 3%;
+ padding-top: 91px;
+ padding-bottom: 60px;
+ padding-left: 108px;
+ padding-right: 110px;
+ gap: 54px 0px;
 }
 
 .card{
@@ -233,7 +321,7 @@ h1{
  padding-bottom: 1%;
  flex-direction: column;
  justify-content: space-between;
- width: 30%;
+ width: 330px;
  height:36%;
  font-family: "Roboto" sans-serif;
  font-size:30px;
@@ -255,14 +343,14 @@ h1{
  transform: scale(1.2);
 }
 
-.card h3 {
+.card h3{
  display: block;
- padding-top: 25px;
-font-family: "Forum", sans-serif;
+ padding-top: 26px;
+ font-family: "Forum", sans-serif;
  font-weight:normal;
- font-size: 30px;
- letter-spacing: 5px;
- /* word-spacing: 1px;  */
+ font-size: 28px;
+ letter-spacing: 4.8px;
+ word-spacing: 1.2px;
  color:var(--bg-dark);
  text-transform: uppercase;
 }
@@ -270,30 +358,29 @@ font-family: "Forum", sans-serif;
 .card h3::after {
  content: '';
  display: block;
- padding-bottom: 10px;
- width: 70%;
+ padding-bottom: 9.1px;
+ width: 46%;
  border-bottom: 2px solid var(--dark-red);
  transition: all 0.3s ease;
  }
+
 .card h3:hover:after {
  width: 100%;
 }
 
 .card span{
-  padding-top: 1%;
+  padding-top: 7px;
   text-transform: capitalize;
   font-weight:normal;
   font-family: var(--Roboto);
-  font-size: 20px;
- letter-spacing: 1px;
-
+  font-size: 18px;
+  letter-spacing: 1.1px;
 }
 
 .card p{
  padding-top: 3%;
- font-size: 18px;
- line-height: 20px;
- word-spacing: 1px;
+ font-size: 16px;
+ line-height: 17px;
  font-family: var(--Roboto);
 
 }
@@ -339,7 +426,7 @@ font-family: "Forum", sans-serif;
    padding-bottom: 30px;
    text-align: justify;
    line-height: 40px;
-  font-size: 22px;
+   font-size: 22px;
    font-family:var(--Roboto);
    color: var(--font-white);
  }
@@ -376,7 +463,7 @@ font-family: "Forum", sans-serif;
  justify-content: space-around;
  align-items:center;
  background: var(--bg-dark);
-height: 72px;
+ height: 72px;
  }
 
  .video-section .controls button {
