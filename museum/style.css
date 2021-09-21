@@ -208,7 +208,6 @@ html{
 .welcome-section img{
   width:68,3%;
   height:89,7%;
-
 }
 
 .welcome-section .title{
@@ -305,12 +304,17 @@ font-family: var(--Forum);
  background-color:var(--dark-red);
  }
 
+.welcome-background{
+  height:1430px;
+}
+
+
 .card-container{
  display:flex;
  justify-content: space-between;
  flex-wrap: wrap;
  padding-top: 91px;
- padding-bottom: 60px;
+ padding-bottom: 63px;
  padding-left: 108px;
  padding-right: 110px;
  gap: 54px 0px;
@@ -318,7 +322,7 @@ font-family: var(--Forum);
 
 .card{
  display: block;
- padding-bottom: 1%;
+ padding-bottom: 0.8%;
  flex-direction: column;
  justify-content: space-between;
  width: 330px;
@@ -344,15 +348,16 @@ font-family: var(--Forum);
 }
 
 .card h3{
- display: block;
- padding-top: 26px;
- font-family: "Forum", sans-serif;
- font-weight:normal;
- font-size: 28px;
- letter-spacing: 4.8px;
- word-spacing: 1.2px;
- color:var(--bg-dark);
- text-transform: uppercase;
+  display: block;
+  padding-top: 26px;
+  font-family: "Forum", sans-serif;
+  font-weight:normal;
+  white-space: nowrap;
+  font-size: 28px;
+  letter-spacing: 4.8px;
+  word-spacing: 1.2px;
+  color:var(--bg-dark);
+  text-transform: uppercase;
 }
 
 .card h3::after {
@@ -367,6 +372,58 @@ font-family: var(--Forum);
 .card h3:hover:after {
  width: 100%;
 }
+
+#colonade{
+display: block;
+ padding-top: 26px;
+ font-family: "Forum", sans-serif;
+ font-weight:normal;
+ white-space: nowrap;
+ font-size: 28px;
+ letter-spacing: 3px;
+ word-spacing: 1px;
+ color:var(--bg-dark);
+ text-transform: uppercase;  
+}
+
+#colonade::after{
+  content: '';
+  display: block;
+  padding-bottom: 9.1px;
+  width: 46%;
+  border-bottom: 2px solid var(--dark-red);
+  transition: all 0.3s ease;
+}
+
+#colonade:hover:after {
+  width: 100%;
+ }
+
+ #mona-lisa{
+  display: block;
+   padding-top: 26px;
+   font-family: "Forum", sans-serif;
+   font-weight:normal;
+   white-space: nowrap;
+   font-size: 28px;
+   letter-spacing: 3px;
+   word-spacing: 1px;
+   color:var(--bg-dark);
+   text-transform: uppercase;  
+  }
+  
+  #mona-lisa::after{
+    content: '';
+    display: block;
+    padding-bottom: 9.1px;
+    width: 46%;
+    border-bottom: 2px solid var(--dark-red);
+    transition: all 0.3s ease;
+  }
+  
+  #mona-lisa:hover:after {
+    width: 100%;
+   }
 
 .card span{
   padding-top: 7px;
