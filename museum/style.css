@@ -11,6 +11,16 @@
   font-family: Roboto-bold;
   src: url("./assets/fonts/Roboto-Bold.ttf");
 }
+
+@font-face {
+  font-family: Roboto-medium;
+  src: url("./assets/fonts/Roboto-Medium.ttf");
+}
+
+@font-face {
+  font-family: Roboto-light;
+  src: url("./assets/fonts/Roboto-Light.ttf");
+}
 :root {
   --bg-dark: #030303;
   --dark-red: #710707;
@@ -19,6 +29,8 @@
   --Forum: 'Forum', sans-serif;
   --Roboto: 'Roboto', sans-serif;
   --Roboto-bold: 'Roboto-bold', sans-serif;
+  --Roboto-medium: 'Roboto-medium', sans-serif;
+  --Roboto-light: 'Roboto-light', sans-serif;
 }
 
 * {
@@ -704,6 +716,11 @@ video button:hover{
   gap: 24px 34px;
 }
 
+.ticket-section{
+  min-height: 893px;
+  
+}
+
 .container-ticket {
   display: block;
   font-size: 22px;
@@ -882,47 +899,55 @@ video button:hover{
 	background: var(--bg-dark);
 }
 
+#contacts{
+  min-height:1362px;
+}
+
 .parallax-container{
+  margin-top:75px;
   width:100%;
   height:400px;
 }
 
 .parallax-image{
-  background-image: url('./assets/img/parallax.jpg');
+  background-image: url(./assets/img/parallax.jpg);
   background-size: cover;
   background-attachment: fixed;
+  height: 400px;
 }
 
 .contacts-container{
+ 
  display:flex;
  justify-content: space-between;
- padding-top: 103px;
+ padding-top: 104px;
 
  }
  .contacts-container img{
-width: 100%;
+  width: 100%;
  }
 
  .section-text-contacts{
-   width: 37%;
+   width: 33.75%;
    color:black;
-   font-family: "Roboto", sans-serif;
+   font-family: var(--Roboto-light);
    font-size: 25px;
  }
 
 .section-text-contacts h4{
-  padding-top: 10px;
-  padding-bottom:5%;
-  font-family: var(--Roboto-bold);
-  font-size: 25px;
-  letter-spacing: 1px;
-  word-spacing: 2px;
-  line-height: 1.5;
-
+  
+  padding-bottom:43px;
+  font-family: var(--Roboto-medium);
+  font-size: 27px;
+  letter-spacing: 0.1px;
+  word-spacing: 1px;
+ 
  }
  .section-text-contacts p{
-   line-height: 2;
+   line-height: 2.3;
    font-size: 22px;
+   letter-spacing: 0.3px;
+   word-spacing: 0.4px;
  }
 
 .footer{
