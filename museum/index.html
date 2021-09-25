@@ -188,22 +188,21 @@
                            <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
                         </div>
                         <span>Total &#8364;220</span>
-                        <button class="total-button">Buy now</button>
-                     </form>
-                     <div class="dialog">
-                     <form action="hbh" class="form-container">
+                        </form>
+                        <button id="total-button">Buy now</button>
+                                            
+                     <div id="myModal" class="dialog">
+                        <span class="close" href="#"><img src="assets/svg/Close.svg" alt=" "></span>
+                        <div class="form-container">
+                          <div class="content">
+                           <form action="hbh">
                         <input type="date" name="date" value="Date">
                         <input type="text" name="username" value="Name">
                         <input type="text" name="username" value="E-mail">
-                        <input type="tel" name="username" value="Phone">
-                        <div>
-                           <input value="Ticket Type"><select name="ticket-type">
-                              
-                             
-                           </select>
-                        </div>
-                        
+                        <input type="tel" name="username" value="Phone">                      
                      </form>
+                     </div>
+                     </div>
                   </div>
                </div>
             </div>
@@ -272,5 +271,6 @@
       </footer>
       <script src="explore.js" ></script>
       <script src="art-gallery.js"></script>
+      <script src="form.js"></script>
    </body>
 </html>

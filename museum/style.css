@@ -692,6 +692,7 @@ video button:hover{
 
 .art-gallery{
   min-height:2200px;
+  overflow: hidden;
 }
 
 .art-gallery h2{
@@ -831,17 +832,56 @@ video button:hover{
   border: none;
 }
 
-.button-ticket .total-button{
-  width:178px;
-  height:50px;
+.dialog{
+  display:none;
+  position:fixed;
+  z-index:1000;
+  left:0;
+  top:0;
+  width:1440px;
+  height:845px;
+  overflow: auto;
+  background-color: var(--font-white);
+  border: 2px solid black;
+  margin-left:12.6%;
+}
+
+.form-container{
+  padding-top:90px;
+  padding-left:234px;
+
+}
+
+.dialog .close{
+  color: var(--bg-dark);
+  float:right;
+  padding-top: 29px;
+  padding-right:43px;
+  
+}
+
+.dialog .close:hover,
+.dialog .close:focus{
+  -webkit-filter: invert(65%) sepia(15%) saturate(806%) hue-rotate(356deg) brightness(81%) contrast(80%);
+  cursor:pointer;
+}
+  
+#total-button{
+   width:175px;
+  height: 50px;
+  background-color: var(--bg-dark);
+  background-clip: padding-box;
+  text-align: center;
   font-size: 22px;
   font-family: var(--Roboto-);
   text-transform: capitalize;
-  background-color:  var(--bg-dark);
   color:var(--font-white);
   border: none;
-  margin-left: -28px;
+}
 
+#total-button:hover{
+  background-color:  var(--font-gold);
+  color:var(--bg-dark);
 }
 
 .tickets-section{
@@ -900,22 +940,7 @@ video button:hover{
 	background: var(--bg-dark);
 }
 
-.dialog{
-  position:fixed;
-  z-index:1001;
-  top:0px;
-  bottom:0px;
-  left: 0px;
-  right: 0px;
-}
 
-.form-container{
-  width:1440px;
-  height:845px;
-  left:-1440px;
-  background-color: var(--font-white);
-
-}
 
 #contacts{
   min-height:1362px;
