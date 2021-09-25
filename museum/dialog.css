@@ -1,0 +1,43 @@
+.modal {
+  display: block;
+  position: fixed;
+  left: -1440px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(20, 20, 20, 0.5);
+  border: 2px solid black;
+  transition: 03s;
+}
+
+.modal.hidden {
+  margin-right: 100%;
+  opacity:0;
+  transition: 03s;
+}
+
+.modal .modal-body {
+  
+  background: #fff;
+  margin: auto;
+  width: 80%;
+  height: 400px;
+}
+
+.modal .form-container {
+  padding-top: 90px;
+  padding-left: 234px;
+}
+
+.modal .close {
+  color: var(--bg-dark);
+  float: right;
+  padding-top: 29px;
+  padding-right: 43px;
+}
+
+.modal .close:hover,
+.modal .close:focus {
+  -webkit-filter: invert(65%) sepia(15%) saturate(806%) hue-rotate(356deg) brightness(81%) contrast(80%);
+  cursor: pointer;
+}

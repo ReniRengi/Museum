@@ -1,0 +1,49 @@
+#contacts {
+    min-height: 1362px;
+  }
+  
+  .parallax-container {
+    margin-top: 75px;
+    width: 100%;
+    height: 400px;
+  }
+  
+  .parallax-image {
+    background-image: url(./assets/img/parallax.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 400px;
+  }
+  
+  .contacts-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 104px;
+  }
+  
+  .contacts-container img {
+    width: 100%;
+  }
+  
+  .section-text-contacts {
+    width: 33.75%;
+    color: black;
+    font-family: var(--Roboto-light);
+    font-size: 25px;
+  }
+  
+  .section-text-contacts h4 {
+    padding-bottom: 43px;
+    font-family: var(--Roboto-medium);
+    font-size: 27px;
+    letter-spacing: 0.1px;
+    word-spacing: 1px;
+  }
+  
+  .section-text-contacts p {
+    line-height: 2.3;
+    font-size: 22px;
+    letter-spacing: 0.3px;
+    word-spacing: 0.4px;
+  }
+  

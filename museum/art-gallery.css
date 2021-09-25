@@ -1,0 +1,27 @@
+.art-gallery {
+  min-height: 2200px;
+  overflow: hidden;
+}
+
+.art-gallery h2 {
+  padding-top: 89px;
+  padding-bottom: 96px;
+  font-size: 80px;
+  font-family: var(--Forum);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: normal;
+}
+
+.picture-container {
+  height: 1810px;
+  overflow-y: hidden;
+}
+
+.picture-inner-container {
+  height: 2800px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 24px 34px;
+}

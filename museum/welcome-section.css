@@ -1,0 +1,136 @@
+.welcome-section {
+    position: relative;
+    text-align: end;
+    padding-top: 0;
+    height: 810px;
+  }
+  
+  .flex-wrapper {
+    display: flex;
+    justify-content: end;
+  }
+  
+  .slider-wrapper {
+    width: 1000px;
+    height: 750px;
+    position: relative;
+    box-shadow: 10px 10px 44px -10px rgba(0, 0, 0, 0.75);
+  }
+  
+  .slide {
+    width: 1000px;
+    height: 750px;
+  }
+  
+  .slide.active {
+    display: block;
+  }
+  
+  .slide img {
+    width: 1000px;
+    height: 750px;
+  }
+  
+  .dots-wrapper {
+    position: absolute;
+    bottom: 0;
+    justify-content: end;
+    display: flex;
+    align-items: center;
+    width: 600px;
+    height: 120px;
+    background-color: #000;
+  }
+  
+  .list-counter {
+    font-size: 20px;
+    font-family: var(--Roboto);
+    font-weight: bolder;
+    letter-spacing: 2px;
+    word-spacing: 2.5px;
+    margin-right: 53px;
+  }
+  
+  #btn-next {
+    margin-left: 42px;
+    margin-right: 1px;
+  }
+  
+  #btn-prev {
+    margin-right: 76px;
+  }
+  
+  .dots img {
+    margin-right: 21px;
+    height: 16px;
+    width: 16px;
+  }
+  
+  #first {
+    -webkit-filter: invert(65%) sepia(15%) saturate(806%) hue-rotate(356deg) brightness(81%) contrast(80%);
+  }
+  
+  .welcome-section .title {
+    position: absolute;
+    text-align: start;
+    top: 1.36%;
+  }
+  
+  h1 {
+    margin: 0px;
+    margin-top: 143px;
+    margin-bottom: 14px;
+    font-family: var(--Forum);
+    letter-spacing: 5px;
+    font-weight: normal;
+    font-size: 80px;
+    text-transform: uppercase;
+  }
+  
+  .title {
+    flex-direction: column;
+    font-family: var(--Roboto);
+    font-size: 30px;
+    color: var(--font-white);
+  }
+  
+  .title span {
+    font-family: var(--Forum);
+    letter-spacing: 5px;
+    line-height: 56px;
+    font-weight: normal;
+    font-size: 80px;
+    text-transform: uppercase;
+  }
+  
+  .title h2 {
+    text-align: justify;
+    padding-top: 45px;
+    padding-bottom: 75px;
+    font-family: var(--Roboto);
+    font-size: 26px;
+  }
+  
+  .title button {
+    width: 360px;
+    height: 75px;
+    border-radius: 7px;
+    background-color: var(--dark-red);
+    font-family: var(--Roboto);
+    font-size: 22px;
+    letter-spacing: 2px;
+    color: var(--font-white);
+    word-spacing: 1px;
+  }
+  
+  .title button:link {
+    background-color: var(--font-gold);
+  }
+  
+  .title button:visited {
+    background-color: var(--font-gold);
+  }
+  
+  .title button:hover {
+    background-color: var(--font-gold);
+  }

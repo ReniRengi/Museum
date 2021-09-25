@@ -1,0 +1,93 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 140px;
+  }
+  
+  .footer>* {
+    height: 140px;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 75%;
+  }
+  
+  .image-icon-footer {
+    width: 25%;
+    font-family: var(--Forum);
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: var(--font-white);
+  }
+  
+  .image-icon-footer * {
+    vertical-align: middle;
+  }
+  
+  .image-icon-footer img {
+    padding-right: 2%;
+  }
+  
+  .nav-container-1 {
+    width: 50%;
+  }
+  
+  .nav-container-1 ul {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    list-style: none;
+  }
+  
+  .nav-container-1 li {
+    font-family: var(--Roboto);
+    font-size: 22px;
+    letter-spacing: 3px;
+    word-spacing: 1px;
+    margin-bottom: 22px;
+  }
+  
+  .nav-container-3 {
+    width: 30%;
+    position: relative;
+    height: 100%;
+  }
+  
+  .nav-container-3 ul {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    list-style: none;
+    justify-content: space-between;
+    font-family: "Roboto" sans-serif;
+    font-size: 20px;
+    color: var(--font-white);
+  }
+  
+  .nav-container-3 ul li {
+    display: inline-block;
+  }
+  
+  .nav-container-3 a {
+    width: 100%;
+    object-fit: fill;
+    display: block;
+    -webkit-transition: all 0.3s ease;
+    ;
+    -moz-transition: all 0.3s ease;
+    ;
+    -o-transition: all 0.3s ease;
+    ;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-container-3 a:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+  }

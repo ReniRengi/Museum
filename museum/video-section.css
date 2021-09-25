@@ -1,0 +1,169 @@
+.video-section {
+    font-family: "Roboto" sans-serif;
+    font-size: 32px;
+  }
+  
+  .video-section button {
+    background-color: transparent;
+    border: none;
+    background-repeat: no-repeat;
+  }
+  
+  .video-section button {
+    transition: 1s;
+  }
+  
+  .video-section button:hover {
+    transform: scale(1.2);
+  }
+  
+  .video-section .controls {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--bg-dark);
+    height: 72px;
+  }
+  
+  .video-section .controls button {
+    width: 40px;
+    height: 40px;
+    background-size: 70%;
+    background-position: 50%;
+  }
+  
+  .video-section .controls button.play {
+    background-image: url(./assets/svg/Play.svg);
+    width: 47px;
+    height: 40px;
+  }
+  
+  .video-section .controls button.volume {
+    background-image: url(./assets/svg/Volume.svg);
+    width: 50px;
+    height: 50px;
+  }
+  
+  .video-section .controls button.fullscreen {
+    background-image: url(./assets/svg/Fullskrin.svg);
+    width: 55px;
+    height: 55px;
+  }
+  
+  .video-section .controls * {
+    vertical-align: middle;
+  }
+  
+  .video {
+    display: block;
+    position: relative;
+    background-color: black;
+  }
+  
+  .video video {
+    width: 100%;
+  }
+  
+  .video button {
+    display: block;
+    position: absolute;
+    width: 16%;
+    height: 37%;
+    bottom: 32%;
+    left: 42%;
+    background-size: 100%;
+    background-image: url(./assets/svg/Button_big.svg);
+    transition: 1s;
+  }
+  
+  .video button {
+    transition: 1s;
+  }
+  
+  video button:hover {
+    transform: scale(1.2);
+  }
+  
+  .progress-big {
+    background: linear-gradient(to right, var(--dark-red) 0%, var(--dark-red) 50%, grey 40%, grey 100%);
+    border: solid 2px black;
+    border-radius: 0;
+    height: 12px;
+    width: 64.7%;
+    outline: none;
+    transition: background 450ms ease-in;
+    -webkit-appearance: none;
+  }
+  
+  .progress-big::-webkit-slider-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    -webkit-appearance: none;
+    cursor: ew-resize;
+    background: var(--font-white);
+  }
+  
+  .progress {
+    background: linear-gradient(to right, var(--dark-red) 0%, var(--dark-red) 40%, grey 40%, grey 100%);
+    border: solid 2px black;
+    border-radius: 0;
+    height: 12px;
+    width: 11%;
+    outline: none;
+    transition: background 450ms ease-in;
+    -webkit-appearance: none;
+  }
+  
+  .progress::-webkit-slider-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    -webkit-appearance: none;
+    cursor: ew-resize;
+    background: var(--font-white);
+  }
+  
+  .text-video-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 79px;
+  }
+  
+  .text-video-section h2 {
+    width: 45%;
+    text-align: justify;
+    color: var(--font-gold);
+    font-family: "Forum", sans-serif;
+    font-size: 80px;
+    text-transform: uppercase;
+    font-weight: normal;
+    letter-spacing: 5px;
+    word-spacing: 1px;
+  }
+  
+  .text-video-section p {
+    width: 49.7%;
+    padding-top: 5px;
+    text-align: justify;
+    font-family: var(--Roboto);
+    font-size: 22px;
+    letter-spacing: 0.7px;
+    word-spacing: 0.9px;
+    font-weight: bold;
+    line-height: 1.9;
+  }
+  
+  .video-gallery {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .video-gallery-button img {
+    margin-top: 53px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+  }

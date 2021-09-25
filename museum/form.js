@@ -1,22 +1,18 @@
-window.addEventListener('load', function (event) {
-      
+window.addEventListener("load", function (event) {
     loadForm();
   });
-function loadForm(){
-  let modal=document.getElementById("myModal");
-  let btn=document.getElementById("total-button");
-  let span=document.getElementsByClassName("close")[0];
-
-  btn.onclick = function() {
-    modal.style.display = "block";
- }
   
-  span.onclick = function() {
-        modal.style.display = "none";
-      }
-      window.onclick = function(event) {
-        if (event.target == modal) {
-          modal.style.display = "none";
-        }
-      }
-}
+  function loadForm() {
+  
+    let modal = document.getElementById("byTicketModal");
+    let btn = document.getElementById("total-button");
+    let span = document.getElementsByClassName("close")[0];
+    const hideModal = () => modal.classList.add('hidden');
+    const showModal = () => modal.classList.remove("hidden");
+  
+    btn.onclick = () => showModal();
+    span.onclick = () => hideModal();
+  
+  
+  }
+  
