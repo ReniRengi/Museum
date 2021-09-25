@@ -48,6 +48,7 @@ html{
 }
 .wrap-body{
   max-height: 6250px;
+  overflow: hidden;
 }
 
 .wrap-dark{
@@ -897,6 +898,23 @@ video button:hover{
 	height: 8px;
 	border-radius: 50%;
 	background: var(--bg-dark);
+}
+
+.dialog{
+  position:fixed;
+  z-index:1001;
+  top:0px;
+  bottom:0px;
+  left: 0px;
+  right: 0px;
+}
+
+.form-container{
+  width:1440px;
+  height:845px;
+  left:-1440px;
+  background-color: var(--font-white);
+
 }
 
 #contacts{
