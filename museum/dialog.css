@@ -70,20 +70,25 @@
 #date input{
   display:block;
   position:absolute;
-  width: 50px;
+  width: 190px;
   height: 45px;
-  z-index:100;
   padding-left: 120px;
+  background-image: url('./assets/svg/date.svg');
+  background-size: 15px;
+  position: left;
+  background-repeat:no-repeat;
 }
 
 #date label{
   display:block;
   float:left;
-  position: absolute;
+  position:absolute;
   width: 190px;
   height: 45px;
+  color:0;
+  z-index:100;
   padding-right: 5px;
-  border: 1px solid black;
+ 
 }
 
 #time select{
