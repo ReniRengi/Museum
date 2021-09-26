@@ -132,7 +132,7 @@ function shuffle(array) {
   }
 }
 shuffle(pictureArray);
-console.log(pictureArray);
+
 pictureArray= pictureArray.map(function(elem){
   return pictureInnerContainer.append(elem);
 });

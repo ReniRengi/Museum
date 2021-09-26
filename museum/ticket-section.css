@@ -116,7 +116,8 @@
     background-clip: padding-box;
     text-align: center;
     font-size: 22px;
-    font-family: var(--Roboto-);
+    font-family: var(--Roboto-light);
+  letter-spacing: 2px;
     text-transform: capitalize;
     color: var(--font-white);
     border: none;

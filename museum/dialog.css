@@ -32,6 +32,7 @@
 
 .content-left {
   width: 400px;
+  margin-right: 40px;
 }
 
 .content-right {
@@ -63,11 +64,12 @@
 }
 
 .place-select{
-  padding-top: 60px;
-  display:block;
+  margin-top: 60px;
+  margin-bottom: 15px;
+  display: block;
 }
 
-#date input{
+#date input {
   display:block;
   position:absolute;
   width: 190px;
@@ -79,7 +81,7 @@
   background-repeat:no-repeat;
 }
 
-#date label{
+#date label {
   display:block;
   float:left;
   position:absolute;
@@ -88,26 +90,25 @@
   color:0;
   z-index:100;
   padding-right: 5px;
- 
 }
 
-#time select{
+#time select {
   display:block;
   float: right;
   width: 190px;
   height: 45px;
 }
 
-.form-input-name{
-  padding-bottom: 10px;
+.form-input {
+  margin-top: 15px;
 }
 
-#input{
+#input {
   width:400px;
   height:45px;
 }
 
-.entry-ticket-form{
+.entry-ticket-form {
   display:block;
   padding: 10px;
   width: 400px;
@@ -122,7 +123,7 @@
   border-bottom: 2px solid #710707;
 }
 
-.span-form{
+.span-form {
   display: flex;
   flex-direction: column;
   padding-right: 136px;
@@ -131,25 +132,30 @@
   font-family: 'Roboto-regular', sans-serif;
 }
 
-.span-form span{
+.span-form span {
   padding-top: 10px;
 }
 
-.button-group{
+.button-group {
   display: flex;
   flex-direction: column;
 }
 
-.entry-ticket-form .counter-group-form button{
+.counter-group-form{
+  width: 105px;
+  border: 1px solid black;
+}
+
+.entry-ticket-form .counter-group-form button {
   width: 35px;
   height: 25px;
   font-size: 18px;
   background-color: black;
   color: white;
   border: none;
-  }
+}
 
-.entry-ticket-form .counter-group-form input{
+.entry-ticket-form .counter-group-form input {
   width: 35px;
   height: 50px;
   font-size: 18px;
@@ -157,9 +163,62 @@
   color: var(--bg-dark);
   margin: 0;
   padding: 0;
-  text-align:justify;
+  text-align: center;
   border:none;
-  }
+}
+
+.content-right-top {
+  padding: 15px 20px 15px 20px;
+  width: 470px;
+}
+
+.content-right-top{
+  display: flex;
+  flex-direction: row;
+}
+
+.content-right-top-left{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-right-top-left p{
+  font-size: 32px;
+  font-family: 'Roboto-medium', sans-serif;
+}
+
+.content-right-top-left h6{
+  font-size: 22px;
+  font-family: 'Roboto-medium', sans-serif;
+  color: #710707;
+}
+
+.span-content-right {
+  display: block;
+  padding-top: 3px;
+}
+
+.span-content-right span{
+  padding-left: 5px;
+  font-size: 18px;
+  font-family: 'Roboto-light', sans-serif;
+}
+
+.span-content-right-time{
+  display: block;
+  float: right;
+}
+
+.image-content-right-top-ticket{
+  display: block;
+  float: left;
+}
+
+.span-content-right-ticket{
+  display: block;
+  float: right;
+}
 
 
 
