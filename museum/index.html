@@ -283,12 +283,79 @@ DOCTYPE HTML>
         <span class="close" href="#"><img src="assets/svg/Close.svg" alt="close"></span>
         <div class="form-container">
           <div class="content">
-            <form action="hbh">
-              <input type="date" name="date" value="Date">
-              <input type="text" name="username" value="Name">
-              <input type="text" name="username" value="E-mail">
-              <input type="tel" name="username" value="Phone">
-            </form>
+             <div class="content-left">
+                <div class="logo-modal">
+                   <img src="assets/svg/logo-gold.svg" alt="">
+                   <span>Booking ticket</span>
+                </div>
+                <p>Tour to Louvre</p>
+                <form action="#">
+                  <div class="place-select">
+                     <div id="date">
+                        <input type="date" id="start" name="trip-start" value="2021-08-16" min="2021-08-16" max="2021-12-31">
+                        <label>Date</label>
+                     </div>
+                     <div id="time">
+                        <select name="Time">
+                           <option disabled>Time</option>
+                           <option disabled>9.00</option>
+                           <option disabled>10.30</option>
+                           <option disabled>12.00</option>
+                           <option disabled>13.30</option>
+                           <option disabled>15.00</option>
+                           <option disabled>16.30</option>
+                           <option disabled>18.00</option>
+                           <option disabled>19.30</option>
+                           <option disabled>21.00</option>
+                        </select>
+                     </div>
+                  </div>
+                  <div class class="form-input">
+                     <input id="input" type="text" name="username" placeholder="Name"  required-placeholder="">
+                        <svg class="svg-icon-form" width="20" height="15">
+                           <use xlink:href="./assets/svg/name.svg">
+                        </svg>
+                  </div>
+                  <div class="form-input">
+                     <input id="input" type="text" name="E-mail" value="E-mail">
+                  </div>
+                  <div class="form-input">
+                     <input id="input" type="tel" name="phone" value="Phone">
+                  </div> 
+                  <div class="form-input">
+                     <select id="input" name="Ticket Type">
+                        <option disabled>Ticket Type</option>
+                        <option disabled>Permanent exhibition</option>
+                        <option disabled>Temporary exhibition</option>
+                        <option disabled>Combined Admission</option>
+                     </select>
+                  </div> 
+                  <div class="entry-ticket-form">
+                     <p>Entry Ticket</p>
+                     <div class="span-form">
+                        <span>Basic 18+(20 €)</span>
+                        <span>Senior 65+(10 €)</span>
+                     </div>
+                     <div class="button-group">
+                        <div class="counter-group-form">
+                           <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                           <input type="number" min="0" max="100" value="1" readonly class="number">
+                           <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                        </div>
+                        <div class="counter-group-form">
+                           <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                           <input type="number" min="0" max="100" value="1" readonly class="number">
+                           <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                        </div>
+                     </div>
+                  </div>                     
+               </form>
+
+             </div>
+             <div class="content-right">
+
+             </div>
+            
           </div>
         </div>
       </div>
