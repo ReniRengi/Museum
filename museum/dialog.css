@@ -13,7 +13,7 @@
 .modal.hidden {
   margin-right: 100%;
   opacity: 0;
-  
+  z-index: -1000;
   transition: all 03s ease;
 }
 
@@ -143,8 +143,6 @@
   border: 1px solid black;
   flex-wrap: nowrap;
 }
-
-
 
 .entry-ticket-form .counter-group-form button {
   width: 35px;

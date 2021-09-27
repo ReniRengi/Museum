@@ -1,181 +1,206 @@
 .ticket-section {
-    min-height: 893px;
-  }
-  
-  .container-ticket {
-    display: block;
-    font-size: 22px;
-    line-height: 3.5;
-    font-family: var(--Roboto);
-    color: var(--bg-dark);
-    cursor: pointer;
-  }
-  
-  .tickets-big-container {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 7%;
-  }
-  
-  .tickets-big-container>* {
-    width: 47%;
-  }
-  
-  .radio-ticket {
-    width: 50%;
-    padding-left: 4%;
-  }
-  
-  .radio-ticket h3 {
-    margin-bottom: 17px;
-    font-weight: bold;
-    font-size: 28px;
-    font-family: var(--Roboto-bold);
-    color: var(--bg-dark);
-    text-transform: capitalize;
-  }
-  
-  .container-ticket input {
-    display: none;
-  }
-  
-  .container-ticket span {
-    vertical-align: middle;
-  }
-  
-  .container-ticket input~span::before {
-    vertical-align: middle;
-    display: inline-block;
-    content: '';
-    margin-right: 8px;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    box-shadow: 0px 0px 2px 2px var(--bg-dark);
-  }
-  
-  .container-ticket input[checked]~span::before {
-    width: 8px;
-    height: 8px;
-    background: var(--font-white);
-    border: 4px solid var(--bg-dark);
-  }
-  
-  .button-ticket h4 {
-    display: block;
-    text-align: right;
-    font-weight: bold;
-    font-size: 28px;
-    color: var(--bg-dark);
-    font-family: var(--Roboto-bold);
-    text-transform: capitalize;
-  }
-  
-  .button-ticket span {
-    display: block;
-    font-size: 22px;
-    line-height: 3.5;
-    font-family: var(--Roboto-bold);
-  }
-  
-  .button-ticket {
-     width: 178px;
-    margin-left: 28px;
-  }
-  
-  .button-ticket .counter-group {
-    width: 150px;
-    border: 3px solid var(--bg-dark);
-  }
-  
-  .button-ticket .counter-group button {
-    width: 44px;
-    height: 50px;
-    font-size: 22px;
-    background-color: transparent;
-    color: var(--bg-dark);
-    border: none;
-  }
-  
-  .button-ticket .counter-group input {
-    width: 48px;
-    height: 50px;
-    font-size: 22px;
-    background-color: transparent;
-    color: var(--bg-dark);
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    border: none;
-  }
-  
-  #total-button {
-    width: 175px;
-    height: 50px;
-    background-color: var(--bg-dark);
-    background-clip: padding-box;
-    text-align: center;
-    font-size: 22px;
-    font-family: var(--Roboto-light);
-  letter-spacing: 2px;
-    text-transform: capitalize;
-    color: var(--font-white);
-    border: none;
-  }
-  
-  #total-button:hover {
-    background-color: var(--font-gold);
-    color: var(--bg-dark);
-  }
-  
-  .tickets-section {
-    color: var(--bg-dark);
-  }
-  
-  .container-ticket input {
-    display: none;
-  }
-  
-  .ticket-radio input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-  }
-  
-  .checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 25px;
-    width: 25px;
-    background-color: var(--bg-dark);
-    border-radius: 50%;
-  }
-  
-  .ticket-radio:hover input~.checkmark {
-    background-color: var(--bg-dark);
-  }
-  
-  .ticket-radio input:checked~.checkmark {
-    background-color: #2196F3;
-  }
-  
-  .checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-  }
-  
-  .ticket-radio input:checked~.checkmark:after {
-    display: block;
-  }
-  
-  .ticket-radio .checkmark:after {
-    top: 9px;
-    left: 9px;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: var(--bg-dark);
-  }
-  
+  min-height: 893px;
+}
+
+.container-ticket {
+  display: block;
+  font-size: 20px;
+  line-height: 2.2;
+  font-family: var(--Roboto);
+  color: var(--bg-dark);
+}
+
+.tickets-big-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 7%;
+}
+
+.tickets-big-container>* {
+  width: 47%;
+}
+
+.radio-ticket {
+  width: 50%;
+  padding-left: 4.3%;
+}
+
+.radio-ticket h3 {
+  margin-bottom: 40px;
+  font-weight: bold;
+  font-size: 28px;
+  font-family: var(--Roboto-bold);
+  color: var(--bg-dark);
+  text-transform: capitalize;
+padding-top: 3px;
+}
+
+
+.button-ticket h4 {
+  display: block;
+  text-align: right;
+  font-weight: bold;
+  font-size: 28px;
+  color: var(--bg-dark);
+  font-family: var(--Roboto-bold);
+  text-transform: capitalize;
+}
+
+.button-ticket span {
+  display: block;
+  font-size: 22px;
+  line-height: 2.5;
+  font-family: var(--Roboto-light);
+}
+
+.button-ticket {
+  width: 160px;
+}
+
+.counter-group {
+width: 150px;
+height: 50px;
+}
+
+.button-ticket .counter-group {
+  border: 3px solid var(--bg-dark);
+}
+
+.button-ticket .counter-group button {
+  width: 44px;
+  height: 46px;
+  font-family: var(--Roboto-regular);
+  font-size: 30px;
+  background-color: transparent;
+  color: var(--bg-dark);
+  border: none;
+}
+
+.button-ticket .counter-group input {
+  width: 48px;
+  height: 46px;
+  font-size: 22px;
+  background-color: transparent;
+  color: var(--bg-dark);
+  margin: auto;
+  padding: auto;
+text-align: center;
+  border: none;
+outline: none;
+}
+
+#total-button {
+  width: 160px;
+  height: 50px;
+  background-color: var(--bg-dark);
+  background-clip: padding-box;
+  text-align: center;
+  font-size: 22px;
+  font-family: var(--Roboto-light);
+  text-transform: capitalize;
+  color: var(--font-white);
+  border: none;
+}
+
+#total-button:hover {
+  background-color: var(--font-gold);
+  color: var(--bg-dark);
+}
+
+.tickets-section {
+  color: var(--bg-dark);
+}
+
+.ticket-radio input {
+  position: absolute;
+  cursor: pointer;
+}
+
+.ticket-radio input:checked~.checkmark {
+  background-color: black;
+}
+
+
+
+input[type="radio" i] {
+height: 18px;
+width: 18px;
+cursor: pointer;
+display: block;
+outline: none;
+border:10px solid black;
+margin-top: 5px;
+
+}
+
+.container-ticket {
+display: block;
+
+}
+
+.checkmark-label {
+font-family: var(--Roboto-light);
+font-size: 22px;
+font-weight: 500;
+margin-left: 20px;
+text-align: center;
+}
+
+#ticket-total-span {
+font-family: var(--Roboto-bold);
+font-size: 30px;
+letter-spacing: 1px;
+padding-top: 30px;
+padding-bottom: 30px;
+width: 155px;
+margin-right: 0;
+}
+
+.number {
+padding-left: 15px;
+font-family: var(--Roboto-light);
+;}
+
+.container-radio {
+display: inline-block;
+border-radius: 100px;
+overflow: hidden;
+padding: 0;
+border-width: 10px;
+}
+
+#ticket-picture {
+object-fit: cover;
+padding-top: 5px;
+}
+
+#ticket-picture-container {
+width: 725px;
+height: 555px;
+padding: 0;
+}
+
+input[type='radio']:before {
+content: '';
+display: block;
+width: 14px;
+height: 14px;
+border-radius: 100%;
+border: 2px solid black;	
+}
+
+
+input[type="radio"]:checked:before {
+background: 2px 2px black;
+}
+
+input[type="radio"]:checked:focus {
+outline: none;
+}
+
+#ticket-age-buttons {
+width: 150px;
+margin-right: 0;
+margin-left: auto;
+}
+
