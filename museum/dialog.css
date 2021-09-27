@@ -1,7 +1,7 @@
 .modal {
   display: block;
   position: fixed;
-  left: -10%;
+  left:-10%;
   top: 0;
   bottom: 0;
   right: 0;
@@ -13,6 +13,7 @@
 .modal.hidden {
   margin-right: 100%;
   opacity: 0;
+  
   transition: all 03s ease;
 }
 
@@ -71,51 +72,33 @@
   border-bottom: 3px solid #710707;
 }
 
-.content-left .left-form{
+.content-left .left-form {
   padding-bottom: 60px;
 }
-.place-select{
+
+.place-select select {
   margin-top: 60px;
+  display: inline-block;
+  font-size: 18px;
+  font-family: 'Roboto-regular', sans-serif;
+  height: 45px;
+  width: 190px;
+  margin-left: 7px;
   margin-bottom: 15px;
-  display: block;
 }
 
-#date input {
-  display:block;
-  position:absolute;
-  width: 190px;
-  height: 45px;
-  overflow: hidden;
-  padding-left: 120px;
-  background-image: url('./assets/svg/date.svg');
-  background-size: 15px;
-  position: left;
-  background-repeat:no-repeat;
-  pointer-events: none;
-}
-
-#date label {
-  display:block;
-  float:left;
-  position:absolute;
-  width: 190px;
-  height: 45px;
-  color:0;
-  z-index:100;
-  padding-right: 5px;
-  pointer-events: none;
-}
-
-#time select {
-  display:block;
-  float: right;
-  width: 190px;
-  height: 45px;
-}
-
-.form-input {
+.form-input input{
   position: relative;
-  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-family: 'Roboto-regular', sans-serif;
+}
+
+.form-input select{
+  position: relative;
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-family: 'Roboto-regular', sans-serif;
 }
 
 #input {
@@ -138,28 +121,30 @@
   border-bottom: 2px solid #710707;
 }
 
-.span-form {
+.row {
   display: flex;
-  flex-direction: column;
-  padding-right: 136px;
-  padding-top: 10px;
+  justify-content: space-between;
+}
+
+.span-form {
+  flex: 70%;
   font-size: 18px;
   font-family: 'Roboto-regular', sans-serif;
 }
 
-.span-form span {
-  padding-top: 10px;
-}
-
 .button-group {
-  display: flex;
-  flex-direction: column;
+  flex:30%;
 }
 
-.counter-group-form{
-  width: 105px;
+.counter-group-form-1 {
+  width: 115px;
+  height: 25px;
+  padding-bottom: 5px;
   border: 1px solid black;
+  flex-wrap: nowrap;
 }
+
+
 
 .entry-ticket-form .counter-group-form button {
   width: 35px;
@@ -167,7 +152,7 @@
   font-size: 18px;
   background-color: black;
   color: white;
-  border: none;
+  border: 1px solid black;
 }
 
 .entry-ticket-form .counter-group-form input {
@@ -179,7 +164,7 @@
   margin: 0;
   padding: 0;
   text-align: center;
-  border:none;
+  border: 1px solid black;
 }
 
 .content-right-top {

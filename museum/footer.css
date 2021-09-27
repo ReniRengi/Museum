@@ -3,11 +3,11 @@
     padding-top: 84px;
     justify-content: space-between;
     align-items: flex-start;
-    min-height: 390px;
+    min-height: 267px;
   }
   
   .footer>* {
-    height: 140px;
+    height: 267px;
   }
   
   .footer-container {
@@ -100,3 +100,17 @@
   .nav-container-3 img:hover {
     -webkit-filter: invert(65%) sepia(15%) saturate(806%) hue-rotate(356deg) brightness(81%) contrast(80%);
   }
+
+  .footer-mini{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 123px;
+    border-top: 3px solid #666666;
+  }
+
+  .footer-mini span{
+    font-size: 22px;
+    font-family: 'Roboto-thin', sans-serif;;
+  }
+

@@ -85,7 +85,7 @@
   }
   
   .progress-big {
-    background: linear-gradient(to right, var(--dark-red) 0%, var(--dark-red) 50%, grey 40%, grey 100%);
+    background-image: linear-gradient(to right,  var(--dark-red) 50%, grey 50%);
     border: solid 2px black;
     border-radius: 0;
     height: 12px;
@@ -159,6 +159,11 @@
     padding-top: 40px;
     display: flex;
     justify-content: space-between;
+  }
+
+  .video-gallery iframe{
+    width: 452px;
+    height: 254px;
   }
   
   .video-gallery-button img {

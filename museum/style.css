@@ -48,6 +48,11 @@
   src: url("./assets/fonts/Roboto-Light.ttf");
 }
 
+@font-face {
+  font-family: Roboto-thin;
+  src: url("./assets/fonts/Roboto-Thin.ttf");
+}
+
 :root {
   --bg-dark: #030303;
   --dark-red: #710707;
@@ -59,6 +64,7 @@
   --Roboto-medium: 'Roboto-medium', sans-serif;
   --Roboto-light: 'Roboto-light', sans-serif;
   --Roboto-regular: 'Roboto-regular', sans-serif;
+  --Roboto-thin: 'Roboto-thin', sans-serif;
 }
 
 * {
