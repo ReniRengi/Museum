@@ -1,8 +1,9 @@
 .footer {
     display: flex;
+    padding-top: 84px;
     justify-content: space-between;
     align-items: flex-start;
-    height: 140px;
+    min-height: 390px;
   }
   
   .footer>* {
@@ -31,6 +32,10 @@
   
   .image-icon-footer img {
     padding-right: 2%;
+  }
+
+  .image-icon-footer img:hover{
+    -webkit-filter: invert(65%) sepia(15%) saturate(806%) hue-rotate(356deg) brightness(81%) contrast(80%);
   }
   
   .nav-container-1 {
@@ -90,4 +95,8 @@
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
     transform: scale(1.2);
+  }
+
+  .nav-container-3 img:hover {
+    -webkit-filter: invert(65%) sepia(15%) saturate(806%) hue-rotate(356deg) brightness(81%) contrast(80%);
   }

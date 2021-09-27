@@ -19,15 +19,15 @@
 .modal .modal-body {
   background: #fff;
   margin-left: 20.3%;
-  
   width: 1440px;
-  height: 800px;
+  height: 844px;
 }
 
 .content {
   margin: 0;
-  /*padding: 100.5px 235px 100.5px 235px;*/
   display: flex;
+  width: 970px;
+  height: 663px;
 }
 
 .content-left {
@@ -63,6 +63,17 @@
   padding-left: 234px;
 }
 
+.content-left p {
+  padding-bottom: 7px;
+  font-size: 18px;
+  font-family: 'Roboto-regular', sans-serif;
+  color: #710707;
+  border-bottom: 3px solid #710707;
+}
+
+.content-left .left-form{
+  padding-bottom: 60px;
+}
 .place-select{
   margin-top: 60px;
   margin-bottom: 15px;
@@ -74,11 +85,13 @@
   position:absolute;
   width: 190px;
   height: 45px;
+  overflow: hidden;
   padding-left: 120px;
   background-image: url('./assets/svg/date.svg');
   background-size: 15px;
   position: left;
   background-repeat:no-repeat;
+  pointer-events: none;
 }
 
 #date label {
@@ -90,6 +103,7 @@
   color:0;
   z-index:100;
   padding-right: 5px;
+  pointer-events: none;
 }
 
 #time select {
@@ -100,6 +114,7 @@
 }
 
 .form-input {
+  position: relative;
   margin-top: 15px;
 }
 
@@ -334,28 +349,41 @@
   z-index: 1;
 }
 
-.CVV-card{
+.CVV-card {
   position: absolute;
-  right: 20px;
+  right: 30px;
   bottom: 10px;
 }
 
-.CVV-card input{
+.CVV-card input {
   width: 75px;
   height: 35px;
 }
 
-.card-name span{
+.card-name span {
   font-size: 10px;
 }
 
-.belt{
+.belt {
   position: absolute;
-  top: 24px;
+  top: 30px;
   height: 45px;
   width: 360px;
   border: 1px solid black;
   background-color: black;
+}
+
+.card-nether button {
+  position: relative;
+  width: 220px;
+  height: 45px;
+  margin: 267px 263px 117px 250px;
+  border: 0;
+  background-color: #710707; 
+  outline: 0;
+  border: 0;
+  border: 5%;
+  color: white;
 }
 
 .modal .close:hover,
@@ -364,14 +392,3 @@
   cursor: pointer;
 }
 
-.content-left p {
-  padding-bottom: 5px;
-  font-size: 18px;
-  font-family: 'Roboto-regular', sans-serif;
-  color: #710707;
-  border-bottom: 3px solid #710707;
-}
-
-.content-left .left-form{
-  padding-bottom: 60px;
-}

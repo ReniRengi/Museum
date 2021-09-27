@@ -21,16 +21,20 @@
     width: 1000px;
     height: 750px;
   }
+
+  .slide img::after{
+    background-image: linear-gradient(to right, #000000 0%, rgba(0, 0, 0, 0.5) 16.19%, rgba(0, 0, 0, 0) 30.73%);
+  }
   
-  .slide.active {
+  /*.slide.active {
     display: block;
   }
   
   .slide img {
     width: 1000px;
     height: 750px;
-  }
-  
+  }*/
+ 
   .dots-wrapper {
     position: absolute;
     bottom: 0;
@@ -54,10 +58,14 @@
   #btn-next {
     margin-left: 42px;
     margin-right: 1px;
+    background-color: black;
+    border: none;
   }
   
   #btn-prev {
     margin-right: 76px;
+    background-color: black;
+    border: none;
   }
   
   .dots img {
