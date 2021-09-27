@@ -136,33 +136,38 @@
   flex:30%;
 }
 
-.counter-group-form-1 {
-  width: 115px;
-  height: 25px;
-  padding-bottom: 5px;
+.counter-group-form{
+  width: 107px;
+  height: 27px;
+  margin-top: 10px;
   border: 1px solid black;
-  flex-wrap: nowrap;
+  display: block;
+  padding: 0;
 }
+
 
 .entry-ticket-form .counter-group-form button {
   width: 35px;
   height: 25px;
   font-size: 18px;
   background-color: black;
+  border: none;
   color: white;
-  border: 1px solid black;
+  padding: 0;
+  margin: 0;
 }
 
 .entry-ticket-form .counter-group-form input {
   width: 35px;
-  height: 50px;
+  height: 25px;
   font-size: 18px;
-  background-color: transparent;
-  color: var(--bg-dark);
-  margin: 0;
-  padding: 0;
+  padding-left: 10px;
+  margin-right: -5px;
+  margin-left: -3px;
   text-align: center;
-  border: 1px solid black;
+  border: none;
+  outline: none;
+  
 }
 
 .content-right-top {
@@ -367,6 +372,24 @@
   border: 0;
   border: 5%;
   color: white;
+  overflow: hidden;
+  transition: background 400ms;
+  cursor: pointer;
+}
+
+span.ripple{
+  position:absolute;
+  border-radius:50%;
+  transform:scale(0);
+  animation: ripple 600ms linear;
+  background-color: white;
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
 }
 
 .modal .close:hover,
