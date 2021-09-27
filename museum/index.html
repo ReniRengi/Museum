@@ -372,13 +372,53 @@
                   </div>
                </div>
                <div class="content-right-medium">
-                  <div class="content-bill">
-                     <img src="assets/svg/Group.svg" alt="">
-                     <p>Basic (20 €)</p>
-                     <span>40 €</span>
-                     <img src="assets/svg/Group.svg" alt="">
-                     <p>Senior (10 €)</p>
-                     <span>20 €</span>
+                  <div class="bill">
+                     <div class="content-bill">
+                        <img src="assets/svg/Group.png" alt="">
+                        <p id="bill-basic">Basic (20 €)</p>
+                        <span>40 €</span>
+                     </div>
+                     <div class="content-bill">
+                        <img src="assets/svg/Group.png" alt="">
+                        <p id="bill-senior">Senior (10 €)</p>
+                        <span>20 €</span>
+                     </div>
+                  </div>
+                  <p id="finall-bill">Total:</p>
+                  <span id="finall-bill-span">60 €</span>
+               </div>
+               <div class="content-right-bottom">
+                  <div class="cards">
+                     <div class="card-upper">
+                        <img src="assets/img/Laibls.jpg" alt=" ">
+                        <div class="cart-left">
+                           <div class="card-input">
+                              <p class="card-name">Card name<br>
+                                 <input type="tel" name="card" value="" size="10">  </p>
+                           </div>
+                           <div class="card-input-month">
+                              <p class="card-name">Expiration date<br>
+                              <input type="number" name="card" value="03" min="01" max="12"></p>
+                           </div>
+                        <div class="card-input-years">
+                           <input type="number" name="card" value="2024" min="2021" max="2024">
+                        </div>
+                       </div> 
+                       <div class="cardholder-name">
+                           <p class="card-name">Cardholder name<br>
+                           <input type="tel" name="card" value="" size="10"></p>
+                        </div>
+                     </div>
+                     <div class="card-nether">
+                        <div class="belt"></div>
+                        <div class="CVV-card">
+                           <p class="card-name">CVC/CVV<br>
+                              <input type="tel" name="card" value="" size="10"><br>
+                              <span>The last<br>3 or 4 digits<br>on back<br>of the card</span></p>
+                        </div>
+
+                     </div>
+
                   </div>
                </div>
              </div>

@@ -172,30 +172,30 @@
   width: 470px;
 }
 
-.content-right-top{
+.content-right-top {
   display: flex;
   flex-direction: row;
 }
 
-.content-right-top-left{
+.content-right-top-left {
   width: 50%;
   display: flex;
   flex-direction: column;
 }
 
-.content-right-top-left p{
+.content-right-top-left p {
   font-size: 32px;
   font-family: 'Roboto-medium', sans-serif;
 }
 
-.content-right-top-left h6{
+.content-right-top-left h6 {
   font-size: 22px;
   font-family: 'Roboto-medium', sans-serif;
   color: #710707;
   padding-bottom: 10px;
 }
 
-.span-content-right-top{
+.span-content-right-top {
   display: block;
   padding-top: 10px;
 }
@@ -205,26 +205,59 @@
   font-family: 'Roboto-light', sans-serif;
 }
 
-.content-right-top-right{
+.content-right-top-right {
   width: 50%;
   display: flex;
   justify-content: end;
 }
 
-.content-right-top-right img{
+.content-right-top-right img {
   width:150px;
   height:120px;
 }
 
-.content-right-medium{
-  padding: 0 20px 15px 20px;
-  display: block;
-  
+.content-right-medium {
+  padding: 0 20px 10px 20px;
 }
 
-.content-bill span{
+.bill{
+  border-bottom: 3px solid #710707;
+  margin-bottom: 10px;
+}
+
+.content-bill span {
   font-size: 22px;
-  font-weight:'Roboto-regular', sans-serif;
+  font-family:'Roboto-regular', sans-serif;
+  display: inline-block;
+}
+
+#bill-basic {
+  display: inline-block;
+  padding-right: 267px;
+  padding-bottom: 5px;
+  font-size: 22px;
+  font-family:'Roboto-regular', sans-serif;
+}
+
+#bill-senior {
+  display: inline-block;
+  padding-right: 257px;
+  padding-bottom: 5px;
+  font-size: 22px;
+  font-family:'Roboto-regular', sans-serif;
+}
+
+#finall-bill {
+  display: inline-block;
+  padding-right: 327px;
+  font-size: 32px;
+  font-family:'Roboto-regular', sans-serif;
+}
+
+#finall-bill-span {
+  display: inline-block;
+  font-size: 32px;
+  font-family:'Roboto-regular', sans-serif;
 }
 
 .modal .close {
@@ -234,13 +267,104 @@
   padding-right: 43px;
 }
 
+.content-right-bottom {
+  padding: 0 20px 10px 20px;
+}
+
+.card-upper {
+  position: absolute;
+  width: 360px;
+  height: 211px;
+  background-color: #BCBCBC;
+  border-radius: 3%;
+  z-index: 100;
+}
+
+.card-input input {
+  width: 215px;
+  height: 35px;
+}
+
+.card-name {
+  font-size: 12px;
+  font-family: 'Roboto-regular', sans-serif;
+}
+
+.card-input-month {
+  display: inline-block;
+}
+
+.card-input-month input {
+  width: 100px;
+  height: 35px;
+}
+
+.card-input-years {
+  display: inline-block;
+}
+
+.card-input-years input {
+  width: 100px;
+  height: 35px;
+}
+
+.cardholder-name input{
+  width: 320px;
+  height: 35px;
+}
+
+.card-left {
+  display: block;
+  float: left;
+}
+
+.card-upper img {
+  display: block;
+  float: right;
+}
+
+.card-nether {
+  position: absolute;
+  margin-left: 115px;
+  margin-top: 20px;
+  width: 360px;
+  height: 211px;
+  background-color: #A4A4A3;
+  border-radius: 3%;
+  z-index: 1;
+}
+
+.CVV-card{
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+}
+
+.CVV-card input{
+  width: 75px;
+  height: 35px;
+}
+
+.card-name span{
+  font-size: 10px;
+}
+
+.belt{
+  position: absolute;
+  top: 24px;
+  height: 45px;
+  width: 360px;
+  border: 1px solid black;
+  background-color: black;
+}
+
 .modal .close:hover,
 .modal .close:focus {
   -webkit-filter: invert(65%) sepia(15%) saturate(806%) hue-rotate(356deg) brightness(81%) contrast(80%);
   cursor: pointer;
 }
 
-.content-left p{
+.content-left p {
   padding-bottom: 5px;
   font-size: 18px;
   font-family: 'Roboto-regular', sans-serif;
