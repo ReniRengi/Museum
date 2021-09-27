@@ -35,7 +35,6 @@
 padding-top: 3px;
 }
 
-
 .button-ticket h4 {
   display: block;
   text-align: right;
@@ -84,9 +83,9 @@ height: 50px;
   color: var(--bg-dark);
   margin: auto;
   padding: auto;
-text-align: center;
+  text-align: center;
   border: none;
-outline: none;
+  outline: none;
 }
 
 #total-button {

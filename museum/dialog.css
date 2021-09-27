@@ -92,6 +92,8 @@
   margin-bottom: 15px;
   font-size: 18px;
   font-family: 'Roboto-regular', sans-serif;
+  width:400px;
+  height:45px;
 }
 
 .form-input select{
@@ -99,12 +101,10 @@
   margin-bottom: 15px;
   font-size: 18px;
   font-family: 'Roboto-regular', sans-serif;
-}
-
-#input {
   width:400px;
   height:45px;
 }
+
 
 .entry-ticket-form {
   display:block;
