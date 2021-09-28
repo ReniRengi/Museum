@@ -71,37 +71,37 @@
           <h2 class="title-underline">Virtual tour</h2>
           <div class="card-container">
             <a class="card" href="./assets/tour/tour1.html">
-              <img src="./assets/img/royal_palace.jpg" alt="Royal_palace">
+              <img src="./assets/img/visitors/Royal_palace.jpg" alt="Royal_palace">
               <h3 class="subject">Royal palace</h3>
               <span>360° virtual tour</span>
               <p>Google Street Panorama View</p>
             </a>
             <a class="card" href="./assets/tour2.html">
-              <img src="./assets/img/Denon_wing.jpg" alt="Denon_wing">
+              <img src="./assets/img/visitors/Denon_wing.jpg" alt="Denon_wing">
               <h3 class="subject">Denon wing</h3>
               <span>360° virtual tour</span>
               <p>Google Street Panorama View</p>
             </a>
             <a class="card" href="./assets/tour3.html">
-              <img src="./assets/img/Colonnade_Perrault.jpg" alt="Colonnade_Perrault">
+              <img src="./assets/img/visitors/Colonnade_Perrault.jpg" alt="Colonnade_Perrault">
               <h3 class="subject" id="colonade">Colonnade Perrault</h3>
               <span>360° virtual tour</span>
               <p>Google Street Panorama View</p>
             </a>
             <a class="card" href="./assets/tour/tour4.html">
-              <img src="./assets/img/Greek_hall.jpg" alt="Greek_hall">
+              <img src="./assets/img/visitors/Greek_hall.jpg" alt="Greek_hall">
               <h3 class="subject">Greek hall</h3>
               <span>360° virtual tour</span>
               <p>Google Street Panorama View</p>
             </a>
             <a class="card" href="./assets/tour/tour5.html">
-              <img src="./assets/img/Mona_Lisa.jpg" alt="Mona_Lisa">
+              <img src="./assets/img/visitors/Mona_Lisa.jpg" alt="Mona_Lisa">
               <h3 class="subject">Mona Lisa</h3>
               <span>360° virtual tour</span>
               <p>Google Street Panorama View</p>
             </a>
             <a class="card" href="./assets/tour/tour6.html">
-              <img src="./assets/img/Night_Palace.jpg" alt="Night_Palace">
+              <img src="./assets/img/visitors/Night_Palace.jpg" alt="Night_Palace">
               <h3 class="subject">Night Palace</h3>
               <span>360° virtual tour</span>
               <p>Google Street Panorama View</p>
@@ -175,7 +175,6 @@
           </div>
         </div>
       </div>
-      <div class="linear-art"></div>
       </section>
 
       <!-- Ticket -->
@@ -224,7 +223,7 @@
 			</div>
 			<span id="ticket-total-span">Total &#8364;220</span>
 		  </form>
-		  <button id="total-button">Buy now</button>
+		  <a href="#modal" id="total-button">Buy now</a>
 		</div>
 	  </div>
 	</div>
@@ -304,153 +303,138 @@
     
 
     <!-- Buy ticket modal -->
-    <div id="byTicketModal" class="modal hidden">
-      <div class="modal-body">
-        <span class="close"><img src="assets/svg/Close.svg" alt="close"></span>
-        <div class="form-container">
-          <div class="content">
-             <div class="content-left">
-                <div class="logo-modal">
-                   <img src="assets/svg/logo-gold.svg" alt="">
-                   <span>Booking ticket</span>
+<div id="modal" class="modal">
+  <a href="#modal-close-anchor" class="modal-close"></a>
+  <div class="modal-body">
+    <a href="#modal-close-anchor" class="modal-close-btn"></a>
+    <form action=# class="content"></form>
+    <div class="content-left">
+    <div class="modal-logo">
+      <img src="assets/svg/logo-gold.svg" alt="">
+    </div>
+    <h4 class="modal-logo-title">Booking ticket</h4>
+    <p class="modal-tour">Tour to Louvre</p>
+                 
+                <input type="date" class="date" name="date" id="date" value="2021-08-19">
+                </input>            
+                <input type="time" class="time"name="time" id="time" value="16-30">
+                </input>
+               <input type="text" class="name" name="name" id="name" placeholder="Name">
+                </input>
+               <input type="mail" class="mail" name="email" id="email" placeholder="email">
+                </input>
+                <input type="tel" class="phone" name="phone" id="phone" placeholder="Phone">
+                </input>
+                <select name="ticket-type" id="ticket-type" class="ticket-type">
+                  <option value="default" disabled selected>Ticket Type</option>
+                  <option value="permanent"></option>
+                  <option value="temporary"></option>
+                  <option value="combined"></option>
+                </select>
+                <div class="entry-ticket-form">
+               <p class="entry-ticket">Entry Ticket</p>
+                <div class="entry-ticket-row">
+                <div class="entry-ticket-type">
+                  <span>Basic 18+(20 €)</span>
+                  <div class="entry-ticket-button">
+                  <button class="entry-button-minus" type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                  <input type="number" min="0" max="21" value="1" readonly class="entry-button-number">
+                  <button class="entry-button-plus" type="button" onclick="this.previousElementSibling.stepUp()">+</button>
                 </div>
-                <p>Tour to Louvre</p>
-                <form>
-                  <div class="place-select">
-                    <select name="Date">
-                      <option value="none" hidden="">Date</option>
-                    </select>
-                    <select name="Time">
-                      <option value="none" hidden="">Time</option>
-                      <option>9.00</option>
-                      <option>10.30</option>
-                      <option>12.00</option>
-                      <option>13.30</option>
-                      <option>15.00</option>
-                      <option>16.30</option>
-                      <option>18.00</option>
-                      <option>19.30</option>
-                      <option>21.00</option>
-                    </select>
-                  </div>
-                  <div class="form-input">
-                    <input type="text" name="username" value="Name">
-                  </div>
-                  <div class="form-input">
-                    <input type="text" name="E-mail" value="E-mail">
-                  </div>
-                  <div class="form-input">
-                    <input type="tel" name="phone" value="Phone">
-                  </div>
-                  <div class="form-input">
-                    <select id="input" name="Ticket Type">
-                      <option value="none" hidden="">Ticket Type</option>
-                      <option>Permanent exhibition</option>
-                      <option>Temporary exhibition</option>
-                      <option>Combined Admission</option>
-                    </select>
-                  </div>
-                  <div class="entry-ticket-form">
-                    <p>Entry Ticket</p>
-                    <div class="row">
-                    <div class="span-form">
-                      <span>Basic 18+(20 €)<br>Senior 65+(10 €)</span>
-                    </div>
-                    <div class="button-group">
-                      <div class="counter-group-form">
-                        <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
-                        <input type="number" min="0" max="21" value="1" readonly class="number">
-                        <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
-                      </div>
-                      <div class="counter-group-form">
-                        <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
-                        <input type="number" min="0" max="21" value="1" readonly class="number">
-                        <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
-                      </div>
-                    </div>
-                    </div>
-                  </div>
-                </form>
+              </div>
+              <div class="entry-ticket-row">
+                <div class="entry-ticket-type">
+                  <span>Basic 65+(10 €)</span>
+                </div>
+                <div class="entry-ticket-button">
+                  <button class="entry-button-minus" type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                  <input type="number" min="0" max="21" value="1" readonly class="entry-button-number">
+                  <button class="entry-button-plus" type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                </div>
+                </div>
+              </div>
+              </div>
+              </div>
+           <div class="content-right">
+          <div class="content-right-top">
+             <p class="content-right-top-left-overview">Overview</p>
+              <p class="content-right-top-left-tour">Tour to Louvre</p>
+              <div class="content-box">
+              <span class="icon-date">
+                <p class="overview-date">Friday, August 19</p>
+                </div>
+                <div class="content-box">
+                  <span class="icon-time"></span>
+                <p class="overview-time">16 : 30</p>
+                </div>
+                <div class="content-box">
+                  <span class="icon-type"></span>
+                <p class="overview-type">Temporary exhibition</p>
+              </div>
+              <div class="content-right-middle">
+              <div class="content-right-middle-left">
+                <div class="content-right-middle-left-quantity">2</div>
+                <div class="content-right-middle-left-name">Basic (20 €)</div>
+              <span class="content-right-middle-right">40 €</span>
+              </div>
+              <div class="content-right-middle">
+              <div class="content-right-middle-left">
+                <div class="content-right-middle-left-quantity">2</div>
+                <div class="content-right-middle-left-name">Senior (10 €)</div>
+              <span class="content-right-middle-right">20 €</span>
+              </div>
+              <div>
+              <div class="content-right-middle-bill">
+            <p class="content-right-middle-bill-left">Total:</p>
+            <span class="content-right-middle-bill-left">60 €</span>
+          </div>
 
-             </div>
-             <div class="content-right">
-               <div class="content-right-top">
-                  <div class="content-right-top-left">
-                     <p>Overview</p>
-                     <h6>Tour to Louvre</h6>
-                     <div id="span-content-right-top">
-                        <img src="assets/svg/date.svg" alt="">
-                        <span>Friday, August 19</span>
-                     </div>
-                     <div class="span-content-right-top">
-                        <img src="assets/svg/Time.svg" alt="">
-                        <span>16 : 30</span>
-                     </div>
-                     <div class="span-content-right-top">
-                        <img src="assets/img/photoeditorsdk-export.png" alt="">
-                        <span>Temporary exhibition</span>
-                     </div>
-                  </div>
-                  <div class="content-right-top-right">
-                     <img src="assets/img/Rectangle.jpg" alt=" ">
-                  </div>
-               </div>
-               <div class="content-right-medium">
-                  <div class="bill">
-                     <div class="content-bill">
-                        <img src="assets/svg/Group.png" alt="">
-                        <p id="bill-basic">Basic (20 €)</p>
-                        <span>40 €</span>
-                     </div>
-                     <div class="content-bill">
-                        <img src="assets/svg/Group.png" alt="">
-                        <p id="bill-senior">Senior (10 €)</p>
-                        <span>20 €</span>
-                     </div>
-                  </div>
-                  <p id="finall-bill">Total:</p>
-                  <span id="finall-bill-span">60 €</span>
-               </div>
-               <div class="content-right-bottom">
-                  <div class="cards">
-                     <div class="card-upper">
-                        <img src="assets/img/Laibls.jpg" alt=" ">
-                        <div class="cart-left">
-                           <div class="card-input">
-                              <p class="card-name">Card name<br>
-                                 <input type="tel" name="card" value="" size="10">  </p>
-                           </div>
-                           <div class="card-input-month">
-                              <p class="card-name">Expiration date<br>
-                              <input type="number" name="card" value="03" min="01" max="12"></p>
-                           </div>
-                        <div class="card-input-years">
-                           <input type="number" name="card" value="2024" min="2021" max="2024">
-                        </div>
-                       </div> 
-                       <div class="cardholder-name">
-                           <p class="card-name">Cardholder name<br>
-                           <input type="tel" name="card" value="" size="10"></p>
-                        </div>
-                     </div>
-                     <div class="card-nether">
-                        <div class="belt"></div>
-                        <div class="CVV-card">
-                           <p class="card-name">CVC/CVV<br>
-                              <input type="tel" name="card" value="" size="10"><br>
-                              <span>The last<br>3 or 4 digits<br>on back<br>of the card</span></p>
-                        </div>
-                        <button>Book</button>
-                     </div>
 
-                  </div>
-               </div>
-             </div>
-            
+          <div class="content-right-top-card">
+            <div class="content-right-top-card-left">
+              <div class="content-right-top-card-left-field">
+                <input type="text" name="cardnumber" id="cardnumber">
+                </input>
+              </div>
+
+              <div class="content-right-top-card-left-field">
+                <div class="content-right-top-card-left-select">
+                <select name="month" id="month">
+                  <option value="01"></option>
+                  <option value="02"></option>
+                  <option value="03" selected></option>
+                </select>
+                </div>
+              </div>
+
+              <div class="content-right-top-card-left-field">
+                <select name="year" id="year">
+                  <option value="2021"></option>
+                  <option value="2022"></option>
+                  <option value="2023"></option>
+                  <option value="2024" selected></option>
+                </select>
+              </div>
+            </div>
+            <div class="content-right-top-card-name">
+              <input type="text" name="cardholder" id="cardholder">
+              </input>
+            </div>
+            <div class="content-left-top-card-right">
+              <div class="content-left-top-card-name">
+                <input type="text" name="cvc" id="cvc">
+                </input>
+              </div>
+            </div>
+          </div>
+          <div class="submit">
+            <button>Book</button>
           </div>
         </div>
-      </div>
+      </form>  
     </div>
+  </div>
+</div>
     <script src="explore.js"></script>
     <script src="art-gallery.js"></script>
     <script src="form.js"></script>

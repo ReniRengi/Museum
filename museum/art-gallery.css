@@ -16,6 +16,16 @@
 .picture-container {
   height: 1960px;
   overflow-y: hidden;
+  position:relative
+}
+
+.picture-container::after {
+  content: "";
+  position:absolute;
+  bottom: 0;
+  height: 360px;
+  width: 100%;
+  background-image: linear-gradient(to top, #000000 0%, rgba(0, 0, 0, 0.5) 16.19%, rgba(0, 0, 0, 0) 30.73%);
 }
 
 .picture-inner-container {
@@ -26,20 +36,3 @@
   gap: 24px 34px;
 }
 
-.linear-art {
-  position:relative;
-  width: 1440px;
-  height: 100px;
-}
-
-.linear-art::after {
-  display: block;
-  content: "";
-  position:absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100px;
-  width: 100%;
-  background-image: linear-gradient(to top, #000000 0%, rgba(0, 0, 0, 0.5) 16.19%, rgba(0, 0, 0, 0) 30.73%);
-}
