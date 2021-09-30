@@ -1,12 +1,11 @@
 .art-gallery {
-  min-height: 2200px;
-  overflow: hidden;
+  padding-bottom: 0;
 }
 
 .art-gallery h2 {
   padding-top: 89px;
   padding-bottom: 96px;
-  font-size: 80px;
+  font-size: calc(28px + 52 * (100vw / 1920));
   font-family: var(--Forum);
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -14,7 +13,6 @@
 }
 
 .picture-container {
-  display: none;
   height: 1960px;
   overflow-y: hidden;
   position:relative
@@ -37,3 +35,28 @@
   gap: 24px 34px;
 }
 
+@media (max-width: 1024px){
+  .art-gallery {
+    padding-bottom: 0;
+    width: 984px;
+  }
+
+  .art-gallery h2 {
+    font-size: 50px;
+}
+
+.picture-container {
+  height: 1288px;
+}
+
+.picture-inner-container{
+  height: 2000px;
+}
+
+.picture-inner-container img{
+  width: 304px;
+  height: auto;
+  
+}
+
+}

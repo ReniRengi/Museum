@@ -1,7 +1,7 @@
 
 .title-underline {
   position: relative;
-  padding-top: 76px;
+  padding-top: 74px;
   font-family: "Forum", sans-serif;
   font-size: calc(28px + 52 * (100vw / 1920));
   font-weight: normal;
@@ -13,15 +13,13 @@
 .title-underline::after {
   content: "";
   position: absolute;
-  bottom: -30px;
+  bottom: -32px;
   left: 0;
   right: 0;
   height: 3px;
   background-color: var(--dark-red);
 
 }
-
-
   
   .card-container {
     display: flex;
@@ -104,22 +102,16 @@
   @media (max-width: 1024px)
   {    
      .title-underline{
-      padding-top: 71px;
+      padding-top: 72px;
       font-weight: 75px;
       letter-spacing: 5px;
       font-size: 50px;
     }
 
-     .title-underline::after {
-      content: "";
-      position: absolute;
-      bottom: -31px;
-      left: 0;
-      right: 0;
-      height: 3px;
-      background-color:var(--dark-red);
-      }
-     
+    .title-underline::after {
+      bottom: -42px;
+    }
+
      .visiting-section{
        height:1587px;
      }

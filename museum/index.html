@@ -190,6 +190,7 @@
           </div>
         </div>
       </section>
+
         <!-- Art-gallery -->
       <section class="wrap-dark">
         <div class="container section art-gallery">
@@ -204,54 +205,51 @@
       <!-- Ticket -->
 <section class="wrap-white">
 	<div class="container section tickets-section" id="tickets">
-	  <h2 class="title-underline">Buy tickets</h2>
-	  <div class="tickets-big-container">
-		<div id="ticket-picture-container"><img src="./assets/img/image.jpg" alt="picture" id="ticket-picture"></div>
-		<div class="radio-ticket">
-		  <h3>Ticket type</h3>
-		  <div class="container-ticket">
-			<div class="container-radio">
-				<input type="radio"  name="radio">
-			</div>
-			<label class="checkmark-label">Permanent exhibition</label>
-		  </div>
-		  <div class="container-ticket">
-			<div class="container-radio">
-				<input type="radio" name="radio">
-			</div>
-			 <label class="checkmark-label">Temporary exhibition</label>
-			</div>
-		  <div class="container-ticket">
-			<div class="container-radio">
-				<input type="radio" name="radio">
-			  </div>
-			<label class="checkmark-label">Combined Admission</label>
-		  </div>
-		</div>
-		<div class="button-ticket">
-		  <h4>Amount</h4>
-		  <form id="ticket-form">
-			  <div id="ticket-age-buttons">
-				<span>Basic 18+</span>
-				<div class="counter-group">
-					<button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
-					<input type="number" min="0" max="100" value="1" readonly class="number">
-					<button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
-				</div>
-				<span>Senior 65+</span>
-				<div class="counter-group">
-					<button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
-					<input type="number" min="0" max="100" value="1" readonly class="number">
-					<button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
-				</div>
-			</div>
-			<span id="ticket-total-span">Total &#8364;220</span>
-		  </form>
-		  <a href="#modal" id="total-button">Buy now</a>
-		</div>
-	  </div>
-	</div>
-</section>
+    <div class="overlay-close-anchor" id="overlay-close-anchor"></div>
+	    <div class="ticket-container">
+        <h2 class="title-underline">Buy tickets</h2>
+        <div class="tickets-big-container">
+		      <div id="ticket-picture-container"><img src="./assets/img/image.jpg" alt="picture" id="ticket-picture"></div>
+		      <div class="radio-ticket hidden">
+            <h4 class="tickets-choice-title">Ticket Type</h4>
+            <label class="radio-container">Permanent exhibition
+              <input type="radio" checked="checked" name="radio">
+              <span class="checkmark"></span>
+            </label>
+            <label class="radio-container">Temporary exhibition
+              <input type="radio" name="radio">
+              <span class="checkmark"></span>
+            </label>
+            <label class="radio-container">Combined Admission
+              <input type="radio" name="radio">
+              <span class="checkmark"></span>
+            </label>
+          </div>
+          <div class="amount">
+            <h4>Amount</h4>
+    		    <form id="ticket-form">
+			        <div id="ticket-age-buttons">
+				        <span class="age-18">Basic 18+</span>
+				        <div class="counter-group">
+					        <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                  <input type="number" min="0" max="100" value="1" readonly class="number">
+                  <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                </div>
+                <span class="age-65">Senior 65+</span>
+                <div class="counter-group">
+                  <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                  <input type="number" min="0" max="100" value="1" readonly class="number">
+                  <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                </div>
+			        </div>
+			        <span id="ticket-total-span">Total &#8364; 220</span>
+		        </form>
+		        <a href="#modal" id="total-button">Buy now</a>
+		      </div>
+	      </div>
+	    </div>
+    </div> 
+  </section>
   
       
       <!-- Contacts -->
