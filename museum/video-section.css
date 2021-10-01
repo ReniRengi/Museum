@@ -3,6 +3,10 @@ margin:0;
 padding:0;
 }
 
+.hidden-1920{
+  display: none;
+}
+
 .video-section {
   font-family: "Roboto" sans-serif;
   font-size: 32px;
@@ -179,6 +183,9 @@ video button:hover {
 }
 
 @media (max-width: 1024px) {
+  .hidden-1024{
+    display: none;
+  }
   .wrap-white{
     max-height: 1001px;
   }
@@ -257,13 +264,56 @@ video button:hover {
 }
 
 @media (max-width: 768px){
-  .wrap-video{
+  .hidden-768{
     display: none;
   }
+
+  .video.video{
+    height: 100%;
+    width: 697px;
+  }
+
+  .video-section .controls {
+    width: 697px;
+    height: 70px;
+  }
+
+  .progress-big {
+    height: 8px;
+    width: 697px;
+    margin-bottom: 62px;
+  }
+  
+  .progress {
+    border: solid 1px black;
+    height: 8px;
+    width: 486px;
+  }
+
+  .text-video-section h2 {
+    width: 90%;
+    font-size: calc(28px + (40 - 28) * (100vw - 420px) / (768 - 420));
+    line-height: calc(40px + (60 - 40) * (100vw - 420px) / (768 - 420));
+    word-spacing: 0.5px;
+  }
+
+  .text-video-section {
+    padding-bottom: calc(20px + (26 - 24) * (100vw - 420px) / (768 - 420));
+  }
+  
+   
 }
 
 @media (max-width: 420px){
   .wrap-video{
     display: none;
+  }
+
+  .hidden-420{
+    display: none;
+  }
+
+  .text-video-section h2 {
+    width: 90%;
   }
 }
