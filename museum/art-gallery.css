@@ -1,12 +1,11 @@
 .art-gallery {
-  min-height: 2200px;
-  overflow: hidden;
+  padding-bottom: 0;
 }
 
 .art-gallery h2 {
   padding-top: 89px;
   padding-bottom: 96px;
-  font-size: 80px;
+  font-size: calc(28px + 52 * (100vw / 1920));
   font-family: var(--Forum);
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -16,6 +15,16 @@
 .picture-container {
   height: 1960px;
   overflow-y: hidden;
+  position:relative
+}
+
+.picture-container::after {
+  content: "";
+  position:absolute;
+  bottom: 0;
+  height: 360px;
+  width: 100%;
+  background-image: linear-gradient(to top, #000000 0%, rgba(0, 0, 0, 0.5) 16.19%, rgba(0, 0, 0, 0) 30.73%);
 }
 
 .picture-inner-container {
@@ -26,20 +35,40 @@
   gap: 24px 34px;
 }
 
-.linear-art {
-  position:relative;
-  width: 1440px;
-  height: 100px;
+@media (max-width: 1024px){
+  .art-gallery {
+    padding-bottom: 0;
+    width: 984px;
+  }
+
+  .art-gallery h2 {
+    font-size: 50px;
 }
 
-.linear-art::after {
-  display: block;
-  content: "";
-  position:absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100px;
-  width: 100%;
-  background-image: linear-gradient(to top, #000000 0%, rgba(0, 0, 0, 0.5) 16.19%, rgba(0, 0, 0, 0) 30.73%);
+.picture-container {
+  height: 1288px;
+}
+
+.picture-inner-container{
+  height: 2000px;
+}
+
+.picture-inner-container img{
+  width: 304px;
+  height: auto;
+  
+}
+
+}
+
+@media (max-width: 768px){
+  .art-gallery{
+    display: none;
+  }
+}
+
+@media (max-width: 420px){
+  .art-gallery{
+    display: none;
+  }
 }
