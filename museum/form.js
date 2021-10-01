@@ -1,5 +1,5 @@
 window.addEventListener("load", function (event) {
-    ///loadForm();
+    loadForm();
     createRipple();
   });
   

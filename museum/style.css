@@ -117,6 +117,7 @@ html {
   padding-top: 75px;
   padding-bottom: 75px;
   background-color: var(--font-white);
+  min-height: 1396px;
 }
 
 .container {
@@ -142,53 +143,23 @@ html {
   text-transform: uppercase;
 }
 
+.title-underline {
+  position: relative;
+  padding-top: 76px;
+  font-family: "Forum", sans-serif;
+  font-size: 80px;
+  font-weight: normal;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--font-gold);
+}
 
-@media (max-width: 1024px)
-  {
-    .wrap-dark,
-    .wrap-white,
-    .wrap-video {
-      padding-right: 20px;
-      padding-left: 20px;
-    }
-    
-    .container {
-      margin: 0px auto;
-      /*max-width: 984px;*/
-    }
-    
-    .wrap-video{
-      padding-top: 60px;
-    }
-  }
-
-  @media (max-width: 768px)
-  { .wrap-dark,
-    .wrap-white,
-    .wrap-video {
-      padding-right: 2.6%;
-      padding-left: 2.6%;
-    }
- 
-    .container {
-      margin: 0px auto;
-      max-width: 728px;
-    }
-  }
-   
-  @media (max-width:420px)
-  {  
-    .wrap-dark,
-    .wrap-white,
-    .wrap-video {
-      padding-right: 4.7%;
-      padding-left: 4.7%;
-    }
-    
-    .container {
-      margin: 0px auto;
-      max-width: 380px;
-    
-  }
-   
-  }
+.title-underline::after {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: var(--dark-red);
+}

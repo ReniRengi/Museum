@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Museum</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="./assets/svg/Frame.svg">
@@ -26,19 +25,6 @@
             <li><a href="#contacts">Contacts</a></li>
           </ul>
         </nav>
-        <div class="burger-menu">
-          <input id="menu-toggle" type="checkbox"/>
-          <label class="menu-btn" for="menu-toggle">
-             <span></span>
-          </label>
-          <ul class="menu-box">
-            <li class="menu-item"><a href="#visiting">Visiting > </a></li>
-            <li class="menu-item"><a href="#explore">Explore > </a></li>
-            <li class="menu-item"><a href="#video">Video > </a></li>
-            <li class="menu-item"><a href="#tickets">Tickets > </a></li>
-            <li class="menu-item"><a href="#contacts">Contacts > </a></li>
-          </ul>
-        </div>
       </div>
     </header>
     <main>
@@ -85,37 +71,37 @@
           <h2 class="title-underline">Virtual tour</h2>
           <div class="card-container">
             <a class="card" href="./assets/tour/tour1.html">
-              <img src="./assets/img/visitors/Royal_palace.jpg" alt="Royal_palace">
+              <img src="./assets/img/Royal_palace.jpg" alt="Royal_palace">
               <h3 class="subject">Royal palace</h3>
               <span>360° virtual tour</span>
               <p>Google Street Panorama View</p>
             </a>
             <a class="card" href="./assets/tour2.html">
-              <img src="./assets/img/visitors/Denon_wing.jpg" alt="Denon_wing">
+              <img src="./assets/img/Denon_wing.jpg" alt="Denon_wing">
               <h3 class="subject">Denon wing</h3>
               <span>360° virtual tour</span>
               <p>Google Street Panorama View</p>
             </a>
             <a class="card" href="./assets/tour3.html">
-              <img src="./assets/img/visitors/Colonnade_Perrault.jpg" alt="Colonnade_Perrault">
+              <img src="./assets/img/Colonnade_Perrault.jpg" alt="Colonnade_Perrault">
               <h3 class="subject" id="colonade">Colonnade Perrault</h3>
               <span>360° virtual tour</span>
               <p>Google Street Panorama View</p>
             </a>
             <a class="card" href="./assets/tour/tour4.html">
-              <img src="./assets/img/visitors/Greek_hall.jpg" alt="Greek_hall">
+              <img src="./assets/img/Greek_hall.jpg" alt="Greek_hall">
               <h3 class="subject">Greek hall</h3>
               <span>360° virtual tour</span>
               <p>Google Street Panorama View</p>
             </a>
             <a class="card" href="./assets/tour/tour5.html">
-              <img src="./assets/img/visitors/Mona_Lisa.jpg" alt="Mona_Lisa">
+              <img src="./assets/img/Mona_Lisa.jpg" alt="Mona_Lisa">
               <h3 class="subject">Mona Lisa</h3>
               <span>360° virtual tour</span>
               <p>Google Street Panorama View</p>
             </a>
             <a class="card" href="./assets/tour/tour6.html">
-              <img src="./assets/img/visitors/Night_Palace.jpg" alt="Night_Palace">
+              <img src="./assets/img/Night_Palace.jpg" alt="Night_Palace">
               <h3 class="subject">Night Palace</h3>
               <span>360° virtual tour</span>
               <p>Google Street Panorama View</p>
@@ -129,10 +115,10 @@
         <div class="container section explore-section" id="explore">
           <div class="section-text">
             <h2 class="title-underline">Picture Explore</h2>
-            <div class="explorer-text hidden-768 hidden-420">
+            <div class="explorer-text">
               <p>Las Meninas is a 1656 painting by Diego Velа́zquez, the leading artist of the Spanish Golden Age.</p>
               <p>It was cleaned in 1984 to remove a <span>"yellow veil"</span> of dust that had gathered since the previous restoration in the 19th century.</p>
-              <p class="hidden-1024">The cleaning provoked furious protest,not because the picture had been damaged in any way, but because it looked different.</p>
+              <p>The cleaning provoked furious protest,not because the picture had been damaged in any way, but because it looked different.</p>
             </div>
           </div>
           <!-- Explore-slider-->
@@ -153,47 +139,34 @@
       <section class="wrap-video">
         <div class="text-video-section">
           <h2>Video Journey</h2>
-          <p class= "hidden-1024">Enter and visit one of the most famous museums in the world and enjoy masterpieces such as Mona Lisa or Hammurabi's Code.
+          <p>Enter and visit one of the most famous museums in the world and enjoy masterpieces such as Mona Lisa or Hammurabi's Code.
         </div>
         <!-- Player -->
         <div class="container section video-section" id="video">
-          <div class="pleer-wraper">
           <div class="video">
             <video src="./assets/video/video.mp4" poster="./assets/video/poster.jpg"></video>
             <button class="button-left" type="button"></button>
           </div>
           <div class="controls">
-            <input class="volume hidden-1920 hidden-1024" type="range" value="40" min="0" max="100" step="1" class="progress-big">
             <button class="play" type="button"></button>
-            <button class="volume hidden-1920 hidden-1024" type="button"></button>
             <input type="range" value="40" min="0" max="100" step="1" class="progress-big">
-            <button class="volume hidden-768 hidden-420" type="button"></button>
+            <button class="volume" type="button"></button>
             <input type="range" value="40" min="0" max="100" step="1" class="progress">
             <button class="fullscreen" type="button"></button>
-          </div>
           </div>
           <!-- Gallery-->
           <div class="video-gallery">
             <iframe loading="lazy" src="https://www.youtube.com/embed/aWmJ5DgyWPI" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <iframe loading="lazy" src="https://www.youtube.com/embed/Vi5D6FKhRmo" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe class="hidden-768" loading="lazy" src="https://www.youtube.com/embed/NOhDysLnTvY" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe loading="lazy" src="https://www.youtube.com/embed/NOhDysLnTvY" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           <div class="video-gallery-button">
             <img src="assets/svg/video-slider-pagination.svg" alt="button">
-            <!--<button class="left"></button>
-              <div class="video-dots">
-                <span class="video-dot video-dot-active"></span>
-                <span class="video-dot"></span>
-                <span class="video-dot"></span>
-                <span class="video-dot"></span>
-                <span class="video-dot"></span>
-              </div>
-              <button class="right"></button>-->
           </div>
         </div>
       </section>
 
-        <!-- Art-gallery -->
+      <!-- Art-gallery -->
       <section class="wrap-dark">
         <div class="container section art-gallery">
           <h2>Art gallery</h2>
@@ -202,55 +175,59 @@
           </div>
         </div>
       </div>
+      <div class="linear-art"></div>
       </section>
 
       <!-- Ticket -->
 <section class="wrap-white">
 	<div class="container section tickets-section" id="tickets">
-    <div class="overlay-close-anchor" id="overlay-close-anchor"></div>
-	    <div class="ticket-container">
-        <h2 class="title-underline">Buy tickets</h2>
-        <div class="tickets-big-container">
-		      <div id="ticket-picture-container"><img src="./assets/img/image.jpg" alt="picture" id="ticket-picture"></div>
-		      <div class="radio-ticket hidden">
-            <h4 class="tickets-choice-title">Ticket Type</h4>
-            <label class="radio-container">Permanent exhibition
-              <input type="radio" checked="checked" name="radio">
-              <span class="checkmark"></span>
-            </label>
-            <label class="radio-container">Temporary exhibition
-              <input type="radio" name="radio">
-              <span class="checkmark"></span>
-            </label>
-            <label class="radio-container">Combined Admission
-              <input type="radio" name="radio">
-              <span class="checkmark"></span>
-            </label>
-          </div>
-          <div class="amount">
-            <h4>Amount</h4>
-    		    <form id="ticket-form">
-			        <div id="ticket-age-buttons">
-				        <span class="age-18">Basic 18+</span>
-				        <div class="counter-group">
-					        <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
-                  <input type="number" min="0" max="100" value="1" readonly class="number">
-                  <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
-                </div>
-                <span class="age-65">Senior 65+</span>
-                <div class="counter-group">
-                  <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
-                  <input type="number" min="0" max="100" value="1" readonly class="number">
-                  <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
-                </div>
-			        </div>
-			        <span id="ticket-total-span">Total &#8364; 220</span>
-		        </form>
-		        <a href="#modal" id="total-button">Buy now</a>
-		      </div>
-	      </div>
-	    </div>
-    </div> 
+	  <h2 class="title-underline">Buy tickets</h2>
+	  <div class="tickets-big-container">
+		<div id="ticket-picture-container"><img src="./assets/img/image.jpg" alt="picture" id="ticket-picture"></div>
+		<div class="radio-ticket">
+		  <h3>Ticket type</h3>
+		  <div class="container-ticket">
+			<div class="container-radio">
+				<input type="radio"  name="radio">
+			</div>
+			<label class="checkmark-label">Permanent exhibition</label>
+		  </div>
+		  <div class="container-ticket">
+			<div class="container-radio">
+				<input type="radio" name="radio">
+			</div>
+			 <label class="checkmark-label">Temporary exhibition</label>
+			</div>
+		  <div class="container-ticket">
+			<div class="container-radio">
+				<input type="radio" name="radio">
+			  </div>
+			<label class="checkmark-label">Combined Admission</label>
+		  </div>
+		</div>
+		<div class="button-ticket">
+		  <h4>Amount</h4>
+		  <form id="ticket-form">
+			  <div id="ticket-age-buttons">
+				<span>Basic 18+</span>
+				<div class="counter-group">
+					<button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+					<input type="number" min="0" max="100" value="1" readonly class="number">
+					<button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+				</div>
+				<span>Senior 65+</span>
+				<div class="counter-group">
+					<button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+					<input type="number" min="0" max="100" value="1" readonly class="number">
+					<button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+				</div>
+			</div>
+			<span id="ticket-total-span">Total &#8364;220</span>
+		  </form>
+		  <button id="total-button">Buy now</button>
+		</div>
+	  </div>
+	</div>
   </section>
   
       
@@ -261,13 +238,13 @@
             <div class="parallax-image"></div>
           </div>
           <div class="wrap-white">
-            <h2 id="contacts-title" class="title-underline">Contacts</h2>
+            <h2 class="title-underline">Contacts</h2>
             <div class="contacts-container">
               <div class="section-text-contacts">
                 <h4>Palais Royal<br>Musee du Louvre</h4>
                 <p>address: 75001 Paris, France</p>
-                <a href="tel:phone:+33(0) 1 40 20 50 50"><p #contacts-link>phone: +33(0) 1 40 20 50 50</p></a>
-                <a href="mailto:info@louvre.fr"><p  #contacts-link>mail: info@louvre.fr</p></a>
+                <p>phone:+33(0) 1 40 20 50 50</p>
+                <p>mail: info@louvre.fr</p>
               </div>
               <div>
                 <img src="./assets/img/cart.png " alt="map">
@@ -278,6 +255,7 @@
       </section>
     </main>
 
+    <!-- Footer -->
     <footer class="wrap-dark">
       <div class="container section footer">
         <div class="image-icon-footer ">
@@ -323,137 +301,156 @@
         <span>renirengi</span>
       </div>
     </footer>
-   <!-- Buy ticket modal -->
-   <div id="modal" class="modal">
-      <a href="#modal-close-anchor" class="modal-close"></a>
-        <div class="modal-body">
-          <a href="#modal-close-anchor" class="modal-close-btn"></a>
-            <form action=# class="content">
-                <div class="content-left">
-                  <div class="modal-logo">
-                    <img src="assets/svg/logo-gold.svg" alt="">
-                  </div>
-                  <h4 class="modal-logo-title">Booking ticket</h4>
-                  <p class="modal-tour">Tour to Louvre</p>
-                  <input type="date" class="date" name="date" id="date" value="2021-08-19">
-                  </input>            
-                  <input type="time" class="time" name="time" id="time" value="16:30">
-                  </input>
-                  <input type="text" class="name" name="name" id="name" placeholder="name">
-                  </input>
-                  <input type="mail" class="mail" name="email" id="mail" placeholder="mail">
-                  </input>
-                  <input type="tel" class="phone" name="phone" id="phone" placeholder="phone">
-                  </input>
-                  <select name="ticket-type" id="ticket-type" class="ticket-type">
-                    <option value="default" disabled selected>Ticket Type</option>
-                    <option value="permanent">Permanent</option>
-                    <option value="temporary">Temporary</option>
-                    <option value="combined">Combined</option>
-                  </select>
-                  <div class="entry-ticket-form">
-                    <h5 class="entry-ticket">Entry Ticket</h5>
-                    <div class="entry-ticket-row">
-                      <div class="entry-ticket-type">
-                        <span>Basic 18+(20 €)</span>
-                        <div class="entry-ticket-button">
-                          <button class="entry-button-minus" type="button" onclick="this.nextElementSibling.stepDown()">-</button>
-                          <input type="number" min="0" max="21" value="1" readonly class="entry-button-number">
-                          <button class="entry-button-plus" type="button" onclick="this.previousElementSibling.stepUp()">+</button>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="entry-ticket-row">
-                      <span class="entry-ticket-type">Basic 65+(10 €)</span>
-                      <div class="entry-ticket-button">
-                        <button class="entry-button-minus" type="button" onclick="this.nextElementSibling.stepDown()">-</button>
-                        <input type="number" min="0" max="21" value="1" readonly class="entry-button-number">
-                        <button class="entry-button-plus" type="button" onclick="this.previousElementSibling.stepUp()">+</button>
-                      </div>
-                    </div>
-                  </div>
+    
+
+    <!-- Buy ticket modal -->
+    <div id="byTicketModal" class="modal hidden">
+      <div class="modal-body">
+        <span class="close"><img src="assets/svg/Close.svg" alt="close"></span>
+        <div class="form-container">
+          <div class="content">
+             <div class="content-left">
+                <div class="logo-modal">
+                   <img src="assets/svg/logo-gold.svg" alt="">
+                   <span>Booking ticket</span>
                 </div>
-                <div class="content-right">
-                  <div class="content-right-top">
-                    <p class="content-right-top-left-overview">Overview</p>
-                    <p class="content-right-top-left-tour">Tour to Louvre</p>
-                    <div class="content-box">
-                      <span class="icon-date"></span>
-                      <p class="overview-date">Friday, August 19</p>
+                <p>Tour to Louvre</p>
+                <form>
+                  <div class="place-select">
+                    <select name="Date">
+                      <option value="none" hidden="">Date</option>
+                    </select>
+                    <select name="Time">
+                      <option value="none" hidden="">Time</option>
+                      <option>9.00</option>
+                      <option>10.30</option>
+                      <option>12.00</option>
+                      <option>13.30</option>
+                      <option>15.00</option>
+                      <option>16.30</option>
+                      <option>18.00</option>
+                      <option>19.30</option>
+                      <option>21.00</option>
+                    </select>
+                  </div>
+                  <div class="form-input">
+                    <input type="text" name="username" value="Name">
+                  </div>
+                  <div class="form-input">
+                    <input type="text" name="E-mail" value="E-mail">
+                  </div>
+                  <div class="form-input">
+                    <input type="tel" name="phone" value="Phone">
+                  </div>
+                  <div class="form-input">
+                    <select id="input" name="Ticket Type">
+                      <option value="none" hidden="">Ticket Type</option>
+                      <option>Permanent exhibition</option>
+                      <option>Temporary exhibition</option>
+                      <option>Combined Admission</option>
+                    </select>
+                  </div>
+                  <div class="entry-ticket-form">
+                    <p>Entry Ticket</p>
+                    <div class="row">
+                    <div class="span-form">
+                      <span>Basic 18+(20 €)<br>Senior 65+(10 €)</span>
                     </div>
-                    <div class="content-box">
-                      <span class="icon-time"></span>
-                      <p class="overview-time">16 : 30</p>
+                    <div class="button-group">
+                      <div class="counter-group-form">
+                        <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                        <input type="number" min="0" max="21" value="1" readonly class="number">
+                        <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                      </div>
+                      <div class="counter-group-form">
+                        <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                        <input type="number" min="0" max="21" value="1" readonly class="number">
+                        <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                      </div>
                     </div>
-                    <div class="content-box">
-                      <span class="icon-type"></span>
-                      <p class="overview-type">Temporary exhibition</p>
                     </div>
                   </div>
-                  <div class="content-right-middle">
-                    <div class="content-right-middle-left">
-                      <div class="content-right-middle-left-quantity">2</div>
-                      <div class="content-right-middle-left-name">Basic (20 €)</div>
-                      <span class="content-right-middle-right">40 €</span>
-                    </div>
-                  </div>  
-                  <div class="content-right-middle">
-                    <div class="content-right-middle-left">
-                      <div class="content-right-middle-left-quantity">2</div>
-                        <div class="content-right-middle-left-name">Senior (10 €)</div>
-                        <span class="content-right-middle-right">20 €</span>
-                      </div>
-                    <div>
+                </form>
+
+             </div>
+             <div class="content-right">
+               <div class="content-right-top">
+                  <div class="content-right-top-left">
+                     <p>Overview</p>
+                     <h6>Tour to Louvre</h6>
+                     <div id="span-content-right-top">
+                        <img src="assets/svg/date.svg" alt="">
+                        <span>Friday, August 19</span>
+                     </div>
+                     <div class="span-content-right-top">
+                        <img src="assets/svg/Time.svg" alt="">
+                        <span>16 : 30</span>
+                     </div>
+                     <div class="span-content-right-top">
+                        <img src="assets/img/photoeditorsdk-export.png" alt="">
+                        <span>Temporary exhibition</span>
+                     </div>
                   </div>
-                    <div class="content-right-middle-bill">
-                      <p class="content-right-middle-bill-left">Total:</p>
-                        <span class="content-right-middle-bill-left">60 €</span>
-                    </div>
-                    <div class="content-right-top-card">
-                        <div class="content-right-top-card-left">
-                          <div class="content-right-top-card-left-field">
-                            <input type="text" name="cardnumber" id="cardnumber">
-                            </input>
-                          </div>
-                          <div class="content-right-top-card-left-field">
-                            <div class="content-right-top-card-left-select">
-                              <select name="month" id="month">
-                                  <option value="01"></option>
-                                  <option value="02"></option>
-                                  <option value="03" selected></option>
-                              </select>
-                            </div>
-                          </div>
-                          <div class="content-right-top-card-left-field">
-                            <select name="year" id="year">
-                              <option value="2021"></option>
-                              <option value="2022"></option>
-                              <option value="2023"></option>
-                              <option value="2024" selected></option>
-                            </select>
-                          </div>
+                  <div class="content-right-top-right">
+                     <img src="assets/img/Rectangle.jpg" alt=" ">
+                  </div>
+               </div>
+               <div class="content-right-medium">
+                  <div class="bill">
+                     <div class="content-bill">
+                        <img src="assets/svg/Group.png" alt="">
+                        <p id="bill-basic">Basic (20 €)</p>
+                        <span>40 €</span>
+                     </div>
+                     <div class="content-bill">
+                        <img src="assets/svg/Group.png" alt="">
+                        <p id="bill-senior">Senior (10 €)</p>
+                        <span>20 €</span>
+                     </div>
+                  </div>
+                  <p id="finall-bill">Total:</p>
+                  <span id="finall-bill-span">60 €</span>
+               </div>
+               <div class="content-right-bottom">
+                  <div class="cards">
+                     <div class="card-upper">
+                        <img src="assets/img/Laibls.jpg" alt=" ">
+                        <div class="cart-left">
+                           <div class="card-input">
+                              <p class="card-name">Card name<br>
+                                 <input type="tel" name="card" value="" size="10">  </p>
+                           </div>
+                           <div class="card-input-month">
+                              <p class="card-name">Expiration date<br>
+                              <input type="number" name="card" value="03" min="01" max="12"></p>
+                           </div>
+                        <div class="card-input-years">
+                           <input type="number" name="card" value="2024" min="2021" max="2024">
                         </div>
-                        <div class="content-right-top-card-name">
-                          <input type="text" name="cardholder" id="cardholder">
-                          </input>
+                       </div> 
+                       <div class="cardholder-name">
+                           <p class="card-name">Cardholder name<br>
+                           <input type="tel" name="card" value="" size="10"></p>
                         </div>
-                        <div class="content-left-top-card-right">
-                          <div class="content-left-top-card-name">
-                              <input type="text" name="cvc" id="cvc">
-                              </input>
-                          </div>
+                     </div>
+                     <div class="card-nether">
+                        <div class="belt"></div>
+                        <div class="CVV-card">
+                           <p class="card-name">CVC/CVV<br>
+                              <input type="tel" name="card" value="" size="10"><br>
+                              <span>The last<br>3 or 4 digits<br>on back<br>of the card</span></p>
                         </div>
-                      </div>
-                      <div class="submit">
                         <button>Book</button>
-                      </div>
-                    </div>
-            </form>  
+                     </div>
+
+                  </div>
+               </div>
+             </div>
+            
           </div>
         </div>
       </div>
     </div>
-  
     <script src="explore.js"></script>
     <script src="art-gallery.js"></script>
     <script src="form.js"></script>

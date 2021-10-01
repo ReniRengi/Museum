@@ -1,25 +1,6 @@
-
-.title-underline {
-  position: relative;
-  padding-top: 74px;
-  font-family: "Forum", sans-serif;
-  font-size: calc(28px + 52 * (100vw / 1920));
-  font-weight: normal;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: var(--font-gold);
-}
-
-.title-underline::after {
-  content: "";
-  position: absolute;
-  bottom: -32px;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background-color: var(--dark-red);
-
-}
+.visiting-section {
+    min-height: 1266px;
+  }
   
   .card-container {
     display: flex;
@@ -37,7 +18,8 @@
     justify-content: space-between;
     width: 439px;
     height: 36%;
-    font-family: var(--Roboto-thin);
+    font-family: "Roboto" sans-serif;
+    font-size: 30px;
     text-decoration: none;
     color: black;
   }
@@ -67,9 +49,9 @@
     font-family: "Forum", sans-serif;
     font-weight: normal;
     white-space: nowrap;
-    font-size: calc(18px + 14 * (100vw / 1920));
-    letter-spacing: 5px;
-    word-spacing: 0;
+    font-size: 32px;
+    letter-spacing: 4.9px;
+    word-spacing: 1.2px;
     color: var(--bg-dark);
     text-transform: uppercase;
   }
@@ -78,8 +60,7 @@
     content: '';
     display: block;
     padding-bottom: 11px;
-    margin-bottom: 10px;
-     width: 68%;
+    width: 68%;
     border-bottom: 3px solid var(--dark-red);
     transition: all 0.3s ease;
   }
@@ -87,149 +68,43 @@
   .card h3:hover:after {
     width: 100%;
   }
-   
+  
+  #colonade {
+    display: block;
+    padding-top: 26px;
+    font-family: "Forum", sans-serif;
+    font-weight: normal;
+    white-space: nowrap;
+    font-size: 32px;
+    letter-spacing: 4.9px;
+    word-spacing: 2.2px;
+    color: var(--bg-dark);
+    text-transform: uppercase;
+  }
+  
+  #colonade::after {
+    content: '';
+    display: block;
+    padding-bottom: 9.1px;
+    width: 68%;
+    border-bottom: 3px solid var(--dark-red);
+    transition: all 0.3s ease;
+  }
+  
+  #colonade:hover:after {
+    width: 100%;
+  }
+  
   .card span {
     text-transform: capitalize;
     font-weight: normal;
-    font-size: calc(16px + 6 * (100vw / 1920));
-    letter-spacing: 0%;
+    font-family: var(--Roboto);
+    font-size: 22px;
   }
   
   .card p {
     padding-top: 3%;
-    font-size: calc(16px + 2 * (100vw / 1920));;
+    font-size: 18px;
+    line-height: 17px;
+    font-family: var(--Roboto);
   }
-
-  @media (max-width: 1024px)
-  {    
-     .title-underline{
-      padding-top: 72px;
-      line-height: 75px;
-      letter-spacing: 5px;
-      font-size: 50px;
-    }
-
-    .title-underline::after {
-      bottom: -42px;
-    }
-
-     .visiting-section{
-       height:1587px;
-     }
-     
-     .card-container{
-      padding-top: 91px;
-      padding-bottom: 63px;
-      padding-left: 108px;
-      padding-right: 110px;
-      gap: 54px 0px;
-     }
-     
-     .card{
-      padding-bottom: 0.8%;
-      width: 330px;
-    }
-
-      .card h3{
-       font-size: 28px;
-       letter-spacing: 3px;
-       word-spacing: 1.2px;
-    }
-     
-     .card h3::after {
-      padding-bottom: 9.1px;
-      width: 46%;
-      border-bottom: 2px solid var(--dark-red);
-      transition: all 0.3s ease;
-      }
-     
-     .card h3:hover:after {
-      width: 100%;
-     }
-     
-      .card span{
-       padding-top: 50px;
-       font-weight:normal;
-        font-size: 18px;
-       letter-spacing: 1.1px;
-     }
-     
-     .card p{
-      padding-top: 3%;
-      font-size: 16px;
-      line-height: 17px;
-      
-     }
-  }
-   
-  @media (max-width:768px)
-  {  
-    .title-underline{
-      padding-top: 40px;
-      line-height: calc(40px + (60 - 40) * (100vw - 420px) / (768 - 420));
-      letter-spacing: 5px;
-      font-size: calc(28px + (40 - 28) * (100vw - 420px) / (768 - 420));
-    }
-
-    .title-underline::after {
-      bottom: -21px;
-    }
-
-     .visiting-section{
-       min-height:1116px;
-     }
-
-     .card h3::after {
-       width: 55%;
-       
-    }
-     
-     .card-container{
-      padding-top: 60px;
-      padding-bottom: calc(40px + (80 - 40) * (100vw - 420px) / (768 - 420));
-      padding-left: calc(50px + (56 - 50) * (100vw - 420px) / (768 - 420));
-      padding-right: calc(50px + (56 - 50) * (100vw - 420px) / (768 - 420));
-      gap: 40px 55px;
-     }
-     
-     .card{
-      /*padding-bottom: 0.8%;*/
-      width: 280px;
-    }
-
-      .card h3{
-       font-size: calc(18px + (22 - 18) * (100vw - 420px) / (768 - 420));
-       letter-spacing: 3px;
-      }
-     
-      
-      .card span{
-      font-size: calc(16px + (18 - 16) * (100vw - 420px) / (768 - 420));
-     }
-     
-     .card p{
-      padding-top: 3%;
-      font-size: calc(16px + (18 - 16) * (100vw - 420px) / (768 - 420));
-     
-     }
-   
-  }
-
-  @media (max-width:420px){
-    /*.visiting-section{
-      height: 2153px;
-    }*/
-
-    .card-container{
-      gap: 30 0px;
-     }
-
-    .card{
-      width: 280px;
-    }
-
-    .card h3{
-      letter-spacing: 5px;
-    }
-    
-  }  

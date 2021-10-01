@@ -1,6 +1,5 @@
 .ticket-section {
   min-height: 893px;
-  color: var(--bg-dark);
 }
 
 .container-ticket {
@@ -8,210 +7,32 @@
   font-size: 20px;
   line-height: 2.2;
   font-family: var(--Roboto);
+  color: var(--bg-dark);
 }
 
-.container-radio {
-display: inline-block;
-border-radius: 100px;
-overflow: hidden;
-padding: 0;
-border-width: 10px;
-}
-
-
-#ticket-picture-container {
-width: 725px;
-height: 555px;
-padding: 0;
-object-fit: cover;
-}
-
-.tickets-big-container{
-  padding-top: 98px;
+.tickets-big-container {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-}
-
-.tickets-choice-title,
-.amount h4{
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 33px;
-  text-align: left;
-}
-
-.amount h4{
-  margin-bottom: 11px;
-  text-align: right;
-}
-
-.radio-ticket{
-  width: 270px;
-  margin-left: 60px;
-}
-
-.amount{
-  width: 175px;
-  margin-left: auto;
-}
-
-.radio-container {
-  display: block;
-  position: relative;
-  padding-left: 40px;
-  margin-bottom: 25px;
-  cursor: pointer;
-  font-weight: 300;
-  line-height: 26px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  transition: 0.5s;
-  font-family: var(--Roboto-light);
-  font-size: 22px;
-}
-
-.radio-container:hover {
-  color: var(--font-gold);
-}
-
-.radio-container input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-}
-
-.checkmark {
-  position: absolute;
-  top: 5px;
-  left: 0;
-  height: 17px;
-  width: 17px;
-  border: 2px solid #000;
-  border-radius: 50%;
-}
-
-.radio-container:hover input ~ .checkmark {
-  border: 2px solid var(--font-gold);
-}
-
-.checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-.radio-container input:checked ~ .checkmark:after {
-  display: block;
-}
-
-.radio-container .checkmark:after {
-  top: 3px;
-  left: 3px;
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: #000;
-}
-
-.age-18,
-.age-65{
-  margin-left: 25px;
-  margin-bottom: 14px;
-  font-weight: 300;
-  line-height: 26px;
-  font-family: var(--Roboto-light);
-  font-size: 22px;
-}
-
-.age-18{
-  margin-top: 25px;
-}
-
-.age-65 {
-  margin-top: 10px;
-}
-
-.counter-group{
-  margin-left: 25px;
-  margin-bottom: 10px;
-  display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 0 14px;
-  width: 150px;
-  height: 50px;
-  border: 3px solid #000;
+  padding-top: 7%;
 }
 
-.counter-group button{
- 
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 37px;
-    text-align: center;
-    border: none;
-    background: transparent;
-    color: #000;
-    cursor: pointer;
-    transition: 0.5s;
-    font-family: var(--Roboto-light);
-    font-size: 22px;
-  }
-  
-  .counter-group button {
-    color: var(--font-gold);
-  }
-  
-  .number {
-    width: 65px;
-    padding-left: 10px;
-    font-weight: 300;
-    line-height: 26px;
-    text-align: center;
-    border: none;
-    background: transparent;
-    font-family: var(--Roboto-light);
-    font-size: 22px;
-    
-  }
+.tickets-big-container>* {
+  width: 47%;
+}
 
-#ticket-total-span{
-  margin-top: 50px;
-  font-weight: 700;
+.radio-ticket {
+  width: 50%;
+  padding-left: 4.3%;
+}
+
+.radio-ticket h3 {
+  margin-bottom: 40px;
+  font-weight: bold;
   font-size: 28px;
-  line-height: 33px;
-  letter-spacing: 1.65px;
-  margin-left: 25px;
-}
-
-#total-button{
-  display: block;
-  width: 175px;
-  margin-top: 60px;
-  padding: 12px 38px;
-  font-weight: 300;
-  line-height: 26px;
-  letter-spacing: 1px;
-  text-decoration: none;
-  border: none;
-  background-color: #000;
-  color: var(--font-white);
-  transition: 0.5s;
-  font-family: var(--Roboto-light);
-  font-size: 22px;
-  
-}
-
-#total-button:hover {
-  background-color: var(--font-gold);
-}
-
-#total-button:active {
-  background-color: var(--font-gold);
+  font-family: var(--Roboto-bold);
+  color: var(--bg-dark);
+  text-transform: capitalize;
+padding-top: 3px;
 }
 
 .button-ticket h4 {
@@ -235,70 +56,150 @@ object-fit: cover;
   width: 160px;
 }
 
-
-@media (max-width:1024px){
-   
-  #ticket-picture-container img{
-  width: 700px;
-  height: 440px;
-  }
-
-  .tickets-big-container{
-    padding-top: 90px;
-    
-  }
-
-  .amount{
-    margin-left: 55px;
-  }
-
-.amount h4{
-  text-align: left;
-  font-family: var(--Roboto-bold);
-  margin-bottom: 30px;
+.counter-group {
+width: 150px;
+height: 50px;
 }
 
-.age-18,
-.age-65{
-  margin-left: 0px;
-  margin-top: 40px;
+.button-ticket .counter-group {
+  border: 3px solid var(--bg-dark);
 }
 
-.counter-group{
-  margin: 10px 0px 30px 0px;
-  width: 175px;
+.button-ticket .counter-group button {
+  width: 44px;
+  height: 46px;
+  font-family: var(--Roboto-regular);
+  font-size: 30px;
+  background-color: transparent;
+  color: var(--bg-dark);
+  border: none;
 }
 
-.counter-group button{
-  font-size: 32px;
+.button-ticket .counter-group input {
+  width: 48px;
+  height: 46px;
+  font-size: 22px;
+  background-color: transparent;
+  color: var(--bg-dark);
+  margin: auto;
+  padding: auto;
+  text-align: center;
+  border: none;
+  outline: none;
 }
 
-#ticket-total-span{
-  margin-left: 0px;
-  margin-top: 0px;
-  font-size: 28px;
-  letter-spacing: 1.65px;
-  font-family: var(--Roboto-bold);
+#total-button {
+  width: 160px;
+  height: 50px;
+  background-color: var(--bg-dark);
+  background-clip: padding-box;
+  text-align: center;
+  font-size: 22px;
+  font-family: var(--Roboto-light);
+  text-transform: capitalize;
+  color: var(--font-white);
+  border: none;
 }
 
-.tickets-section{
-  max-height: 318px;
+#total-button:hover {
+  background-color: var(--font-gold);
+  color: var(--bg-dark);
+}
+
+.tickets-section {
+  color: var(--bg-dark);
+}
+
+.ticket-radio input {
+  position: absolute;
+  cursor: pointer;
+}
+
+.ticket-radio input:checked~.checkmark {
+  background-color: black;
 }
 
 
 
+input[type="radio" i] {
+height: 18px;
+width: 18px;
+cursor: pointer;
+display: block;
+outline: none;
+border:10px solid black;
+margin-top: 5px;
+
 }
 
-@media (max-width: 768px){
-  .ticket-container{
-    display: none;
-  }
+.container-ticket {
+display: block;
+
 }
 
-@media (max-width: 420px){
-  .ticket-container{
-    display: none;
-  }
+.checkmark-label {
+font-family: var(--Roboto-light);
+font-size: 22px;
+font-weight: 500;
+margin-left: 20px;
+text-align: center;
 }
 
+#ticket-total-span {
+font-family: var(--Roboto-bold);
+font-size: 30px;
+letter-spacing: 1px;
+padding-top: 30px;
+padding-bottom: 30px;
+width: 155px;
+margin-right: 0;
+}
+
+.number {
+padding-left: 15px;
+font-family: var(--Roboto-light);
+;}
+
+.container-radio {
+display: inline-block;
+border-radius: 100px;
+overflow: hidden;
+padding: 0;
+border-width: 10px;
+}
+
+#ticket-picture {
+object-fit: cover;
+padding-top: 5px;
+}
+
+#ticket-picture-container {
+width: 725px;
+height: 555px;
+padding: 0;
+}
+
+input[type='radio']:before {
+content: '';
+display: block;
+width: 14px;
+height: 14px;
+border-radius: 100%;
+border: 2px solid black;	
+}
+
+
+input[type="radio"]:checked:before {
+background: 2px 2px black;
+}
+
+input[type="radio"]:checked:focus {
+outline: none;
+}
+
+#ticket-age-buttons {
+width: 150px;
+margin-right: 0;
+margin-left: auto;
+}
 
