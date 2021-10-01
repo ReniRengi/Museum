@@ -236,10 +236,11 @@ object-fit: cover;
 }
 
 
-@media (max-width:1024px){ 
+@media (max-width:1024px){
+   
   #ticket-picture-container img{
   width: 700px;
-  height: auto;
+  height: 440px;
   }
 
   .tickets-big-container{
@@ -278,7 +279,10 @@ object-fit: cover;
   font-size: 28px;
   letter-spacing: 1.65px;
   font-family: var(--Roboto-bold);
-  
+}
+
+.tickets-section{
+  max-height: 318px;
 }
 
 

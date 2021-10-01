@@ -259,13 +259,13 @@
             <div class="parallax-image"></div>
           </div>
           <div class="wrap-white">
-            <h2 class="title-underline">Contacts</h2>
+            <h2 id="contacts-title" class="title-underline">Contacts</h2>
             <div class="contacts-container">
               <div class="section-text-contacts">
                 <h4>Palais Royal<br>Musee du Louvre</h4>
                 <p>address: 75001 Paris, France</p>
-                <p>phone:+33(0) 1 40 20 50 50</p>
-                <p>mail: info@louvre.fr</p>
+                <a href="tel:phone:+33(0) 1 40 20 50 50"><p #contacts-link>phone: +33(0) 1 40 20 50 50</p></a>
+                <a href="mailto:info@louvre.fr"><p  #contacts-link>mail: info@louvre.fr</p></a>
               </div>
               <div>
                 <img src="./assets/img/cart.png " alt="map">
@@ -276,7 +276,6 @@
       </section>
     </main>
 
-    <!-- Footer -->
     <footer class="wrap-dark">
       <div class="container section footer">
         <div class="image-icon-footer ">
@@ -322,8 +321,6 @@
         <span>renirengi</span>
       </div>
     </footer>
-    
-
    <!-- Buy ticket modal -->
    <div id="modal" class="modal">
       <a href="#modal-close-anchor" class="modal-close"></a>

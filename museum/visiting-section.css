@@ -103,7 +103,7 @@
   {    
      .title-underline{
       padding-top: 72px;
-      font-weight: 75px;
+      line-height: 75px;
       letter-spacing: 5px;
       font-size: 50px;
     }
@@ -117,9 +117,6 @@
      }
      
      .card-container{
-      display:flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
       padding-top: 91px;
       padding-bottom: 63px;
       padding-left: 108px;
@@ -165,19 +162,73 @@
      }
   }
    
-  @media (max-width:420px)
+  @media (max-width:768px)
   {  
-    .wrap-dark,
-    .wrap-white,
-    .wrap-video {
-      padding-right: 4.7%;
-      padding-left: 4.7%;
+    .title-underline{
+      padding-top: 40px;
+      line-height: calc(40px + (60 - 40) * (100vw - 420px) / (768 - 420));
+      letter-spacing: 5px;
+      font-size: calc(28px + (40 - 28) * (100vw - 420px) / (768 - 420));
     }
-    
-    .container {
-      margin: 0px auto;
-      max-width: 380px;
-    
-  }
+
+    .title-underline::after {
+      bottom: -42px;
+    }
+
+     .visiting-section{
+       height:1116px;
+     }
+     
+     .card-container{
+      padding-top: 91px;
+      padding-bottom: calc(40px + (80 - 40) * (100vw - 420px) / (768 - 420));
+      padding-left: calc(70px + (76 - 70) * (100vw - 420px) / (768 - 420));
+      padding-right: calc(70px + (76 - 70) * (100vw - 420px) / (768 - 420));
+      gap:  calc(30px + (40 - 30) * (100vw - 420px) / (768 - 420)) 0px;
+     }
+     
+     .card{
+      padding-bottom: 0.8%;
+      width: 330px;
+    }
+
+      .card h3{
+       padding-top: 26px;
+       font-size: 28px;
+       letter-spacing: 3px;
+       word-spacing: 1.2px;
+    }
+     
+     .card h3::after {
+      padding-bottom: 9.1px;
+      width: 46%;
+      border-bottom: 2px solid var(--dark-red);
+      transition: all 0.3s ease;
+      }
+     
+     .card h3:hover:after {
+      width: 100%;
+     }
+     
+      .card span{
+       padding-top: 50px;
+       font-weight:normal;
+        font-size: 18px;
+       letter-spacing: 1.1px;
+     }
+     
+     .card p{
+      padding-top: 3%;
+      font-size: 16px;
+      line-height: 17px;
+      
+     }
    
   }
+
+  @media (max-width:420px){
+    .visiting-section{
+      height: 2153px;
+    }
+    
+  }  
