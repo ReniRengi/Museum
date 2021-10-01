@@ -255,3 +255,15 @@ video button:hover {
 
 }
 }
+
+@media (max-width: 768px){
+  .wrap-video{
+    display: none;
+  }
+}
+
+@media (max-width: 420px){
+  .wrap-video{
+    display: none;
+  }
+}

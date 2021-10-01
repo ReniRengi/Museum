@@ -99,5 +99,17 @@
        
       
      }
+
+     @media (max-width: 768px){
+      #contacts{
+        display: none;
+      }
+    }
+  
+    @media (max-width: 420px){
+      #contacts{
+        display: none;
+      }
+    }
   
   

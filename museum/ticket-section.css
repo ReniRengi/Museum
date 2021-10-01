@@ -289,4 +289,16 @@ object-fit: cover;
 
 }
 
+@media (max-width: 768px){
+  .ticket-container{
+    display: none;
+  }
+}
+
+@media (max-width: 420px){
+  .ticket-container{
+    display: none;
+  }
+}
+
 

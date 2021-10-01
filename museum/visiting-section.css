@@ -78,7 +78,8 @@
     content: '';
     display: block;
     padding-bottom: 11px;
-    width: 68%;
+    margin-bottom: 10px;
+     width: 68%;
     border-bottom: 3px solid var(--dark-red);
     transition: all 0.3s ease;
   }
@@ -130,7 +131,6 @@
     }
 
       .card h3{
-       padding-top: 26px;
        font-size: 28px;
        letter-spacing: 3px;
        word-spacing: 1.2px;
@@ -172,63 +172,64 @@
     }
 
     .title-underline::after {
-      bottom: -42px;
+      bottom: -21px;
     }
 
      .visiting-section{
-       height:1116px;
+       min-height:1116px;
      }
+
+     .card h3::after {
+       width: 55%;
+       
+    }
      
      .card-container{
-      padding-top: 91px;
+      padding-top: 60px;
       padding-bottom: calc(40px + (80 - 40) * (100vw - 420px) / (768 - 420));
-      padding-left: calc(70px + (76 - 70) * (100vw - 420px) / (768 - 420));
-      padding-right: calc(70px + (76 - 70) * (100vw - 420px) / (768 - 420));
-      gap:  calc(30px + (40 - 30) * (100vw - 420px) / (768 - 420)) 0px;
+      padding-left: calc(50px + (56 - 50) * (100vw - 420px) / (768 - 420));
+      padding-right: calc(50px + (56 - 50) * (100vw - 420px) / (768 - 420));
+      gap: 40px 55px;
      }
      
      .card{
-      padding-bottom: 0.8%;
-      width: 330px;
+      /*padding-bottom: 0.8%;*/
+      width: 280px;
     }
 
       .card h3{
-       padding-top: 26px;
-       font-size: 28px;
+       font-size: calc(18px + (22 - 18) * (100vw - 420px) / (768 - 420));
        letter-spacing: 3px;
-       word-spacing: 1.2px;
-    }
-     
-     .card h3::after {
-      padding-bottom: 9.1px;
-      width: 46%;
-      border-bottom: 2px solid var(--dark-red);
-      transition: all 0.3s ease;
       }
      
-     .card h3:hover:after {
-      width: 100%;
-     }
-     
+      
       .card span{
-       padding-top: 50px;
-       font-weight:normal;
-        font-size: 18px;
-       letter-spacing: 1.1px;
+      font-size: calc(16px + (18 - 16) * (100vw - 420px) / (768 - 420));
      }
      
      .card p{
       padding-top: 3%;
-      font-size: 16px;
-      line-height: 17px;
-      
+      font-size: calc(16px + (18 - 16) * (100vw - 420px) / (768 - 420));
+     
      }
    
   }
 
   @media (max-width:420px){
-    .visiting-section{
+    /*.visiting-section{
       height: 2153px;
+    }*/
+
+    .card-container{
+      gap: 30 0px;
+     }
+
+    .card{
+      width: 280px;
+    }
+
+    .card h3{
+      letter-spacing: 5px;
     }
     
   }  

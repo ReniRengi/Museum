@@ -60,3 +60,15 @@
 }
 
 }
+
+@media (max-width: 768px){
+  .art-gallery{
+    display: none;
+  }
+}
+
+@media (max-width: 420px){
+  .art-gallery{
+    display: none;
+  }
+}
