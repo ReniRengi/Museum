@@ -62,9 +62,8 @@
 }
 
 @media (max-width: 768px){
-  .art-gallery{
-    display: none;
-  }
+    .art-gallery h2 {
+    font-size: calc(28px + (40 - 28) * (100vw - 420px) / (768 - 420));
 }
 
 @media (max-width: 420px){

@@ -186,6 +186,11 @@ html {
       padding-right: 4.7%;
       padding-left: 4.7%;
     }
+
+    .wrap-video{
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
     
     .container {
       margin: 0px auto;

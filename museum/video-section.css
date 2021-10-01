@@ -15,7 +15,6 @@ padding:0;
 .video{
   position: relative;
   margin-bottom: 0;
-  height: 650px;
 }
 
 .video-section button {
@@ -61,10 +60,9 @@ video button:hover {
   display: block;
   position: relative;
   margin-bottom: 0;
-  height: 650px;
 }
 
-.video .video {
+.video video {
   width: 100%;
 }
 
@@ -176,11 +174,12 @@ video button:hover {
   .hidden-1024{
     display: none;
   }
-  .wrap-white{
+  
+  .video-section{
     max-height: 1001px;
   }
 
-  .video. video{
+  .video video{
     height: 100%;
     width: 984px;
   }
@@ -198,6 +197,7 @@ video button:hover {
   .video-section .controls {
     height: 50px;
     width: 984px;
+    margin-bottom: 0;
   }
     
   .video-section .controls button.play {
@@ -259,19 +259,19 @@ video button:hover {
     display: none;
   }
 
-  .video.video{
+  .video video{
     height: 100%;
-    width: 697px;
+    width: 728px;
   }
 
   .video-section .controls {
-    width: 697px;
+    width: 728px;
     height: 70px;
   }
 
   .progress-big {
     height: 8px;
-    width: 697px;
+    width: 728px;
     margin-bottom: 62px;
   }
   
@@ -291,15 +291,23 @@ video button:hover {
   .text-video-section {
     padding-bottom: calc(20px + (26 - 24) * (100vw - 420px) / (768 - 420));
   }
+
+  .video-gallery {
+    padding-top: 20px;
+  }
   
-   
+  .video-gallery iframe{
+    width: 354px;
+    height: 199px;
+  }
+  
+  .video-gallery-button img {
+    margin-top: 20px;
+}
 }
 
 @media (max-width: 420px){
-  .wrap-video{
-    display: none;
-  }
-
+  
   .hidden-420{
     display: none;
   }
@@ -307,4 +315,66 @@ video button:hover {
   .text-video-section h2 {
     width: 90%;
   }
+
+  .video video{
+    height: 100%;
+    width: 380px;
+  }
+
+  .video-section .controls {
+    width: 380px;
+    height: 57px;
+  }
+
+  .progress-big {
+    height: 5px;
+    width: 380px;
+    margin-bottom: 62px;
+  }
+  
+  .progress {
+    border: solid 1px black;
+    height: 5px;
+    width: 204px;
+  }
+
+  .video-section .controls button.play {
+    width: 14px;
+    height: 18px;
+  }
+  
+  .video-section .controls button.volume,
+  .video-section .controls button.fullscreen {
+    width: 18px;
+    height: 18px;
+  }
+     
+  .progress-big::-webkit-slider-thumb {
+    width: 10px;
+    height: 10px;
+  }
+  
+   
+  .progress::-webkit-slider-thumb {
+    width: 10px;
+    height: 10px;
+  }
+ 
+  .video-gallery {
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+  
+  .video-gallery iframe{
+    width: 180px;
+    height: 101px;
+  }
+  
+  .video-gallery-button img {
+    width: 174px;
+    height: 100%;
+    margin-top: 0;
+}
+
+
 }

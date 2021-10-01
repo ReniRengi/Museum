@@ -152,7 +152,7 @@
     object-fit: contain;
     margin-top:0px;
     width: 700px;
-    height: 720px;
+   /*height: 720px;*/
   }
 
   @media (max-width: 768px){
