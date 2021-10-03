@@ -62,12 +62,23 @@
 }
 
 @media (max-width: 768px){
-    .art-gallery h2 {
+.art-gallery h2 {
     font-size: calc(28px + (40 - 28) * (100vw - 420px) / (768 - 420));
+    line-height: calc(40px + (60 - 40) * (100vw - 420px) / (768 - 420));
+    padding-top: calc(45px + (52 - 45) * (100vw - 420px) / (768 - 420));
+    padding-bottom: calc(45px + (52 - 45) * (100vw - 420px) / (768 - 420));
 }
 
+.picture-container {
+  height: calc(650px + (1090 - 650) * (100vw - 420px) / (768 - 420))
+}
+
+.picture-inner-container img{
+  width: calc(178px + (352 - 178) * (100vw - 420px) / (768 - 420));
+  height: auto;
+  
+}
+}
 @media (max-width: 420px){
-  .art-gallery{
-    display: none;
-  }
+  
 }

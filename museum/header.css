@@ -14,7 +14,7 @@
     text-transform: uppercase;
     letter-spacing: 5px;
     color: var(--font-white);
-    z-index: 10001;
+    z-index: 1001;
   }
   
   .image-icon * {

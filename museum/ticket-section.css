@@ -237,6 +237,9 @@ object-fit: cover;
 
 
 @media (max-width:1024px){
+  .hidden-1024{
+    display:done;
+  }
    
   #ticket-picture-container img{
   width: 700px;
@@ -285,20 +288,54 @@ object-fit: cover;
   max-height: 318px;
 }
 
-
-
 }
 
 @media (max-width: 768px){
-  .ticket-container{
-    display: none;
+  #title-768 {
+    padding-top: 40px;
   }
+
+  #ticket-picture-container {
+    width: 444px;
+    height: 340px;
+    padding: 0;
+    object-fit: cover;
+    }
+
+    .tickets-big-container{
+      padding-top: 65px;
+      
+    }
+
+    .amount{
+      margin-left: 57px;
+    }
+
+    .age-65{
+      margin-top: 43px;
+    }
+
+    .amount h4{
+      margin-bottom: 35px;
+    }
+
+  #ticket-picture-container img{
+    width: 444px;
+    height: 340px;
+    }
+    
+    #total-button{
+      margin-top: 43px;
+      padding: 10px 38px;
+      height: 50px;
+    }
 }
 
 @media (max-width: 420px){
-  .ticket-container{
-    display: none;
-  }
+  #ticket-picture-container img{
+    width: 444px;
+    height: 340px;
+    }
 }
 
 

@@ -14,7 +14,7 @@ padding:0;
 
 .video{
   position: relative;
-  margin-bottom: 0;
+  border: 0;
 }
 
 .video-section button {
@@ -38,7 +38,7 @@ padding:0;
   transition: 1s;
 }
 
-video button:hover {
+.video button:hover {
   transform: scale(1.2);
 }
 
@@ -56,11 +56,6 @@ video button:hover {
   background-color: #000000;
 }
 
-.video {
-  display: block;
-  position: relative;
-  margin-bottom: 0;
-}
 
 .video video {
   width: 100%;
@@ -184,7 +179,7 @@ video button:hover {
     width: 984px;
   }
 
-  .text-video-section h2 {
+    .text-video-section h2 {
     font-size: 50px;
     line-height: 75px;
     word-spacing: 0.5px;
@@ -209,6 +204,11 @@ video button:hover {
   .video-section .controls button.fullscreen {
     width: 35px;
     height: 35px;
+  }
+
+  .video-section .controls button.volume{
+    position: absolute;
+    padding-left: 50px;
   }
     
   .progress-big {
@@ -263,6 +263,10 @@ video button:hover {
     height: 100%;
     width: 728px;
   }
+  .video button{
+    width: 80px;
+    height:auto;
+  }
 
   .video-section .controls {
     width: 728px;
@@ -270,6 +274,8 @@ video button:hover {
   }
 
   .progress-big {
+    position:absolute;
+    left:0px;
     height: 8px;
     width: 728px;
     margin-bottom: 62px;
@@ -339,14 +345,14 @@ video button:hover {
   }
 
   .video-section .controls button.play {
-    width: 14px;
-    height: 18px;
+    max-width: 14px;
+    max-height: 18px;
   }
   
   .video-section .controls button.volume,
   .video-section .controls button.fullscreen {
-    width: 18px;
-    height: 18px;
+    max-width: 18px;
+    max-height: 18px;
   }
      
   .progress-big::-webkit-slider-thumb {
