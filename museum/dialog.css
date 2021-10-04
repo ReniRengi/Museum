@@ -587,7 +587,7 @@ span.ripple {
   cursor: pointer;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1473px) and (min-width: 1024px) {
   .modal-body {
     max-width: 1024px;
     min-height: 768px;
@@ -624,7 +624,7 @@ span.ripple {
     margin: 0px;
   }
   .content-left {
-    width: 530px;
+    width: 100%;
     min-height: 622px;
     float: none;
     margin-bottom: 52px;

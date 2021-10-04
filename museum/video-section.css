@@ -30,9 +30,9 @@
   .video button {
     display: block;
     position: absolute;
-    width: 220px;
+    max-width: 220px;
+    width: 100%;
     height: 220px;
-    
     background-size: 100%;
     transition: 1s;
   }
@@ -55,6 +55,7 @@
     margin-top: 0;
     margin-bottom: 40px;
     max-width: 1440px;
+    width: 1000%;
     height: 85px;
     background-color: #000000;
   }
@@ -70,14 +71,14 @@
   }
   
   .video-section .controls button.volume {
-    width: 38px;
+    max-width: 38px;
+    width: 100%;
     height: 31px;
   }
-  
-  
-  
+    
   .video-section .controls button.fullscreen {
-    width: 35px;
+   max-width: 35px;
+   width: 100%;
     height: 35px;
   }
   
@@ -129,7 +130,7 @@
   }
   
   .text-video-section h2 {
-    width: 45%;
+    max-width: 45%;
     text-align: justify;
     color: var(--font-gold);
     font-family: "Forum", sans-serif;
@@ -159,7 +160,8 @@
   }
   
   .video-gallery iframe{
-    width: 452px;
+    max-width: 452px;
+    width: 100%;
     height: 254px;
   }
   
@@ -170,7 +172,7 @@
     margin-right: auto;
   }
   
-  @media (max-width: 1024px) {
+  @media (max-width: 1473px) and (min-width: 1024px) {
     .hidden-1024{
       display: none;
     }
@@ -181,19 +183,17 @@
   
     .video video{
       height: 100%;
-      width: 984px;
+      max-width: 984px;
+      width: 100%;
     }
   
     .video button {
        transform:scale(69.1%);
     }
   
-  
-    
     .video-section .controls button.volume2 {
       display: block;
       transform: scale(68%);
-        
     }
     
     .video-section .controls button.fullscreen {
@@ -209,12 +209,11 @@
   
     .text-video-section {
       padding-bottom: 40px;
-      
     }
   
     .video-section .controls {
       height: 50px;
-      width: 984px;
+      width: 100%;
       margin-bottom: 0;
     }
       
@@ -227,7 +226,8 @@
       border: solid 1px black;
       border-radius: 0;
       height: 8px;
-      width: 564px;
+      max-width: 564px;
+      width: 100%;
     }
     
     .progress-big::-webkit-slider-thumb {
@@ -239,7 +239,8 @@
     .progress {
       border: solid 1px black;
       height: 8px;
-      width: 143px;
+      max-width: 143px;
+      width: 100%;
     }
     
     .progress::-webkit-slider-thumb {
@@ -249,7 +250,8 @@
     
        
     .video-gallery iframe{
-      width: 300px;
+      max-width: 300px;
+      width: 100%;
       height: 170px;
     }
     
@@ -258,8 +260,6 @@
       display: block;
       margin-left: auto;
       margin-right: auto
-      
-  
   }
   }
   
@@ -270,15 +270,17 @@
   
     .video video{
       height: 100%;
-      width: 728px;
+      max-width: 728px;
+      width: 100%;
     }
+
     .video button {
       transform:scale(36.5%);
       left:250px;
     }
    
     .video-section .controls {
-      width: 728px;
+      width: 100%;
       height: 53px;
     }
   
@@ -286,7 +288,8 @@
       position:absolute;
       left:0px;
       height: 8px;
-      width: 728px;
+      max-width: 728px;
+      width: 100%;
       margin-bottom: 62px;
     }
   
@@ -297,11 +300,13 @@
     .progress {
       border: solid 1px black;
       height: 8px;
-      width: 490px;
+      max-width: 490px;
+      width: 100%;
     }
   
     .text-video-section h2 {
-      width: 90%;
+      max-width: 90%;
+      width: 100%;
       font-size: calc(28px + (40 - 28) * (100vw - 420px) / (768 - 420));
       line-height: calc(40px + (60 - 40) * (100vw - 420px) / (768 - 420));
       word-spacing: 0.5px;
@@ -316,7 +321,8 @@
     }
     
     .video-gallery iframe{
-      width: 354px;
+      max-width: 354px;
+      width: 100%;
       height: 199px;
     }
     
@@ -358,25 +364,27 @@
   
     .video video{
       height: 100%;
-      width: 380px;
+      max-width: 380px;
+      width: 100%;
     }
   
     .video-section .controls {
-      width: 380px;
+      width: 100%;
       height:26px;
     }
   
     .progress-big {
       height: 5px;
-      width: 380px;
+      max-width: 380px;
+      width: 100%;
       margin-bottom: 62px;
     }
     
     .progress {
       border: solid 1px black;
       height: 5px;
-      width: 200px;
-      
+      max-width: 200px;
+      width: 100%;
     }
   
        
@@ -391,15 +399,16 @@
     }
     
     .video-gallery iframe{
-      width: 180px;
+      max-width: 180px;
+      width: 100%;
       height: 101px;
     }
     
     .video-gallery-button img {
-      width: 174px;
+      max-width: 174px;
+      width: 100%;
       height: 100%;
       margin-top: 0;
   }
-  
   
   }
