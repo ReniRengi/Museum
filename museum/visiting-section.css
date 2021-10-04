@@ -106,14 +106,14 @@
 
   @media (max-width: 1024px){    
      .title-underline{
-      padding-top: 72px;
+      padding-top: 58px;
       line-height: 75px;
       letter-spacing: 5px;
       font-size: 50px;
     }
 
     .title-underline::after {
-      bottom: -42px;
+      bottom: -22px;
     }
 
      .visiting-section{
@@ -121,7 +121,7 @@
      }
      
      .card-container{
-      padding-top: 91px;
+      padding-top: 83px;
       padding-bottom: 63px;
       padding-left: 108px;
       padding-right: 110px;

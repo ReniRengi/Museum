@@ -192,16 +192,16 @@
     display:none;
   }
 
-  .menu-btn{
+  .menu-btn {
     top: 35px;
   }
 
-    .image-icon img{
+  .image-icon img { 
     transform:scale(59%);
-   padding-left: 0px;
-     padding-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
-  .image-icon{
+  .image-icon {
      font-size: 16px;
      
   }

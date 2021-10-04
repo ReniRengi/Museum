@@ -87,8 +87,7 @@ html {
 }
 
 .wrap-dark {
-  padding-left: 12.6%;
-  padding-right: 12.6%;
+  margin: 0 auto;
   background-color: var(--bg-dark);
   color: var(--font-white);
 }
@@ -171,6 +170,11 @@ html {
       padding-right: 2.6%;
       padding-left: 2.6%;
     }
+
+    .wrap-video{
+      padding-top: 42px;
+      padding-bottom: 79px;
+    }
  
     .container {
       margin: 0px auto;
@@ -188,8 +192,8 @@ html {
     }
 
     .wrap-video{
-      padding-top: 30px;
-      padding-bottom: 30px;
+      padding-top: 36px;
+      padding-bottom: 40px;
     }
     
     .container {
