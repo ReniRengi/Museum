@@ -1,63 +1,63 @@
-.ticket-section {
+  .ticket-section {
   min-height: 893px;
   color: var(--bg-dark);
-}
+  }
 
-.container-ticket {
+  .container-ticket {
   display: block;
   font-size: 20px;
   line-height: 2.2;
   font-family: var(--Roboto);
-}
+  }
 
-.container-radio {
-display: inline-block;
-border-radius: 100px;
-overflow: hidden;
-padding: 0;
-border-width: 10px;
-}
+  .container-radio {
+  display: inline-block;
+  border-radius: 100px;
+  overflow: hidden;
+  padding: 0;
+  border-width: 10px;
+  }
 
 
-#ticket-picture-container {
-width: 725px;
-height: 555px;
-padding: 0;
-object-fit: cover;
-}
+  #ticket-picture-container {
+  width: 725px;
+  height: 555px;
+  padding: 0;
+  object-fit: cover;
+  }
 
-.tickets-big-container{
+  .tickets-big-container{
   padding-top: 98px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-}
+  }
 
-.tickets-choice-title,
-.amount h4{
+  .tickets-choice-title,
+  .amount h4{
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 28px;
   line-height: 33px;
   text-align: left;
-}
+  }
 
-.amount h4{
+  .amount h4{
   margin-bottom: 11px;
   text-align: right;
-}
+  }
 
-.radio-ticket{
+  .radio-ticket{
   width: 270px;
   margin-left: 60px;
-}
+  }
 
-.amount{
+  .amount{
   width: 175px;
   margin-left: auto;
-}
+  }
 
-.radio-container {
+  .radio-container {
   display: block;
   position: relative;
   padding-left: 40px;
@@ -72,19 +72,19 @@ object-fit: cover;
   transition: 0.5s;
   font-family: var(--Roboto-light);
   font-size: 22px;
-}
+  }
 
-.radio-container:hover {
+  .radio-container:hover {
   color: var(--font-gold);
-}
+  }
 
-.radio-container input {
+  .radio-container input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
-}
+  }
 
-.checkmark {
+  .checkmark {
   position: absolute;
   top: 5px;
   left: 0;
@@ -92,50 +92,50 @@ object-fit: cover;
   width: 17px;
   border: 2px solid #000;
   border-radius: 50%;
-}
+  }
 
-.radio-container:hover input ~ .checkmark {
+  .radio-container:hover input ~ .checkmark {
   border: 2px solid var(--font-gold);
-}
+  }
 
-.checkmark:after {
+  .checkmark:after {
   content: "";
   position: absolute;
   display: none;
-}
+  }
 
-.radio-container input:checked ~ .checkmark:after {
+  .radio-container input:checked ~ .checkmark:after {
   display: block;
-}
+  }
 
-.radio-container .checkmark:after {
+  .radio-container .checkmark:after {
   top: 3px;
   left: 3px;
   width: 7px;
   height: 7px;
   border-radius: 50%;
   background: #000;
-}
+  }
 
-.age-18,
-.age-65{
+  .age-18,
+  .age-65{
   margin-left: 25px;
   margin-bottom: 14px;
   font-weight: 300;
   line-height: 26px;
   font-family: var(--Roboto-light);
   font-size: 22px;
-}
+  }
 
-.age-18{
+  .age-18{
   margin-top: 25px;
-}
+  }
 
-.age-65 {
+  .age-65 {
   margin-top: 10px;
-}
+  }
 
-.counter-group{
+  .counter-group{
   margin-left: 25px;
   margin-bottom: 10px;
   display: flex;
@@ -145,50 +145,50 @@ object-fit: cover;
   width: 150px;
   height: 50px;
   border: 3px solid #000;
-}
-
-.counter-group button{
- 
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 37px;
-    text-align: center;
-    border: none;
-    background: transparent;
-    color: #000;
-    cursor: pointer;
-    transition: 0.5s;
-    font-family: var(--Roboto-light);
-    font-size: 22px;
   }
-  
+
+  .counter-group button{
+
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 37px;
+  text-align: center;
+  border: none;
+  background: transparent;
+  color: #000;
+  cursor: pointer;
+  transition: 0.5s;
+  font-family: var(--Roboto-light);
+  font-size: 22px;
+  }
+
   .counter-group button {
-    color: var(--font-gold);
-  }
-  
-  .number {
-    width: 65px;
-    padding-left: 10px;
-    font-weight: 300;
-    line-height: 26px;
-    text-align: center;
-    border: none;
-    background: transparent;
-    font-family: var(--Roboto-light);
-    font-size: 22px;
-    
+  color: var(--font-gold);
   }
 
-#ticket-total-span{
+  .number {
+  width: 65px;
+  padding-left: 10px;
+  font-weight: 300;
+  line-height: 26px;
+  text-align: center;
+  border: none;
+  background: transparent;
+  font-family: var(--Roboto-light);
+  font-size: 22px;
+
+  }
+
+  #ticket-total-span{
   margin-top: 50px;
   font-weight: 700;
   font-size: 28px;
   line-height: 33px;
   letter-spacing: 1.65px;
   margin-left: 25px;
-}
+  }
 
-#total-button{
+  #total-button{
   display: block;
   width: 175px;
   margin-top: 60px;
@@ -203,18 +203,18 @@ object-fit: cover;
   transition: 0.5s;
   font-family: var(--Roboto-light);
   font-size: 22px;
-  
-}
 
-#total-button:hover {
+  }
+
+  #total-button:hover {
   background-color: var(--font-gold);
-}
+  }
 
-#total-button:active {
+  #total-button:active {
   background-color: var(--font-gold);
-}
+  }
 
-.button-ticket h4 {
+  .button-ticket h4 {
   display: block;
   text-align: right;
   font-weight: bold;
@@ -222,125 +222,184 @@ object-fit: cover;
   color: var(--bg-dark);
   font-family: var(--Roboto-bold);
   text-transform: capitalize;
-}
+  }
 
-.button-ticket span {
+  .button-ticket span {
   display: block;
   font-size: 22px;
   line-height: 2.5;
   font-family: var(--Roboto-light);
-}
-
-.button-ticket {
-  width: 160px;
-}
-
-
-@media (max-width:1024px){
-  .hidden-1024{
-    display:done;
   }
-   
+
+  .button-ticket {
+  width: 160px;
+  }
+
+
+  @media (max-width:1024px){
+  .tickets-section{
+  height: 720px;
+  }
+
+  .hidden-1024{
+  display:none;
+  }
+
+  #title-768 {
+  padding-top: 59px;
+  }
+
   #ticket-picture-container img{
   width: 700px;
   height: 440px;
   }
 
   .tickets-big-container{
-    padding-top: 90px;
-    
+  padding-top: 86px;
+
   }
 
   .amount{
-    margin-left: 55px;
+  margin-left: 55px;
   }
 
-.amount h4{
+  .amount h4{
   text-align: left;
   font-family: var(--Roboto-bold);
   margin-bottom: 30px;
-}
+  }
 
-.age-18,
-.age-65{
+  .age-18,
+  .age-65{
   margin-left: 0px;
   margin-top: 40px;
-}
+  }
 
-.counter-group{
+  .counter-group{
   margin: 10px 0px 30px 0px;
   width: 175px;
-}
+  }
 
-.counter-group button{
+  .counter-group button{
   font-size: 32px;
-}
+  }
 
-#ticket-total-span{
+  #ticket-total-span{
   margin-left: 0px;
-  margin-top: 0px;
+  padding-top: 4px;
+  margin-top:0px;
   font-size: 28px;
   letter-spacing: 1.65px;
   font-family: var(--Roboto-bold);
-}
+  }
 
-.tickets-section{
+  .tickets-section{
   max-height: 318px;
-}
+  }
 
-}
+  }
 
-@media (max-width: 768px){
+  @media (max-width: 768px){
   #title-768 {
-    padding-top: 40px;
+  padding-top: 40px;
+  }
+
+  .tickets-section{
+  height: 632px;
   }
 
   #ticket-picture-container {
-    width: 444px;
-    height: 340px;
-    padding: 0;
-    object-fit: cover;
-    }
-
-    .tickets-big-container{
-      padding-top: 65px;
-      
-    }
-
-    .amount{
-      margin-left: 57px;
-    }
-
-    .age-65{
-      margin-top: 43px;
-    }
-
-    .amount h4{
-      margin-bottom: 35px;
-    }
-
-  #ticket-picture-container img{
-    width: 444px;
-    height: 340px;
-    }
-    
-    #total-button{
-      margin-top: 43px;
-      padding: 10px 38px;
-      height: 50px;
-    }
-}
-
-@media (max-width: 420px){
-  .tickets-section{
-    display: none;
+  width: 444px;
+  height: 340px;
+  padding: 0;
+  object-fit: cover;
   }
-  #ticket-picture-container img{
-    
-    width: 444px;
-    height: 340px;
-    }
 
-}
+  .tickets-big-container{
+  padding-top: 65px;
+
+  }
+
+  .amount{
+  margin-left: 57px;
+  }
+
+  .age-65{
+  margin-top: 43px;
+  }
+
+  .amount h4{
+  margin-bottom: 35px;
+  }
+
+  #ticket-picture-container img{
+  width: 444px;
+  height: 340px;
+  }
+
+  #total-button{
+  margin-top: 50px;
+  padding: 10px 38px;
+  height: 50px;
+  }
+
+  .counter-group{
+  margin: 10px 0px 28px 0px;
+
+  }
+
+  #ticket-total-span{
+  padding-top: 80px;
+  }}
+
+  @media (max-width: 420px){
+  .tickets-section{
+  height: 760px;
+  }
+  .tickets-big-container{
+  padding-top: 63px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  }
+
+  #ticket-picture-container img,
+  #ticket-picture-container{
+  width: 380px;
+  height: 160px;
+  }
+
+  .amount{
+  display:flex;
+
+  flex-direction: column;
+  margin:0 auto;
+  }
+  .amount h4{
+  font-size: 16px;
+  padding-left: 59px;
+  padding-top: 35px;
+  margin-bottom: 10px;
+  }
+
+  .age-18,
+  .age-65{
+  margin-left: 0px;
+  margin-top: 0px;
+  font-size: 16px;
+  }
+
+  .counter-group{
+  margin: 10px 0px 17px 0px;
+
+  }
+  #ticket-total-span{
+  padding-top: 43px;
+  font-size: 16px;
+  padding-left: 45px;
+  }
+
+
+  }
 
 

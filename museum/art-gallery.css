@@ -3,9 +3,9 @@
 }
 
 .art-gallery h2 {
-  padding-top: 89px;
-  padding-bottom: 96px;
-  font-size: calc(28px + 52 * (100vw / 1920));
+  padding-top:89px;
+  padding-bottom:96px;
+  font-size: calc(50px + (52 - 50) * (100vw - 420px) / (1920 - 1024));
   font-family: var(--Forum);
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -42,8 +42,10 @@
   }
 
   .art-gallery h2 {
-    font-size: 50px;
-}
+    padding-top:56px;
+    padding-bottom:56px;
+
+  }
 
 .picture-container {
   height: 1288px;
@@ -65,8 +67,8 @@
 .art-gallery h2 {
     font-size: calc(28px + (40 - 28) * (100vw - 420px) / (768 - 420));
     line-height: calc(40px + (60 - 40) * (100vw - 420px) / (768 - 420));
-    padding-top: calc(45px + (52 - 45) * (100vw - 420px) / (768 - 420));
-    padding-bottom: calc(45px + (52 - 45) * (100vw - 420px) / (768 - 420));
+    padding-top: 38px;
+    padding-bottom: 44px;
 }
 
 .picture-container {
@@ -80,5 +82,8 @@
 }
 }
 @media (max-width: 420px){
-  
+  .art-gallery h2 {
+    padding-top: 42px;
+    padding-bottom: 42px;
+}
 }
