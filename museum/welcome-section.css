@@ -11,7 +11,7 @@
 }
 
 .slider-wrapper {
-  max-width: calc((1000 * 100) / 1440px);
+  width: calc((1000 * 100) / 1440px);
   height: calc((750 * 100) / 810px);
   position: relative;
 }
@@ -19,7 +19,7 @@
 .slide {
   position: relative;    
   line-height: 0;
-  max-width: calc((1000 * 100) / 1440px);
+  width: calc((1000 * 100) / 1440px);
   height: calc((750 * 100) / 810px);
   
 }
@@ -50,8 +50,7 @@
   justify-content: end;
   display: flex;
   align-items: center;
-  max-width: 100%;
-  width: 100%;
+  width: 600px;
   height: 120px;
   background-color: #000;
 }
@@ -81,8 +80,7 @@
 .dots img {
   margin-right: 21px;
   height: 16px;
-  max-width: 16px;
-  width: 100%;
+  width: 16px;
 }
 
 #first {
@@ -132,8 +130,7 @@ h1 {
 }
 
 .title button {
-  max-width: 360px;
-  width: 100%;
+  width: 360px;
   height: 75px;
   border-radius: 7px;
   background-color: var(--dark-red);
@@ -163,22 +160,19 @@ h1 {
 }
 
 .slider-wrapper {
-  max-width:968px;
-  width: 100%;
-  height:auto;
+  width:700px;
+  height:526px;
 }
 
 .slide{
-  max-width:700px;
-  width: 100%;
-  height:auto;
+  width:700px;
+  height:526px;
   
 }
 
 .slide img {
-  max-width:700px;
-  width: 100%;
-  height:auto;
+  width:700px;
+  height:526px;
 }
 
 
@@ -194,14 +188,13 @@ h1 {
 }
 
 #btn-prev{
-  margin-right:5.41%;
+  margin-right:78px;
 }
 
 .dots img{
   margin-right: 21px;
   height: 12px;
-  max-width: 12px;
-  width: 100%;
+  width: 12px;
 }
 
 .welcome-section .title{
@@ -233,8 +226,7 @@ h1{
 }
 
 .title button{
- max-width: 76%;
- width: 100%;
+ width: 76%;
  height: 60px;
  letter-spacing: 2px;
  word-spacing: 1px;
@@ -255,7 +247,7 @@ h1{
 
 .welcome-section .title{
  text-align: center;
- max-width: 100%;
+ width: 728px;
  height: calc((325px * 100) / 861);
 }
 
@@ -279,7 +271,7 @@ h1,
 .slider-wrapper {
   padding-top: 215px;
   padding-bottom: 0px;
-  max-width:100%;
+  width:728px;
   height:546px;
 }
 
@@ -289,13 +281,13 @@ h1,
 
 .slide,
 .slide img {
-  max-width:100%;
+  width:728px;
   height:546px;
 }
 
 .dots-wrapper{
   justify-content: center;
-  max-width:100%;
+  width:728px;
   height:100px;
 }
 
@@ -323,8 +315,7 @@ h1,
   
   .welcome-section .title{
    text-align: center;
-   max-width: 380px;
-   width: 100%;
+   width: 380px;
    height: 179px;
   }
   
@@ -347,8 +338,7 @@ h1,
   .slider-wrapper {
     padding-top: 179px;
     padding-bottom: 0px;
-    max-width:380px;
-    width: 100%;
+    width:380px;
     height:285px;
   }
 
@@ -362,14 +352,12 @@ h1,
 
   .slide,
   .slide img{
-    max-width:380px;
-    width: 100%;
+    width:380px;
     height:285px;
   }
   
   .dots-wrapper {
-    max-width: 380px;
-    width: 100%;
+    width: 380px;
     height: 80px;
   }
   
@@ -403,7 +391,6 @@ h1,
   .dots img {
     margin-right: 10px;
     height: 7px;
-    max-width: 7px;
-    width: 100%;
+    width: 7px;
   }
 }
