@@ -66,10 +66,6 @@ dots.forEach((item,indexDot)=>{
     })
 })
 
- getEvent = () => event.type.search('touch') !== -1 ? event.touches[0] : event;
- swipeStart = function() {
-    let evt = getEvent();
-
 next.addEventListener('click', nextSlide);
 prev.addEventListener('click', prevSlide)
   }
