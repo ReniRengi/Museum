@@ -6,15 +6,19 @@ window.addEventListener('load', function (event) {
 
 function loadSwiper(){
     const swiper = new Swiper (".swiper", {
-        direction: 'horizontal',
         loop: true,
+        slidesPerView: 3,
+        spaceBetween: 42,
 
-        pagination: '.swiper-pagination',
+        navigation:{
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
 
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
-
-        autoplay: 3000
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        }
     });
     
 }
