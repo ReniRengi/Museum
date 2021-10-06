@@ -1,5 +1,4 @@
 window.addEventListener("load", function (event) {
-    ///loadForm();
     toSlides();
   });
 
@@ -49,7 +48,6 @@ const prevSlide=()=>{
 const activeDot=n=>{
     for (dot of dots){
     dot.classList.remove('active');
-    console.log (n);
     }
     dots[n].classList.add('active');
     }
@@ -66,6 +64,39 @@ dots.forEach((item,indexDot)=>{
     })
 })
 
+let xDown = null;
+
+function getTouches(evt) {
+  return evt.touches;
+}                                                     
+                                                                         
+function handleTouchStart(evt) {
+    const firstTouch = getTouches(evt)[0];                                      
+    xDown = firstTouch.clientX;                                    
+};                                                
+                                                                         
+function handleTouchMove(evt) {
+    if ( ! xDown) {
+        return;
+    }
+
+    let xUp = evt.touches[0].clientX; 
+
+    let xMove = xDown - xUp;
+
+    if ( Math.abs( xMove ) > 2 ) {
+        if ( xMove > 0 ) {
+            nextSlide();
+        } else {
+            prevSlide();
+        }                       
+    }
+    xDown = null;                                       
+};
+
 next.addEventListener('click', nextSlide);
 prev.addEventListener('click', prevSlide)
+
+document.addEventListener('touchstart', handleTouchStart, false);        
+document.addEventListener('touchmove', handleTouchMove, false);
   }
