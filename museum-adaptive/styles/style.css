@@ -20,37 +20,37 @@
 
   @font-face {
   font-family: Roboto;
-  src: url("./assets/fonts/Roboto-Thin.ttf");
+  src: url("../assets/fonts/Roboto-Thin.ttf");
   }
 
   @font-face {
   font-family: Roboto-regular;
-  src: url("./assets/fonts/Roboto-Regular.ttf");
+  src: url("../assets/fonts/Roboto-Regular.ttf");
   }
 
   @font-face {
   font-family: Forum;
-  src: url("./assets/fonts/Forum-Regular.ttf");
+  src: url("../assets/fonts/Forum-Regular.ttf");
   }
 
   @font-face {
   font-family: Roboto-bold;
-  src: url("./assets/fonts/Roboto-Bold.ttf");
+  src: url("../assets/fonts/Roboto-Bold.ttf");
   }
 
   @font-face {
   font-family: Roboto-medium;
-  src: url("./assets/fonts/Roboto-Medium.ttf");
+  src: url("../assets/fonts/Roboto-Medium.ttf");
   }
 
   @font-face {
   font-family: Roboto-light;
-  src: url("./assets/fonts/Roboto-Light.ttf");
+  src: url("../assets/fonts/Roboto-Light.ttf");
   }
 
   @font-face {
   font-family: Roboto-thin;
-  src: url("./assets/fonts/Roboto-Thin.ttf");
+  src: url("../assets/fonts/Roboto-Thin.ttf");
   }
 
   :root {
@@ -83,7 +83,7 @@
 
   img{
     object-fit: cover;
-  } 
+  }
 
    .wrap-dark {
   margin: 0 auto;
@@ -186,7 +186,7 @@
   }
 
   @media (max-width:480px)
-  {  
+  {
   .wrap-dark,
   .wrap-white,
   .wrap-video {
