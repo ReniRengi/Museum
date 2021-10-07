@@ -375,24 +375,32 @@
       <a href="#modal-close-anchor" class="modal-close"></a>
       <div class="modal-body">
         <a href="#modal-close-anchor" class="close-btn"></a>
-        <form action="/my-handling-form-page" method="post" class="ticket-form">
+        <form action="/my-handling-form-page" method="post" onsubmit="return validateForm()" class="ticket-form" id="ticket-form">
           <div class="content-left">
             <div class="form-logo">
               <img src="assets/svg/logo-gold.svg" alt="">
             </div>
             <h4 class="form-logo-title">Booking ticket</h4>
             <p class="modal-tour">Tour to Louvre</p>
-            <input type="date" class="date" name="date" id="date" value="2021-08-19">
+            <input type="date" class="date" name="date" id="date" value="" required>
             </input>
-            <input type="time" class="time" name="time" id="time" value="16:30">
+            <select type="time" class="time" name="time" id="time" value="" required>
+              <option value="default" disabled selected>Time</option>
+              <option value="default" disabled>9.00</option>
+              <option value="default" disabled>10.30</option>
+              <option value="default" disabled>12.00</option>
+              <option value="default" disabled>13.30</option>
+              <option value="default" disabled>15.00</option>
+              <option value="default" disabled>16.30</option>
+              <option value="default" disabled>18.00</option>
+            </select>
+            <input type="text" class="name" name="name" id="name" placeholder="Name" required>
             </input>
-            <input type="text" class="name" name="name" id="name" placeholder="Name">
+            <input type="mail" class="mail" name="email" id="mail" placeholder="Mail" required>
             </input>
-            <input type="mail" class="mail" name="email" id="mail" placeholder="Mail">
+            <input type="tel" class="phone" name="phone" id="phone" placeholder="Phone" required>
             </input>
-            <input type="tel" class="phone" name="phone" id="phone" placeholder="Phone">
-            </input>
-            <select name="ticket-type" id="ticket-type" class="ticket-type">
+            <select name="ticket-type" id="ticket-type" class="ticket-type" required>
               <option value="default" disabled selected>Ticket Type</option>
             </select>
             <div class="count-tickets">
