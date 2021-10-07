@@ -22,10 +22,15 @@ const time=document.getElementById("time");
 const phone=document.getElementById("phone");
 const ticketType=document.getElementById("ticket-type");
 
-form.addEventListener('submit', function (e) {
+let regTel=/^(\+)?((\d{2,3}) ?\d|\d)(([ -]?\d)|( ?(\d{2,3}) ?)){5,12}\d$/ //проверка номера телефона
+let regEm=/^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$/;
+let regNam=/^(?=.*[a-z])(?=.*[A-Z])(?=.*[А-Я])(?=.*[а-я])(?=.*[A-Z])(?=.*[а-я])(?=.*\s)/;
+
+/*form.addEventListener('submit', function (e) {
   e.preventDefault();
 
-});
+});*/
+
 
 const isRequired = value => value === '' ? false : true; // проверка значения на пустоту;
 
@@ -33,6 +38,7 @@ const isBetween = (length, min, max) => length < min || length > max ? false : t
 
 const isNameValid = (nameP) => {
  let re=new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[А-Я])(?=.*[а-я])(?=.*[A-Z])(?=.*[а-я])(?=.*\s)")
+ return re.test(nameP);
 }
 
 

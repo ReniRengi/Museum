@@ -1,15 +1,13 @@
-const wrap = document.querySelector('.swiper-video');
-const videoPlayer = document.getElementById('video-player');
-
+const videoPlayer = document.querySelector('.video');
 const progressBar = document.getElementById('progress-bar');
-/*const currTime = document.getElementById("curr-time");
-    const durationTime = document.getElementById("duration");*/
+const currTime = document.getElementById('curr-time');
+const durationTime = document.getElementById('duration');
 
 const bigPlayButton = document.getElementById('big_button');
 const actionButton = document.getElementById('action');
 const muteButton = document.getElementById('mute');
-const volumeScale = document.querySelector('.volume');
-/*const speedSelect = document.querySelector(".speed");*/
+const volumeScale = document.getElementById('volume');
+const speedSelect = document.getElementById('speed');
 const fullscreenButton = document.getElementById('fullscreen');
 let countClick = [];
 
@@ -37,7 +35,7 @@ function videoAct() {
   }
 }
 
-/*function videoTime(time) {
+function videoTime(time) {
         time = Math.floor(time);
         let minutes = Math.floor(time / 60);
         let seconds = Math.floor(time - minutes * 60);
@@ -50,12 +48,12 @@ function videoAct() {
             secondsVal = '0' + seconds;
         }
         return minutesVal + ":" + secondsVal;
-    }*/
+    }
 
 function videoProgress() {
   progress = videoPlayer.currentTime / videoPlayer.duration;
   progressBar.value = progress * 100;
-  /*currTime.innerHTML = videoTime(videoPlayer.currentTime);*/
+  currTime.innerHTML = videoTime(videoPlayer.currentTime);
 }
 
 function videoChangeTime(e) {
@@ -99,7 +97,7 @@ function videoMute() {
   }
 }
 
-/*function videoChangeSpeed() {
+function videoChangeSpeed() {
         let speed = speedSelect.value / 100;
         videoPlayer.playbackRate = speed;
     }
@@ -119,7 +117,7 @@ function videoMute() {
         let nb = Number(speedSelect.value);
         speedSelect.value = nb - 25;
         videoChangeSpeed();
-    }*/
+    }
 
 function NextFrame() {
   videoPlayer.currentTime += 1 / 29.97;
@@ -209,7 +207,7 @@ function loadSwiper() {
   const swiper = new Swiper('.swiper', {
     loop: true,
     slidesPerView: 3,
-    /*spaceBetween: 42,*/
+    spaceBetween: 42,
 
     navigation: {
       nextEl: '.swiper-button-next',

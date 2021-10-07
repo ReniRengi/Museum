@@ -107,7 +107,7 @@ function initSlider() {
   let slideIndex = 0;
   let touchDownPos = null;
 
-  const updateCounter = (currentIndex) => counter.innerHTML = `0${currentIndex + 1} | 05`;
+  const updateCounter = (currentIndex) => counter.innerHTML = `0${currentIndex + 1}`;
 
   const setActiveClass = (elements, activeIndex) => {
     elements.forEach((dot) => dot.classList.remove('active'));

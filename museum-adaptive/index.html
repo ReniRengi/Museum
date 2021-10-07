@@ -200,20 +200,32 @@
           </div>
           <!-- Player -->
             <div class="video">
-            <video  id="video-player" src="/assets/video/Petits contes de Printemps - La ruse du Renard 🦊.mp4"></video>
-            <!--<video src="https://www.youtube.com/embed/Vi5D6FKhRmo"></video>
-            <video src="https://www.youtube.com/embed/NOhDysLnTvY"></video>
-            <video src="https://www.youtube.com/embed/zp1BXPX8jcU"></video>
-            <video src="https://www.youtube.com/embed/2OR0OCr6uRE"></video>!-->
-            <button class="big_button_on" id="big_button" type="button"><img src="./assets/svg/Button_big.svg"></button>
+            <video  id="video-player" src="/assets/video/video0.mp4" poster="/assets/video/poster0.jpg"></video>
+            <!--<video src="/assets/video/video1.mp4" poster="/assets/video/poster1.jpg"></video>
+            <video src="/assets/video/video2.mp4" poster="/assets/video/poster2.jpg"></video>
+            <video src="/assets/video/video3.mp4" poster="/assets/video/poster3.jpg"></video>
+            <video src="/assets/video/video4.mp4" poster="/assets/video/poster4.jpg"></video>!-->
+            <button id="big_button" class="big_button_on" type="button"></button>
           </div>
-          <div class="controls" id="controls">
-            <button id="mute-left"   class="mute_false  hidden-1920 hidden-1024" type="button"></button>
-            <button  class="action_play" id="action" type="button"><img src="./assets/svg/Play.svg"></button>
-            <input type="range" value="40" min="0" max="100" step="1" class="progress-bar" id="progress-bar">
-            <button id="mute-right" class="mute_false  hidden-420" type="button"><img src="./assets/svg/Volume.svg"></button>
-            <input type="range" value="40" min="0" max="100" step="1" class="volume" id="volume">
-            <button id="fullscreen" class="fullscreen_false"></button>
+          <div id="controls" class="controls">
+            <!--<button id="mute-left" class="mute_false  hidden-1920 hidden-1024" type="button"></button>-->
+            <button  id="action" class="action_play" type="button"></button>
+            <div id="curr-time" class="curr-time">00:00</div>
+            <input id="progress-bar" type="range" value="40" min="0" max="100" step="1" class="progress-bar">
+            <div class="duration" id="duration">00:00</div>
+            <button id="mute" class="mute_false  hidden-420" type="button"></button>
+            <input id="volume" type="range" value="0" min="0" max="100" step="1" class="volume">
+            <select id="speed" title="speed" class="speed">
+              <option value="25">x0.25</option>
+              <option value="50">x0.50</option>
+              <option value="75">x0.75</option>
+              <option value="100" selected>x1.00</option>
+              <option value="125">x1.25</option>
+              <option value="150">x1.50</option>
+              <option value="175">x1.75</option>
+              <option value="200">x2.00</option>
+           </select>
+            <button id="fullscreen" class="fullscreen_false"><img src="./assets/svg/Fullskrin.svg"></button>
           </div>
 
         <!-- Gallery-->

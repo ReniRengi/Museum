@@ -446,12 +446,13 @@ padding-left: 220px;
 .book-btn {
   display: block;
   margin-left: auto;
+  margin-top: 240px;
   font-size: 22px;
   font-family: var(--Roboto-regular);
   width: 220px;
   height: 45px;
   border: none;
-  color: var(--dark-section-text-color);
+  color: white;
   background: #710707;
   opacity: 0.9;
   cursor: pointer;
