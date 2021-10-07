@@ -1,8 +1,6 @@
 export function initForm() {
-  window.addEventListener('load', function (event) {
-    ///loadForm();
-    createRipple();
-  });
+  window.addEventListener('load', () => loadForm());
+}
 
 function loadForm() {
   let modal = document.getElementById('byTicketModal');
@@ -11,10 +9,14 @@ function loadForm() {
   const hideModal = () => modal.classList.add('hidden');
   const showModal = () => modal.classList.remove('hidden');
 
-  btn.onclick = () => showModal();
-  span.onclick = () => hideModal();
+  if (btn && span) {
+    btn.onclick = () => showModal();
+    span.onclick = () => hideModal();
+  }
+  // createRipple();
 }
 
+/*
 function createRipple(event) {
   const button = event.currentTarget;
   const circle = document.createElement('span');
@@ -58,7 +60,6 @@ const isRequired = value => value === '' ? false : true; // проверка з�
 const isBetween = (length, min, max) => length < min || length > max ? false : true;//проверка на длинуж
 
 const isNameValid = (nameP) => {
-  
+
 }
-
-
+ */
