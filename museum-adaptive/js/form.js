@@ -8,11 +8,35 @@ function loadForm() {
   let span = document.getElementsByClassName('close')[0];
   const hideModal = () => modal.classList.add('hidden');
   const showModal = () => modal.classList.remove('hidden');
-
-  if (btn && span) {
+if (btn && span) {
     btn.onclick = () => showModal();
     span.onclick = () => hideModal();
   }
+
+
+const form=document.getElementById("ticket-form");
+const nameP=document.getElementById("name");
+const email=document.getElementById("email");
+const date=document.getElementById("date");
+const time=document.getElementById("time");
+const phone=document.getElementById("phone");
+const ticketType=document.getElementById("ticket-type");
+
+form.addEventListener('submit', function (e) {
+  e.preventDefault();
+
+});
+
+const isRequired = value => value === '' ? false : true; // проверка значения на пустоту;
+
+const isBetween = (length, min, max) => length < min || length > max ? false : true;//проверка на длину;
+
+const isNameValid = (nameP) => {
+ let re=new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[А-Я])(?=.*[а-я])(?=.*[A-Z])(?=.*[а-я])(?=.*\s)")
+}
+
+
+  
   // createRipple();
 }
 
@@ -42,13 +66,7 @@ for (const button of buttons) {
   button.addEventListener('click', createRipple);
 }
 
-const form=document.getElementById("ticket-form");
-const nameP=document.getElementById("name");
-const email=document.getElementById("email");
-const date=document.getElementById("date");
-const time=document.getElementById("time");
-const phone=document.getElementById("phone");
-const ticketType=document.getElementById("ticket-type");
+
 
 form.addEventListener('submit', function (e) {
   e.preventDefault();

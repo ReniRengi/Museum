@@ -443,8 +443,6 @@ padding-left: 220px;
   font-family: var(--Roboto-medium);
 }
 
-
-
 .book-btn {
   display: block;
   margin-left: auto;
@@ -551,21 +549,6 @@ padding-left: 220px;
   background-color: black;
 }
 
-.card-nether button {
-  position: relative;
-  width: 220px;
-  height: 45px;
-  margin: 267px 70px 117px 50px;
-  border: 0;
-  background-color: #710707;
-  outline: 0;
-  border: 0;
-  border: 5%;
-  color: white;
-  overflow: hidden;
-  transition: background 400ms;
-  cursor: pointer;
-}
 
 span.ripple{
   position:absolute;
