@@ -199,21 +199,26 @@
             <p class= "hidden-1024 hidden-768 hidden-420">Enter and visit one of the most famous museums in the world and enjoy masterpieces such as Mona Lisa or Hammurabi's Code.
           </div>
           <!-- Player -->
-          <div class="video">
-            <video src="./assets/video/video.mp4" poster="./assets/video/poster.jpg"></video>
-            <button type="button"><img src="./assets/svg/Button_big.svg"></button>
+            <div class="video">
+            <video  id="video-player" src="/assets/video/Petits contes de Printemps - La ruse du Renard 🦊.mp4"></video>
+            <!--<video src="https://www.youtube.com/embed/Vi5D6FKhRmo"></video>
+            <video src="https://www.youtube.com/embed/NOhDysLnTvY"></video>
+            <video src="https://www.youtube.com/embed/zp1BXPX8jcU"></video>
+            <video src="https://www.youtube.com/embed/2OR0OCr6uRE"></video>!-->
+            <button class="big_button_on" id="big_button" type="button"><img src="./assets/svg/Button_big.svg"></button>
           </div>
-          <div class="controls">
-            <button class="volume  hidden-1920 hidden-1024" type="button"></button>
-            <button class="play" type="button"><img src="./assets/svg/Play.svg"></button>
-            <input type="range" value="40" min="0" max="100" step="1" class="progress-big">
-            <button class="volume2  hidden-420" type="button"><img src="./assets/svg/Volume.svg"></button>
-            <input type="range" value="40" min="0" max="100" step="1" class="progress">
-            <button class="fullscreen" type="button"><img src="./assets/svg/Fullskrin.svg"></button>
+          <div class="controls" id="controls">
+            <button id="mute-left"   class="mute_false  hidden-1920 hidden-1024" type="button"></button>
+            <button  class="action_play" id="action" type="button"><img src="./assets/svg/Play.svg"></button>
+            <input type="range" value="40" min="0" max="100" step="1" class="progress-bar" id="progress-bar">
+            <button id="mute-right" class="mute_false  hidden-420" type="button"><img src="./assets/svg/Volume.svg"></button>
+            <input type="range" value="40" min="0" max="100" step="1" class="volume" id="volume">
+            <button id="fullscreen" class="fullscreen_false"></button>
           </div>
-        </div>
+        
         <!-- Gallery-->
         <div class="swiper-container">
+           
           <div class="swiper">
           <div class="swiper-wrapper">
            <div class="swiper-slide"><iframe loading="lazy" src="https://www.youtube.com/embed/aWmJ5DgyWPI" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
@@ -222,7 +227,6 @@
            <div class="swiper-slide"><iframe loading="lazy" src="https://www.youtube.com/embed/zp1BXPX8jcU" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
            <div class="swiper-slide"><iframe loading="lazy" src="https://www.youtube.com/embed/2OR0OCr6uRE" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
           </div>
-          
            </div>
            <div class="button-bottom">
             <div class="swiper-button-prev">
@@ -235,7 +239,16 @@
           </div>
           </div>
          </div>
-        
+        </section>
+         <!-- Art-gallery -->
+      <section class="wrap-dark">
+        <div class="container section art-gallery">
+          <h2>Art gallery</h2>
+          <div class="picture-container">
+            <div class="picture-inner-container">
+            </div>
+          </div>
+        </div>
       </section>
       <!-- Ticket -->
       <section class="wrap-white">
@@ -362,7 +375,7 @@
       <a href="#modal-close-anchor" class="modal-close"></a>
       <div class="modal-body">
         <a href="#modal-close-anchor" class="close-btn"></a>
-        <form action=# class="ticket-form">
+        <form action="/my-handling-form-page" method="post" class="ticket-form">
           <div class="content-left">
             <div class="form-logo">
               <img src="assets/svg/logo-gold.svg" alt="">
@@ -438,9 +451,42 @@
             <div class="content-right-middle-total">
               <p class="content-right-middle-total-p">Total:<span class="total-price">60 </span>€</p>
             </div>
-            <div class="credit-card"></div>
-            <div class="credit-card-double hidden-1920 hidden-1024 hidden-768"></div>
-            <button type="submit" class="book-btn">Book</button>
+            <div class="content-right-bottom">
+              <div class="cards">
+                 <div class="card-upper">
+                    <img src="assets/img/Laibls.jpg" alt=" ">
+                    <div class="cart-left">
+                       <div class="card-input">
+                          <p class="card-name">Card name<br>
+                             <input type="tel" name="card" value="" size="10">  </p>
+                       </div>
+                       <div class="card-input-month">
+                          <p class="card-name">Expiration date<br>
+                          <input type="number" name="card-month" value="03" min="01" max="12"></p>
+                       </div>
+                    <div class="card-input-years">
+                       <input type="number" name="card-years" value="2024" min="2021" max="2024">
+                    </div>
+                   </div> 
+                   <div class="cardholder-name">
+                       <p class="card-name">Cardholder name<br>
+                       <input type="tel" name="card" value="" size="10"></p>
+                    </div>
+                 </div>
+                 <div class="card-nether">
+                    <div class="belt"></div>
+                    <div class="CVV-card">
+                       <p class="card-name">CVC/CVV<br>
+                          <input type="tel" name="card" value="" size="10"><br>
+                          <span>The last<br>3 or 4 digits<br>on back<br>of the card</span></p>
+                    </div>
+                    <button type="submit">Book</button>
+                 </div>
+                 
+                </div>
+              </div>
+            </div>
+           
           </div>
         </form>
       </div>

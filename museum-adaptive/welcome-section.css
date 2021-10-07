@@ -43,7 +43,7 @@
 }
 
 
-.slide img::after{
+.slide::after{
   display: block;
   content: "";
   position:absolute;

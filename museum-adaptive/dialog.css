@@ -409,6 +409,13 @@
   background-color: var(--bg-dark);
 }
 
+.content-right-middle-price {
+  display: inline-block;
+  font-size: 22px;
+font-family:'Roboto-regular', sans-serif;
+padding-left: 220px;
+}
+
 .content-right-middle-total-p {
   margin-top: 21px;
   margin-bottom: 10px;
@@ -428,14 +435,7 @@
   font-family: var(--Roboto-medium);
 }
 
-.credit-card {
-  margin-bottom: 26px;
-  width: 470px;
-  height: 241px;
-  background-image: url('./assets/img/form/02-10-2021\ 17-19-54.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-}
+
 
 .book-btn {
   display: block;
@@ -451,102 +451,107 @@
   cursor: pointer;
 }
 
-.content-right-middle-price {
-  display: none;
+
+.content-right-bottom {
+  padding: 0 20px 10px 20px;
 }
 
-
-/*.content-right-top-card{
-  margin-bottom: 26px;
-  width: 470px;
-  height: 241px;
-  background-image: url('./assets/img/credit-card.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
+.card-upper {
+  position: absolute;
+  width: 360px;
+  height: 211px;
+  background-color: #BCBCBC;
+  border-radius: 3%;
+  z-index: 100;
 }
 
-
-/*.content-right-top-card {
-    background-image: url('../assets/svg/card1.svg'), url('../assets/svg/card2.svg');
-    background-repeat: no-repeat, no-repeat;
-    background-position: top 0px left 0px, top 30px left 110px;
-    height: 241px;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 27px;
+.card-input input {
+  width: 215px;
+  height: 35px;
 }
 
-.content-right-top-card-left {
-    width: 360px;
-    padding-top: 34px;
-    padding-left: 19px;
+.card-name {
+  font-size: 12px;
+  font-family: 'Roboto-regular', sans-serif;
 }
 
-.content-right-top-card-left-field {
-    width: 215px;
-    margin-bottom: 28px;
-    display: flex;
-    justify-content: space-between;
+.card-input-month {
+  display: inline-block;
 }
 
-.content-right-top-card-left-field:last-child {
-    width: 320px;
-    height: 30px;
+.card-input-month input {
+  width: 100px;
+  height: 35px;
 }
 
-.content-right-top-card-left-field input {
-    width: 100%;
-    height: 30px;
+.card-input-years {
+  display: inline-block;
 }
 
-.content-right-top-card-left-field select {
-    width: 100px;
-    height: 35px;
-    padding: 5px 10px;
-    font-size: 12px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
+.card-input-years input {
+  width: 100px;
+  height: 35px;
 }
 
-.content-right-top-card-left-field{
-    position: relative;
+.cardholder-name input{
+  width: 320px;
+  height: 35px;
 }
 
-.content-right-top-card-left-field::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 34px;
-    width: 29px;
-    background-image: url('../assets/svg/form/form-arrows.svg');
-}
-
-.content-left-top-card-name {
-    width: 100%;
-    margin-top: 135px;
-    margin-left: 10px;
-}
-
-.content-left-top-card-name input {
-    width: 70px;
-    height: 30px;
-}
-
-.content-left-top-card-right {
-    width: 110px;
-}*/
-
-.book-btn {
+.card-left {
   display: block;
-  margin-left: auto;
+  float: left;
+}
+
+.card-upper img {
+  display: block;
+  float: right;
+}
+
+.card-nether {
+  position: absolute;
+  margin-left: 115px;
+  margin-top: 20px;
+  width: 360px;
+  height: 211px;
+  background-color: #A4A4A3;
+  border-radius: 3%;
+  z-index: 1;
+}
+
+.CVV-card {
+  position: absolute;
+  right: 30px;
+  bottom: 10px;
+}
+
+.CVV-card input {
+  width: 75px;
+  height: 35px;
+}
+
+.card-name span {
+  font-size: 10px;
+}
+
+.belt {
+  position: absolute;
+  top: 30px;
+  height: 45px;
+  width: 360px;
+  border: 1px solid black;
+  background-color: black;
+}
+
+.card-nether button {
+  position: relative;
   width: 220px;
   height: 45px;
-  background: #710707;
-  opacity: 0.9;
-  cursor: pointer;
+  margin: 267px 70px 117px 50px;
+  border: 0;
+  background-color: #710707; 
   outline: 0;
+  border: 0;
   border: 5%;
   color: white;
   overflow: hidden;
@@ -554,10 +559,10 @@
   cursor: pointer;
 }
 
-span.ripple {
-  position: absolute;
-  border-radius: 50%;
-  transform: scale(0);
+span.ripple{
+  position:absolute;
+  border-radius:50%;
+  transform:scale(0);
   animation: ripple 600ms linear;
   background-color: white;
 }
@@ -569,20 +574,8 @@ span.ripple {
   }
 }
 
-.modal-close-btn {
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  width: 25px;
-  height: 25px;
-  display: block;
-  border: none;
-  background: var(--dark-section-text-color) url('./assets/svg/Close.svg') no-repeat center;
-  cursor: pointer;
-}
-
-.modal-close-btn:hover,
-.modal-close-btn:focus {
+.modal .close:hover,
+.modal .close:focus {
   -webkit-filter: invert(65%) sepia(15%) saturate(806%) hue-rotate(356deg) brightness(81%) contrast(80%);
   cursor: pointer;
 }
@@ -718,6 +711,8 @@ span.ripple {
     background-position: center;
   }
   .content-right-middle-price {
-    display: none;
+    display: inline-block;
+    font-size: 22px;
+  font-family:'Roboto-regular', sans-serif;
   }
 }
