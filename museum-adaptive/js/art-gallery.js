@@ -18,8 +18,6 @@ const imagesData = [
   { src: './assets/img/gallery/galery15.jpg', className: 'square' }
 ];
 
-window.addEventListener('load', loadImages);
-
 function shuffleArray(array) {
   for (let i = array.length - 1; i > 0; i--) {
     let j = Math.floor(Math.random() * (i + 1));
@@ -43,6 +41,6 @@ function loadImages() {
   pictureArray.forEach((imgElement) => galleryContainer.append(imgElement));
 }
 
-
-
-
+export function initGallery() {
+  window.addEventListener('load', loadImages);
+}

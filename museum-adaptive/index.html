@@ -8,7 +8,7 @@
   rel="stylesheet"
   href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
 />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/style.css" />
     <link rel="icon" href="./assets/svg/Frame.svg">
     <base target="_blank">
   </head>
@@ -215,10 +215,10 @@
             <input type="range" value="40" min="0" max="100" step="1" class="volume" id="volume">
             <button id="fullscreen" class="fullscreen_false"></button>
           </div>
-        
+
         <!-- Gallery-->
         <div class="swiper-container">
-           
+
           <div class="swiper">
           <div class="swiper-wrapper">
            <div class="swiper-slide"><iframe loading="lazy" src="https://www.youtube.com/embed/aWmJ5DgyWPI" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
@@ -232,7 +232,7 @@
             <div class="swiper-button-prev">
            <div></div>
           </div>
-          <div class="swiper-pagination">         
+          <div class="swiper-pagination">
           </div>
           <div class="swiper-button-next">
             <div></div>
@@ -383,7 +383,7 @@
             <h4 class="form-logo-title">Booking ticket</h4>
             <p class="modal-tour">Tour to Louvre</p>
             <input type="date" class="date" name="date" id="date" value="2021-08-19">
-            </input>            
+            </input>
             <input type="time" class="time" name="time" id="time" value="16:30">
             </input>
             <input type="text" class="name" name="name" id="name" placeholder="Name">
@@ -467,7 +467,7 @@
                     <div class="card-input-years">
                        <input type="number" name="card-years" value="2024" min="2021" max="2024">
                     </div>
-                   </div> 
+                   </div>
                    <div class="cardholder-name">
                        <p class="card-name">Cardholder name<br>
                        <input type="tel" name="card" value="" size="10"></p>
@@ -482,20 +482,16 @@
                     </div>
                     <button type="submit">Book</button>
                  </div>
-                 
+
                 </div>
               </div>
             </div>
-           
+
           </div>
         </form>
       </div>
     </div>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <script src="explore.js"></script>
-    <script src="art-gallery.js"></script>
-    <script src="form.js"></script>
-    <script src="video.js"></script>
-    <script src="welcome.js"></script>
+    <script type="module" src="js/index.js"></script>
   </body>
 </html>
