@@ -199,6 +199,7 @@
             <p class= "hidden-1024 hidden-768 hidden-420">Enter and visit one of the most famous museums in the world and enjoy masterpieces such as Mona Lisa or Hammurabi's Code.
           </div>
           <!-- Player -->
+            <div class="player-wrap"></div>
             <div class="video">
             <video  id="video-player" src="/assets/video/video0.mp4" poster="/assets/video/poster0.jpg"></video>
             <!--<video src="/assets/video/video1.mp4" poster="/assets/video/poster1.jpg"></video>
@@ -206,7 +207,7 @@
             <video src="/assets/video/video3.mp4" poster="/assets/video/poster3.jpg"></video>
             <video src="/assets/video/video4.mp4" poster="/assets/video/poster4.jpg"></video>!-->
             <button id="big_button" class="big_button_on" type="button"></button>
-          </div>
+            </div>
           <div id="controls" class="controls">
             <!--<button id="mute-left" class="mute_false  hidden-1920 hidden-1024" type="button"></button>-->
             <button  id="action" class="action_play" type="button"></button>
@@ -227,7 +228,7 @@
            </select>
             <button id="fullscreen" class="fullscreen_false"><img src="./assets/svg/Fullskrin.svg"></button>
           </div>
-
+          </div>
         <!-- Gallery-->
         <div class="swiper-container">
 
@@ -270,22 +271,24 @@
             <h2 class="title-underline" id="title-768">Buy tickets</h2>
             <div class="tickets-big-container">
               <div id="ticket-picture-container"><img src="./assets/img/image.jpg" alt="picture" id="ticket-picture"></div>
+              <form>
               <div class="radio-ticket hidden-1024 hidden-768 hidden-420">
                 <h4 class="tickets-choice-title">Ticket Type</h4>
-                <label class="radio-container">Permanent exhibition
-                <input type="radio" checked="checked" name="radio">
+                <label  class="radio-container">Permanent exhibition
+                <input id="r1" type="radio" checked="checked" name="radio" value="20">
                 <span class="checkmark"></span>
                 </label>
                 <label class="radio-container">Temporary exhibition
-                <input type="radio" name="radio">
+                <input id="r2" type="radio" name="radio" value="25">
                 <span class="checkmark"></span>
                 </label>
                 <label class="radio-container">Combined Admission
-                <input type="radio" name="radio">
+                <input id="r3" type="radio" name="radio" value="40">
                 <span class="checkmark"></span>
                 </label>
-              </div>
-              <div class="amount">
+                </div>
+                </form>
+               <div class="amount">
                 <h4>Amount</h4>
                 <form id="ticket-form">
                   <div id="ticket-age-buttons">

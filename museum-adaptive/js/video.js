@@ -1,4 +1,4 @@
-const videoPlayer = document.querySelector('.video');
+const videoPlayer = document.querySelector('.player-wrap');
 const progressBar = document.getElementById('progress-bar');
 const currTime = document.getElementById('curr-time');
 const durationTime = document.getElementById('duration');
