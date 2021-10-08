@@ -3,6 +3,17 @@ export function initForm() {
 }
 
 function loadForm() {
+  const form = document.getElementById('ticket-form');
+
+  form.addEventListener('click', function () {
+  console.log (price.innerHTML);
+  console.log (window.ticketValue1);
+  console.log (window.ticketValue2);
+  console.log (window.ticketItem);
+  console.log (window.ticketPrime);})
+
+  
+}
   /*let modal = document.getElementById('byTicketModal');
   let btn = document.getElementById('total-button');
   let span = document.getElementsByClassName('close')[0];
@@ -44,7 +55,7 @@ const isNameValid = (nameP) => {
 
   
   // createRipple();
-}
+
 
 /*
 function createRipple(event) {

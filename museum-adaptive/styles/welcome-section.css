@@ -19,6 +19,7 @@
   display:none;
   max-width: calc((1000 * 100) / 1440px);
   height: calc((750 * 100) / 810px);
+  
 }
 
 .slide.active {

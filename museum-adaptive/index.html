@@ -8,6 +8,8 @@
   rel="stylesheet"
   href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
 />
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.5.0/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v2.5.0/mapbox-gl.css' rel='stylesheet' />
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="icon" href="./assets/svg/Frame.svg">
     <base target="_blank">
@@ -331,9 +333,31 @@
                   <p  #contacts-link>mail: info@louvre.fr</p>
                 </a>
               </div>
-              <div>
-                <img src="./assets/img/cart.png " alt="map">
-              </div>
+              <div id='map' style='width: 960px; height: 620px;'></div>
+              <script>
+                mapboxgl.accessToken = 'pk.eyJ1IjoidG9taWVrIiwiYSI6ImNrdWlmbXNlNTBzNzMycG15aHkyY3NuenEifQ.zFmpHvAxJckD8u0qRkAM5g';
+                const map = new mapboxgl.Map({
+                container: 'map', // container ID
+                style: 'mapbox://styles/tomiek/ckuir2kp018mz17q12z311zcb', // style URL
+                center: [2.3364, 48.86091], // starting position [lng, lat]
+                zoom: 15 // starting zoom
+                });
+                const marker1 = new mapboxgl.Marker()
+                  .setLngLat([2.3364, 48.86091])
+                  .addTo(map);
+                const marker2 = new mapboxgl.Marker()
+                  .setLngLat([2.3333, 48.8602])
+                  .addTo(map);
+                const marker3 = new mapboxgl.Marker()
+                  .setLngLat([2.3397, 48.8607])
+                  .addTo(map);
+                const marker4 = new mapboxgl.Marker()
+                  .setLngLat([2.3330, 48.8619])
+                  .addTo(map);
+                const marker5 = new mapboxgl.Marker()
+                  .setLngLat([2.3365, 48.8625])
+                  .addTo(map);
+                </script>
             </div>
           </div>
         </div>
@@ -424,7 +448,7 @@
                   <p class="basic-p">Basic 18+ (20 €)</p>
                   <div class="count-tickets-basic">
                     <button type="button" onclick="this.nextElementSibling.stepDown()" class="count-tickets-btn">&ndash;</button>
-                    <input type="number" min="0" max="20" value="2" readonly class="count-tickets-number">
+                    <input type="number" min="0" max="20" value="0" readonly class="count-tickets-number">
                     <button type="button" onclick="this.previousElementSibling.stepUp()" class="count-tickets-btn">+</button>
                   </div>
                 </div>
@@ -432,7 +456,7 @@
                   <p class="basic-p">Senior 65+ (10 €)</p>
                   <div class="count-tickets-basic">
                     <button type="button" onclick="this.nextElementSibling.stepDown()" class="count-tickets-btn">&ndash;</button>
-                    <input type="number" min="0" max="20" value="2" readonly class="count-tickets-number">
+                    <input type="number" min="0" max="20" value="0" readonly class="count-tickets-number">
                     <button type="button" onclick="this.previousElementSibling.stepUp()" class="count-tickets-btn">+</button>
                   </div>
                 </div>
@@ -459,19 +483,19 @@
             <div class="content-right-middle-count">
                 <div class="content-right-middle-count-basic">
                   <p class="content-right-middle-count-p">
-                    <span class="content-right-middle-count-icon">2</span>Basic (20 €)
+                    <span class="content-right-middle-count-icon">0</span>Basic (20 €)
                   </p>
-                  <p class="content-right-middle-price">40 €</p>
+                  <p class="content-right-middle-price">0 €</p>
                 </div>
                 <div class="content-right-middle-count-senior">
                   <p class="content-right-middle-count-p">
-                    <span class="content-right-middle-count-icon">2</span>Senior (10 €)
+                    <span class="content-right-middle-count-icon">0</span>Senior (10 €)
                   </p>
-                  <p class="content-right-middle-price">20 €</p>
+                  <p class="content-right-middle-price">0 €</p>
                 </div>
             </div>
             <div class="content-right-middle-total">
-              <p class="content-right-middle-total-p">Total:<span class="total-price">60 </span>€</p>
+              <p class="content-right-middle-total-p">Total:<span class="total-price">0 </span>€</p>
             </div>
             <div class="content-right-bottom">
               <div class="cards">

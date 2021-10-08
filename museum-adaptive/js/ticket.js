@@ -13,7 +13,9 @@ function addTicket() {
     const total = item * value1 + item * value2 / 2;
 
     price.innerHTML = total;
-
+    window.ticketValue1=value1;
+    window.ticketValue2=value2;
+    window.ticketItem=item;
     window.ticketPrime=total;
   });
 }

@@ -5,7 +5,7 @@ import { initGallery } from './art-gallery.js';
 import { initForm } from './form.js';
 import { initExplore } from './explore.js';
 import { initTicket } from './ticket.js';
-///import { initMap } from './contact.js';
+
 
 
 initWelcome();
@@ -15,4 +15,3 @@ initGallery();
 initExplore();
 initForm();
 initTicket();
-//addMap();
