@@ -271,7 +271,7 @@
             <h2 class="title-underline" id="title-768">Buy tickets</h2>
             <div class="tickets-big-container">
               <div id="ticket-picture-container"><img src="./assets/img/image.jpg" alt="picture" id="ticket-picture"></div>
-              <form>
+              <form id="booking-form">
               <div class="radio-ticket hidden-1024 hidden-768 hidden-420">
                 <h4 class="tickets-choice-title">Ticket Type</h4>
                 <label  class="radio-container">Permanent exhibition
@@ -286,33 +286,32 @@
                 <input id="r3" type="radio" name="radio" value="40">
                 <span class="checkmark"></span>
                 </label>
-                </div>
-                </form>
-               <div class="amount">
+              </div>
+              <div class="amount">
                 <h4>Amount</h4>
-                <form id="ticket-form">
+                <div id="ticket-form">
                   <div id="ticket-age-buttons">
                     <span class="age-18">Basic 18+</span>
                     <div class="counter-group">
                       <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
-                      <input type="number" min="0" max="100" value="1" readonly class="number">
+                      <input id="num1" type="number" min="0" max="20" value="0" readonly class="number">
                       <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
                     </div>
                     <span class="age-65">Senior 65+</span>
                     <div class="counter-group">
                       <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
-                      <input type="number" min="0" max="100" value="1" readonly class="number">
+                      <input id="num2" type="number" min="0" max="20" value="0" readonly class="number">
                       <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
                     </div>
                   </div>
-                  <span id="ticket-total-span">Total &#8364; 220</span>
-                </form>
+                  <span id="ticket-total-span">Total € <span id="price">0</span></span>
+                </div>
+              </form>
                 <a href="#modal" id="total-button">Buy Now</a>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
       <!-- Contacts -->
       <section>
         <div class=" section contacts-section" id="contacts">

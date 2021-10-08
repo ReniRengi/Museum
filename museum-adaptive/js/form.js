@@ -3,7 +3,7 @@ export function initForm() {
 }
 
 function loadForm() {
-  let modal = document.getElementById('byTicketModal');
+  /*let modal = document.getElementById('byTicketModal');
   let btn = document.getElementById('total-button');
   let span = document.getElementsByClassName('close')[0];
   const hideModal = () => modal.classList.add('hidden');
@@ -29,7 +29,7 @@ let regNam=/^(?=.*[a-z])(?=.*[A-Z])(?=.*[А-Я])(?=.*[а-я])(?=.*[A-Z])(?=.*[а
 /*form.addEventListener('submit', function (e) {
   e.preventDefault();
 
-});*/
+});
 
 
 const isRequired = value => value === '' ? false : true; // проверка значения на пустоту;
@@ -39,7 +39,7 @@ const isBetween = (length, min, max) => length < min || length > max ? false : t
 const isNameValid = (nameP) => {
  let re=new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[А-Я])(?=.*[а-я])(?=.*[A-Z])(?=.*[а-я])(?=.*\s)")
  return re.test(nameP);
-}
+}*/
 
 
   
