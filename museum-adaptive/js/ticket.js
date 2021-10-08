@@ -1,25 +1,17 @@
 export function initTicket() {
-    window.addEventListener('load', () =>addTicket());
-  }
-  function addTicket(){
-      const form=document.getElementById('booking-form');
-      let total;
-      let price;
-      let item;
-      let value1;
-      let value2;
-      console.log(document.getElementById('price'));
-    form.addEventListener("click", function(event) {
-       item=form.querySelector('input[name="radio"]:checked').value;
-       value1=document.getElementById('num1').value;
-       value2=document.getElementById('num2').value;
-       price=document.getElementById('price');
-       total=(item*value1)+((item/2)*value2);
-       console.log(price);
-       let updatePrice = (total) => price.textContent =total;
-       updatePrice();
-      });
-    
+  window.addEventListener('load', () => addTicket());
+}
 
-    
+function addTicket() {
+  const form = document.getElementById('booking-form');
+
+  form.addEventListener('click', function () {
+    const item = form.querySelector('input[name="radio"]:checked').value;
+    const value1 = document.getElementById('num1').value;
+    const value2 = document.getElementById('num2').value;
+    const price = document.getElementById('price');
+    const total = item * value1 + item * value2 / 2;
+
+    price.innerHTML = total;
+  });
 }
