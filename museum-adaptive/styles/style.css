@@ -1,0 +1,211 @@
+  @import 'header.css';
+
+  @import 'welcome-section.css';
+
+  @import 'visiting-section.css';
+
+  @import 'explore-section.css';
+
+  @import 'video-section.css';
+
+  @import 'art-gallery.css';
+
+  @import 'ticket-section.css';
+
+  @import 'contacts-section.css';
+
+  @import 'footer.css';
+
+  @import 'dialog.css';
+
+  @font-face {
+  font-family: Roboto;
+  src: url("../assets/fonts/Roboto-Thin.ttf");
+  }
+
+  @font-face {
+  font-family: Roboto-regular;
+  src: url("../assets/fonts/Roboto-Regular.ttf");
+  }
+
+  @font-face {
+  font-family: Forum;
+  src: url("../assets/fonts/Forum-Regular.ttf");
+  }
+
+  @font-face {
+  font-family: Roboto-bold;
+  src: url("../assets/fonts/Roboto-Bold.ttf");
+  }
+
+  @font-face {
+  font-family: Roboto-medium;
+  src: url("../assets/fonts/Roboto-Medium.ttf");
+  }
+
+  @font-face {
+  font-family: Roboto-light;
+  src: url("../assets/fonts/Roboto-Light.ttf");
+  }
+
+  @font-face {
+  font-family: Roboto-thin;
+  src: url("../assets/fonts/Roboto-Thin.ttf");
+  }
+
+  :root {
+  --bg-dark: #030303;
+  --dark-red: #710707;
+  --font-gold: #9d8665;
+  --font-white: #ffff;
+  --Forum: 'Forum', sans-serif;
+  --Roboto: 'Roboto', sans-serif;
+  --Roboto-bold: 'Roboto-bold', sans-serif;
+  --Roboto-medium: 'Roboto-medium', sans-serif;
+  --Roboto-light: 'Roboto-light', sans-serif;
+  --Roboto-regular: 'Roboto-regular', sans-serif;
+  --Roboto-thin: 'Roboto-thin', sans-serif;
+  }
+
+  * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  }
+
+  a {
+  text-decoration: none;
+  }
+
+  html {
+  scroll-behavior: smooth;
+  }
+
+  img{
+    object-fit: cover;
+  }
+
+   .wrap-dark {
+  margin: 0 auto;
+  background-color: var(--bg-dark);
+  color: var(--font-white);
+  }
+
+  .wrap-dark a:link {
+  color: var(--font-white);
+  }
+
+  .wrap-dark a:visited {
+  color: var(--font-white);
+  }
+
+  .wrap-dark a:hover {
+  color: var(--font-gold);
+  }
+
+  .wrap-white {
+  padding-left: 12.6%;
+  padding-right: 12.6%;
+  background-color: var(--font-white);
+  max-height: 2150px;
+
+  }
+
+  .wrap-video {
+  padding-left: 12.6%;
+  padding-right: 12.6%;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  background-color: var(--font-white);
+  }
+
+  .container {
+  margin: 0px auto;
+  max-height: 9934px;
+  max-width: 1440px;
+  }
+
+  .title-padding {
+  text-align: justify;
+  font-family: var(--Roboto);
+  font-size: 30px;
+  letter-spacing: 3px;
+  }
+
+  .section-title {
+  justify-content: space-between;
+  margin: 0px;
+  padding-bottom: 11px;
+  border-bottom: 3px solid var(--dark-red);
+  font-family: "Forum", sans-serif;
+  font-size: 80px;
+  text-transform: uppercase;
+  }
+
+
+  @media (max-width: 1473px) and (min-width: 1024px)
+  {
+  .wrap-dark,
+  .wrap-white,
+  .wrap-video {
+  padding-right: 20px;
+  padding-left: 20px;
+  }
+
+  .hidden-1024{
+   display:none;
+  }
+
+  .container {
+  margin: 0px auto;
+  /*max-width: 984px;*/
+  }
+
+  .wrap-video{
+  padding-top: 60px;
+  }
+  }
+
+  @media (max-width: 768px)
+  { .wrap-dark,
+  .wrap-white,
+  .wrap-video {
+  padding-right: 2.6%;
+  padding-left: 2.6%;
+  }
+
+  .wrap-video{
+  padding-top: 42px;
+  padding-bottom: 79px;
+  }
+
+  .container {
+  margin: 0px auto;
+  max-width: 728px;
+  }
+  }
+
+  @media (max-width:480px)
+  {
+  .wrap-dark,
+  .wrap-white,
+  .wrap-video {
+  padding-right: 4.7%;
+  padding-left: 4.7%;
+  }
+
+  .wrap-video{
+  padding-top: 36px;
+  padding-bottom: 40px;
+  }
+
+  .container {
+  margin: 0px auto;
+  max-width: 380px;
+
+  }
+   .hidden-420{
+     display:none;
+   }
+
+  }

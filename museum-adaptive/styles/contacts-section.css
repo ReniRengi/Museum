@@ -1,0 +1,195 @@
+  #contacts {
+  max-height: 1362px;
+  }
+
+  .parallax-container {
+  margin-top: 75px;
+  width: 100%;
+  height: 400px;
+  }
+
+  .parallax-image {
+  background-image: url(../assets/img/parallax.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 400px;
+  }
+
+  .contacts-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 104px;
+  }
+
+  .contacts-container img {
+  width: 100%;
+  }
+
+  .section-text-contacts {
+  width: 33.75%;
+  color: black;
+  font-family: var(--Roboto-light);
+  font-size: 25px;
+  }
+
+  #contacts-link{
+  width: 33.75%;
+  font-family: var(--Roboto-light);
+  font-size: 25px;
+  }
+
+  .section-text-contacts a{
+  color:black;
+  }
+
+  .section-text-contacts h4 {
+  padding-bottom: 43px;
+  font-family: var(--Roboto-medium);
+  font-size: 27px;
+  letter-spacing: 0.1px;
+  word-spacing: 1px;
+  }
+
+  .section-text-contacts p {
+  line-height: 2.3;
+  font-size: 22px;
+  letter-spacing: 0.3px;
+  word-spacing: 0.4px;
+  }
+
+  @media (max-width: 1473px) and (min-width: 1024px){
+  .contacts-wrap{
+  height: 735px;
+
+  }
+  #contacts-title {
+  padding-top: 63px;
+  }
+
+  .contacts-container {
+  padding-top: 84px;
+  }
+
+  .parallax-container {
+  margin-top: 0px;
+  width: 100%;
+  height: 400px;
+  }
+
+  .contacts-container img {
+  padding-top: 0;
+  width: 694px;
+  height: 454px;
+  }
+
+  .section-text-contacts h4 {
+  padding-top: 0px;
+  padding-bottom: 23px;
+  font-size: 24px;
+  letter-spacing: 0;
+  word-spacing: 0;
+  }
+
+  .section-text-contacts {
+  font-size: 20px;
+  }
+
+  #contacts-link{
+  font-size: 20px;
+  }
+
+  .section-text-contacts p {
+  font-size: 20px;
+  letter-spacing: 0;
+  word-spacing: 0;
+  line-height: 2;
+
+  }
+
+
+
+  }
+
+  @media (max-width: 768px){
+  #contacts-title {
+  padding-top: 44px;
+  font-size:  calc(28px + (40 - 28) * (100vw - 420px) / (768 - 420));
+  }
+
+  .contacts-wrap{
+  height: 926px;
+
+  }
+
+  .contacts-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  }
+
+  .parallax-container {
+  height:  300px;
+  object-fit: cover;
+  }
+
+  .contacts-container img {
+  padding-top: 20px;
+  width: 100%;
+  height: auto;
+  }
+
+  .section-text-contacts h4 {
+  padding-top: 0px;
+  padding-bottom: calc(16px + (30 - 16) * (100vw - 420px) / (768 - 420));;
+  font-size: calc(16px + (20 - 16) * (100vw - 420px) / (768 - 420));
+  letter-spacing: 0;
+  word-spacing: 0;
+  }
+
+  .section-text-contacts {
+  font-size: calc(16px + (20 - 16) * (100vw - 420px) / (768 - 420));;
+  }
+
+  #contacts-link{
+  font-size: calc(16px + (20 - 16) * (100vw - 420px) / (768 - 420));;
+  }
+
+  .section-text-contacts p {
+  font-size: calc(16px + (18 - 16) * (100vw - 420px) / (768 - 420));
+  letter-spacing: 0;
+  word-spacing: 0;
+  line-height: 2;
+
+  }
+
+  }
+
+  @media (max-width: 420px){
+  #contacts-title {
+  padding-top: 40px;
+  }
+
+  .contacts-wrap{
+  height: 637px;
+
+  }
+  .parallax-container {
+  height:  300px;
+  }
+
+  .contacts-container img {
+  padding-top: 30px;
+  width: 100%;
+  height: auto;
+  }
+
+  .section-text-contacts h4 {
+  padding-bottom: 40px;
+  }
+
+  .section-text-contacts p {
+  white-space: nowrap;
+  }
+
+  }
+
