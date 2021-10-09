@@ -1,4 +1,4 @@
-const videoPlayer = document.querySelector('#video-player');
+const videoPlayer = document.querySelector('.video');
 const progressBar = document.getElementById('progress-bar');
 const currTime = document.getElementById('curr-time');
 const durationTime = document.getElementById('duration');
@@ -9,8 +9,20 @@ const muteButton = document.getElementById('mute');
 const volumeScale = document.getElementById('volume');
 const speedSelect = document.getElementById('speed');
 const fullscreenButton = document.getElementById('fullscreen');
+let countClick = [];
 
-function videoControl() {
+const videoPlay= document.getElementById('video-player');
+
+actionButton.addEventListener('click', videoAct);
+videoPlayer.addEventListener('click', videoAct);
+videoPlayer.addEventListener('timeupdate', videoProgress);
+progressBar.addEventListener('click', videoChangeTime);
+muteButton.addEventListener('click', videoMute);
+volumeScale.addEventListener('change', videoChangeVolume);
+speedSelect.addEventListener('change', videoChangeSpeed);
+document.addEventListener('keydown', keyboard);
+
+function videoAct() {
   if (videoPlayer.paused) {
     videoPlayer.play();
     actionButton.setAttribute('class', 'action_play');
@@ -26,16 +38,22 @@ function videoControl() {
 }
 
 function videoTime(time) {
-  const minutes = Math.floor(+time / 60);
-  const seconds = Math.floor(+time - minutes * 60);
-  const minutesVal = minutes < 10 ? `0${minutes}` : minutes;
-  const secondsVal = seconds < 10 ? `0${seconds}` : seconds;
-
-  return `${minutesVal}:${secondsVal}`;
-}
+        time = Math.floor(time);
+        let minutes = Math.floor(time / 60);
+        let seconds = Math.floor(time - minutes * 60);
+        let minutesVal = minutes;
+        let secondsVal = seconds;
+        if (minutes < 10) {
+            minutesVal = '0' + minutes;
+        }
+        if (seconds < 10) {
+            secondsVal = '0' + seconds;
+        }
+        return minutesVal + ":" + secondsVal;
+    }
 
 function videoProgress() {
-  const progress = videoPlayer.currentTime / videoPlayer.duration;
+  progress = videoPlayer.currentTime / videoPlayer.duration;
   progressBar.value = progress * 100;
   currTime.innerHTML = videoTime(videoPlayer.currentTime);
 }
@@ -48,8 +66,12 @@ function videoChangeTime(e) {
   videoPlayer.currentTime = videoPlayer.duration * progress;
 }
 
-function videoScroll(forward = false) {
-  videoPlayer.currentTime = forward ? videoPlayer.currentTime + 10 : videoPlayer.currentTime - 10;
+function videoUpTime(e) {
+  videoPlayer.currentTime += 10;
+}
+
+function videoDownTime(e) {
+  videoPlayer.currentTime -= 10;
 }
 
 function videoChooseTime(e) {
@@ -78,109 +100,110 @@ function videoMute() {
 }
 
 function videoChangeSpeed() {
-  videoPlayer.playbackRate = speedSelect.value / 100;
-}
+        let speed = speedSelect.value / 100;
+        videoPlayer.playbackRate = speed;
+    }
+    function videoBoostSpeed() {
+        if (speedSelect.value === "200") {
+            return;
+        }
+        let nb = Number(speedSelect.value);
+        speedSelect.value = nb + 25;
+        videoChangeSpeed();
+    }
 
-function increaseVideoSpeed() {
-  if (speedSelect.value === '200') {
-    return;
-  }
-  let nb = Number(speedSelect.value);
-  speedSelect.value = nb + 25;
-  videoChangeSpeed();
-}
+    function videoDownsizeSpeed() {
+        if (speedSelect.value === "25") {
+            return;
+        }
+        let nb = Number(speedSelect.value);
+        speedSelect.value = nb - 25;
+        videoChangeSpeed();
+    }
 
-function decreaseVideoSpeed() {
-  if (speedSelect.value === '25') {
-    return;
-  }
-  let nb = Number(speedSelect.value);
-  speedSelect.value = nb - 25;
-  videoChangeSpeed();
-}
-
-function nextFrame() {
+function NextFrame() {
   videoPlayer.currentTime += 1 / 29.97;
 }
 
 volumeScale.value = 50;
 videoChangeVolume();
-fullscreenButton.addEventListener('click', toggleFullscreen());
 
-function toggleFullscreen() {
-  const setFullscreen = (state) => videoPlayer.setAttribute('data-fullscreen', state);
-  const isFullScreen = !!(document.webkitIsFullScreen || document.mozFullScreen || document.msFullscreenElement || document.fullscreenElement);
-  const getExitFullScreenPromise = () => {
-    if (document.exitFullscreen) return document.exitFullscreen();
-    else if (document.mozCancelFullScreen) return document.mozCancelFullScreen();
-    else if (document.webkitCancelFullScreen) return document.webkitCancelFullScreen();
-    else if (document.msExitFullscreen) return document.msExitFullscreen();
-  };
-  const getRequestFullScreenPromise = () => {
-    if (videoPlayer.requestFullscreen) return videoPlayer.requestFullscreen();
-    else if (videoPlayer.mozRequestFullScreen) return videoPlayer.mozRequestFullScreen();
-    else if (videoPlayer.webkitRequestFullScreen) return videoPlayer.webkitRequestFullScreen();
-    else if (videoPlayer.msRequestFullscreen) return videoPlayer.msRequestFullscreen();
-  };
-
-  const actionPromise = isFullScreen ? getExitFullScreenPromise() : getRequestFullScreenPromise();
-
-  actionPromise.then(() => setFullscreen(!isFullScreen));
+function isFullScreen() {
+  return !!(
+    document.webkitIsFullScreen ||
+    document.mozFullScreen ||
+    document.msFullscreenElement ||
+    document.fullscreenElement
+  );
 }
 
-function handleKeyboardEvents(event) {
-  const {key, shiftKey} = event;
+function handleFullscreen() {
+  if (isFullScreen()) {
+    if (document.exitFullscreen) document.exitFullscreen();
+    else if (document.mozCancelFullScreen) document.mozCancelFullScreen();
+    else if (document.webkitCancelFullScreen) document.webkitCancelFullScreen();
+    else if (document.msExitFullscreen) document.msExitFullscreen();
 
-  switch(key) {
-    case ' ':
-    case 'k':
-    case 'л':
-      videoControl();
-      break;
-    case 'm':
-    case 'ь':
-      videoMute();
-      break;
-    case 'f':
-    case 'а':
-      toggleFullscreen();
-      break;
-    case '.':
-    case 'ю':
-      nextFrame();
-      break;
-    case '>':
-    case 'Ю':
-      if (shiftKey) {increaseVideoSpeed()};
-      break;
-    case '<':
-    case 'Б':
-      if (shiftKey) {decreaseVideoSpeed()};
-      break;
-    case 'l':
-    case 'д':
-      videoScroll(true);
-      break;
-    case 'j':
-    case 'о':
-      videoScroll(false);
-      break;
-    default:
-      if (key >= 0 && key < 10) {
-        videoChooseTime();
-      }
+    setFullscreen(false);
+  } else {
+    if (videoPlayer.requestFullscreen) videoPlayer.requestFullscreen();
+    else if (videoPlayer.mozRequestFullScreen) videoPlayer.mozRequestFullScreen();
+    else if (videoPlayer.webkitRequestFullScreen) videoPlayer.webkitRequestFullScreen();
+    else if (videoPlayer.msRequestFullscreen) videoPlayer.msRequestFullscreen();
+
+    setFullscreen(true);
   }
 }
 
-actionButton.addEventListener('click', videoControl);
-videoPlayer.addEventListener('click', videoControl);
-videoPlayer.addEventListener('timeupdate', videoProgress);
-progressBar.addEventListener('click', videoChangeTime);
-muteButton.addEventListener('click', videoMute);
-volumeScale.addEventListener('change', videoChangeVolume);
-speedSelect.addEventListener('change', videoChangeSpeed);
+function setFullscreen() {
+  videoPlayer.setAttribute('data-fullscreen', !!state);
+}
 
-document.addEventListener('keydown', handleKeyboardEvents);
+fullscreenButton.addEventListener('click', function (e) {
+  handleFullscreen();
+});
+
+function keyboard(event) {
+  console.log(countClick);
+  countClick.push(event.key);
+  if (event.key === ' ') {
+    videoAct();
+    return;
+  } else if (event.key === 'k' || event.key === 'л') {
+    videoAct();
+    return;
+  } else if (event.key === 'm' || event.key === 'ь') {
+    videoMute();
+    return;
+  } else if (event.key === 'f' || event.key === 'а') {
+    handleFullscreen();
+    return;
+  } else if (event.key === '.' || event.key === 'ю') {
+    NextFrame();
+    return;
+  } else if (
+    (countClick[countClick.length - 2] === '>' && countClick[countClick.length - 1] === 'Shift') ||
+    countClick[countClick.length - 2] === 'Ю'
+  ) {
+    videoBoostSpeed();
+    return;
+  } else if (
+    (countClick[countClick.length - 2] === '<' && countClick[countClick.length - 1] === 'Shift') ||
+    countClick[countClick.length - 2] === 'Б'
+  ) {
+    videoDownsizeSpeed();
+    return;
+  } else if (event.key == 'l' || event.key === 'д') {
+    videoUpTime();
+    return;
+  } else if (event.key == 'j' || event.key === 'о') {
+    videoDownTime();
+    return;
+  } else if (event.key >= 0 && event.key < 10) {
+    videoChooseTime();
+    return;
+  }
+}
 
 function loadSwiper() {
   const swiper = new Swiper('.swiper', {
@@ -190,18 +213,41 @@ function loadSwiper() {
 
     navigation: {
       nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      prevEl: '.swiper-button-prev'
     },
     pagination: {
       el: '.swiper-pagination',
-      clickable: true,
-    },
+      clickable: true
+    }
+  });
+  swiper.on('slideChange', function(){    
+    console.log("click " + swiper.activeIndex);
+    //console.log(swiper.slides[swiper.activeIndex]);
+    videoPlay.pause();
+    if (swiper.activeIndex === 0){
+      videoPlay.src="/assets/video/video0.mp4";
+  }
+    else if (swiper.activeIndex === 1){
+      videoPlay.src="/assets/video/video1.mp4";
+  }
+    else if (swiper.activeIndex === 2){
+      videoPlay.src="/assets/video/video2.mp4";
+  }
+    else if (swiper.activeIndex === 3){
+      videoPlay.src="/assets/video/video3.mp4";
+  }
+    else{
+      videoPlay.src="/assets/video/video4.mp4";
+  }
+    
+    videoPlay.load();
+    videoPlay.play();
   });
 }
 
 export function initVideo() {
   window.addEventListener('load', function (event) {
     loadSwiper();
-    videoControl();
+    videoAct();
   });
 }

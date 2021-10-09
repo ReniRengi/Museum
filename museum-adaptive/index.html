@@ -201,13 +201,13 @@
             <p class= "hidden-1024 hidden-768 hidden-420">Enter and visit one of the most famous museums in the world and enjoy masterpieces such as Mona Lisa or Hammurabi's Code.
           </div>
           <!-- Player -->
-            <div class="player-wrap"></div>
+            
             <div class="video">
-            <video id="video-player" src="/assets/video/video0.mp4" poster="/assets/video/poster0.jpg"  preload="metadata"></video>
-            <!--<video src="/assets/video/video1.mp4" poster="/assets/video/poster1.jpg" preload="none"></video>
-            <video src="/assets/video/video2.mp4" poster="/assets/video/poster2.jpg" preload="none"></video>
-            <video src="/assets/video/video3.mp4" poster="/assets/video/poster3.jpg" preload="none"></video>
-            <video src="/assets/video/video4.mp4" poster="/assets/video/poster4.jpg" preload="none"></video>!-->
+            <video id="video-player" class="video-player" src="/assets/video/video0.mp4" poster="/assets/video/poster0.jpg"  preload="metadata"></video>
+            <!--<video class="video-player" src="/assets/video/video1.mp4" poster="/assets/video/poster1.jpg" preload="none"></video>
+            <video class="video-player" src="/assets/video/video2.mp4" poster="/assets/video/poster2.jpg" preload="none"></video>
+            <video class="video-player" src="/assets/video/video3.mp4" poster="/assets/video/poster3.jpg" preload="none"></video>
+            <video class="video-player" src="/assets/video/video4.mp4" poster="/assets/video/poster4.jpg" preload="none"></video>!-->
             <button id="big_button" class="big_button_on" type="button"></button>
             </div>
           <div id="controls" class="controls">
@@ -230,7 +230,7 @@
            </select>
             <button id="fullscreen" class="fullscreen_false"><img src="./assets/svg/Fullskrin.svg"></button>
           </div>
-          </div>
+          
         <!-- Gallery-->
         <div class="swiper-container">
 
@@ -254,6 +254,7 @@
           </div>
           </div>
          </div>
+        </div>
         </section>
          <!-- Art-gallery -->
       <section class="wrap-dark">
@@ -357,7 +358,7 @@
                 const marker5 = new mapboxgl.Marker()
                   .setLngLat([2.3365, 48.8625])
                   .addTo(map);
-                </script>
+              </script>
             </div>
           </div>
         </div>
